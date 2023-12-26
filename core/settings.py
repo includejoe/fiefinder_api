@@ -27,6 +27,7 @@ ALLOWED_HOSTS = ["*"]
 # Application definition
 
 INSTALLED_APPS = [
+    "daphne",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -37,9 +38,11 @@ INSTALLED_APPS = [
     "user.apps.UserConfig",
     "base.apps.BaseConfig",
     "rental.apps.RentalConfig",
+    "chat.apps.ChatConfig",
     # 3rd party
     "axes",
     "easyaudit",
+    "channels",
     "post_office",
     "corsheaders",
     "django_celery_results",
@@ -218,3 +221,6 @@ POST_OFFICE = {
         minutes=2
     ),  # Schedule to be retried 15 minutes later
 }
+
+
+ASGI_APPLICATION = "core.asgi.application"

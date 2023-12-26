@@ -3,14 +3,18 @@ from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.http import require_POST, require_GET
 from django_ratelimit.decorators import ratelimit
 from django.db import transaction
-from django.core.paginator import Paginator, EmptyPage
-
 
 from core.settings import LOGGER as logger
 from base.models import Location
 from rental.models import Rental
 from rental.serializers import rental_serializer
-from base.utils import request_sanitizer, token_required, partial_update, type_checker
+from base.utils import (
+    request_sanitizer,
+    token_required,
+    partial_update,
+    type_checker,
+    paginator,
+)
 
 
 @csrf_exempt
@@ -97,6 +101,7 @@ def fetch_rentals(request):
     page_number = body.get("page", 1)
     drop = body.get("drop", 20)
     filters = body.get("filters", {})
+    select_related = ["user", "location"]
 
     if not isinstance(page_number, int):
         return {
@@ -110,39 +115,15 @@ def fetch_rentals(request):
             "info": "Page drop should be an integer",
         }
 
-    rentals = Rental.objects.select_related("user", "location").filter(**filters)
-    paginator = Paginator(rentals, drop)
-
-    try:
-        page = paginator.page(page_number)
-    except EmptyPage:
-        page = paginator.page(paginator.num_pages)
-
-    try:
-        previous_page = page.previous_page_number()
-    except Exception as e:
-        logger.warning(str(e))
-        previous_page = page.number
-    try:
-        next_page = page.next_page_number()
-    except Exception as e:
-        logger.warning(str(e))
-        next_page = page.number
-
-    rentals = [rental_serializer(rental) for rental in page.object_list]
-
-    return JsonResponse(
-        {
-            "success": True,
-            "info": rentals,
-            "paginator": {
-                "previous_page": previous_page,
-                "next_page": next_page,
-                "next": page.has_next(),
-                "prev": page.has_previous(),
-            },
-        }
+    response = paginator(
+        page_number,
+        Rental,
+        rental_serializer,
+        filters,
+        select_related=select_related,
     )
+
+    return JsonResponse(response)
 
 
 @csrf_exempt

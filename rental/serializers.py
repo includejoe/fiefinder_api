@@ -1,11 +1,6 @@
-def includer(valid_fields, includes):
-    return {field: valid_fields[field] for field in includes if field in valid_fields}
+from base.utils import includer, excluder
 
-
-def excluder(valid_fields, excludes):
-    return {
-        field: valid_fields[field] for field in valid_fields if field not in excludes
-    }
+from user.serializers import user_serializer
 
 
 def rental_serializer(rental, fields=[], exclude=[]):
@@ -28,13 +23,7 @@ def rental_serializer(rental, fields=[], exclude=[]):
             "longitude": rental.location.longitude,
         },
         "created_at": rental.created_at,
-        "user": {
-            "full_name": f"{rental.user.first_name} {rental.user.last_name}",
-            "image": rental.user.image,
-            "verified": rental.user.image,
-            "phone": rental.user.phone,
-            "gender": rental.user.gender,
-        },
+        "user": user_serializer(rental.user),
     }
 
     if fields:

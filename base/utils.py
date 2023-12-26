@@ -15,6 +15,16 @@ def partial_update(body, exclude=[]):
     return {key: value for key, value in body.items() if key not in exclude}
 
 
+def includer(valid_fields, includes):
+    return {field: valid_fields[field] for field in includes if field in valid_fields}
+
+
+def excluder(valid_fields, excludes):
+    return {
+        field: valid_fields[field] for field in valid_fields if field not in excludes
+    }
+
+
 def generate_verification_code():
     random_digits = [random.randint(0, 9) for _ in range(6)]
     logger.warning(random_digits)
@@ -143,27 +153,21 @@ class Cache:
             return json_data
 
 
-def paginator_(
-    page,
+def paginator(
+    page_number,
     cls,
+    serializer,
     filters,
-    values,
     annotate={},
     select_related=None,
     special_filter=None,
     excludes=None,
-    method=None,
-    method_params=None,
     drop=20,
 ):
     if excludes is None:
         excludes = {}
     if select_related:
-        obj = (
-            cls.objects.select_related(*select_related)
-            .annotate(**annotate)
-            .values(*values)
-        )
+        obj = cls.objects.select_related(*select_related).annotate(**annotate)
         if special_filter:
             obj = (
                 obj.filter(special_filter, **filters)
@@ -177,7 +181,6 @@ def paginator_(
             obj = (
                 cls.objects.filter(special_filter, **filters)
                 .annotate(**annotate)
-                .values(*values)
                 .exclude(**excludes)
                 .order_by("-id")
             )
@@ -185,38 +188,35 @@ def paginator_(
             obj = (
                 cls.objects.filter(**filters)
                 .annotate(**annotate)
-                .values(*values)
                 .exclude(**excludes)
                 .order_by("-id")
             )
     paginator = Paginator(obj, drop)
     try:
-        objects_ = paginator.page(page)
+        page = paginator.page(page_number)
     except PageNotAnInteger:
-        objects_ = paginator.page(1)
+        page = paginator.page(1)
     except EmptyPage:
-        objects_ = paginator.page(paginator.num_pages)
+        page = paginator.page(paginator.num_pages)
     try:
-        previous_page = objects_.previous_page_number()
+        previous_page = page.previous_page_number()
     except Exception as e:
         logger.warning(str(e))
-        previous_page = objects_.number
+        previous_page = page.number
     try:
-        next_page = objects_.next_page_number()
+        next_page = page.next_page_number()
     except Exception as e:
         logger.warning(str(e))
-        next_page = objects_.number
-    finale = list(objects_.object_list)
-    if method:
-        finale = method(finale, *method_params)
+        next_page = page.number
+
     return {
-        "info": finale,
+        "info": [serializer(obj) for obj in page.object_list],
         "success": True,
         "paginator": {
             "success": True,
             "previous_page": previous_page,
             "next_page": next_page,
-            "next": objects_.has_next(),
-            "prev": objects_.has_previous(),
+            "next": page.has_next(),
+            "prev": page.has_previous(),
         },
     }
