@@ -60,6 +60,6 @@ def fetch_languages(request):
         ]
         return JsonResponse({"success": True, "info": languages})
     else:
-        languages = Language.objects.values("id", "name", "short_code", "image")
+        languages = list(Language.objects.values("id", "name", "short_code", "image"))
         Cache(Language, "base_cache_language").save_values()
-    return JsonResponse({"success": True, "info": list(languages)})
+    return JsonResponse({"success": True, "info": languages})

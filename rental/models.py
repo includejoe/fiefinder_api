@@ -3,6 +3,7 @@ from django.contrib.postgres.fields import ArrayField
 
 from base.models import Location
 from user.models import User
+from base.utils import Cache
 
 
 class RentalCategory(models.Model):
@@ -13,6 +14,14 @@ class RentalCategory(models.Model):
         ordering = ["-name"]
         verbose_name_plural = "Rental Categories"
         indexes = [models.Index(fields=["name"])]
+
+    def save(self, *args, **kwargs):
+        super().save(*args, **kwargs)
+        Cache(RentalCategory, "base_cache_rental_category").save_values()
+
+    @staticmethod
+    def fetch_categories():
+        return Cache(RentalCategory, "base_cache_rental_category").fetch_values()
 
 
 class Rental(models.Model):
@@ -28,8 +37,8 @@ class Rental(models.Model):
         max_length=128,
         blank=True,
         null=True,
-        choices=(("monthly", "monthly"), ("yearly", "yearly")),
-        default="yearly",
+        choices=(("years", "years"), ("months", "months")),
+        default="years",
     )
     lease_term = models.PositiveSmallIntegerField(default=1)
     images = ArrayField(models.URLField(), blank=True, null=True)

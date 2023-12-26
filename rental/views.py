@@ -1,19 +1,23 @@
+from django.db.models.functions import Cos, Sin, Radians
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.http import require_POST, require_GET
 from django_ratelimit.decorators import ratelimit
 from django.db import transaction
+from django.db.models import F, ExpressionWrapper, DecimalField
 
 from core.settings import LOGGER as logger
 from base.models import Location
-from rental.models import Rental
+from rental.models import Rental, RentalCategory
 from rental.serializers import rental_serializer
+from rental.utils import Acos
 from base.utils import (
     request_sanitizer,
     token_required,
     partial_update,
     type_checker,
     paginator,
+    Cache,
 )
 
 
@@ -102,28 +106,57 @@ def fetch_rentals(request):
     drop = body.get("drop", 20)
     filters = body.get("filters", {})
     select_related = ["user", "location"]
+    longitude = filters.pop("longitude", None)
+    latitude = filters.pop("latitude", None)
+    annotate = {}
 
-    if not isinstance(page_number, int):
-        return {
-            "success": False,
-            "info": "Page number should be an integer",
-        }
+    try:
+        if not isinstance(page_number, int):
+            return {
+                "success": False,
+                "info": "Page number should be an integer",
+            }
 
-    if not isinstance(drop, int):
-        return {
-            "success": False,
-            "info": "Page drop should be an integer",
-        }
+        if not isinstance(drop, int):
+            return {
+                "success": False,
+                "info": "Page drop should be an integer",
+            }
 
-    response = paginator(
-        page_number,
-        Rental,
-        rental_serializer,
-        filters,
-        select_related=select_related,
-    )
+        if longitude and latitude:
+            # todo: implement accurate calculation of distance
 
-    return JsonResponse(response)
+            latitude_expr = Radians(F("location__latitude"))
+            longitude_expr = Radians(F("location__longitude"))
+
+            annotate = {
+                "distance": ExpressionWrapper(
+                    6371
+                    * Acos(
+                        Cos(Radians(latitude))
+                        * Cos(latitude_expr)
+                        * Cos(Radians(longitude) - longitude_expr)
+                        + Sin(Radians(latitude)) * Sin(latitude_expr)
+                    ),
+                    output_field=DecimalField(),
+                )
+            }
+
+            # filters = {"distance__lte": 30, **filters}
+
+        response = paginator(
+            page_number,
+            Rental,
+            rental_serializer,
+            {"available": True, **filters},
+            annotate=annotate,
+            select_related=select_related,
+        )
+
+        return JsonResponse(response)
+    except Exception as e:
+        logger.exception(str(e))
+        return JsonResponse({"success": False, "info": "Invalid request body"})
 
 
 @csrf_exempt
@@ -139,3 +172,17 @@ def fetch_rental(request, rental_id):
     except Exception as e:
         logger.exception(str(e))
         return JsonResponse({"success": False, "info": "Invalid request body"})
+
+
+@csrf_exempt
+@ratelimit(key="ip", rate="10/m", block=True)
+@request_sanitizer
+@require_GET
+def fetch_categories(request):
+    cached_categories = RentalCategory.fetch_categories()
+    if cached_categories:
+        categories = cached_categories
+    else:
+        categories = list(RentalCategory.objects.values())
+        Cache(RentalCategory, "base_cache_rental_category").save_values()
+    return JsonResponse({"success": True, "info": categories})

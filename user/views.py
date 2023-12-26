@@ -108,11 +108,13 @@ def login_user(request):
                 "success": True,
                 "info": {
                     "token": token.key,
+                    "id": user.id,
                     "first_name": user.first_name,
                     "last_name": user.last_name,
                     "gender": user.gender,
                     "email": user.email,
                     "country": user.country.name,
+                    "phone": user.phone,
                     "image": user.image,
                     "verified": user.verified,
                 },

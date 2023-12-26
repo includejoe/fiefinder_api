@@ -3943,3 +3943,921 @@ HINT:  Perhaps you meant to reference the column "rental_rental.lease_term".
 2023-12-26 01:19:38,170 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
 2023-12-26 01:19:38,171 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
 2023-12-26 01:19:38,172 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2023-12-26 10:14:16,632 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 10:14:20,863 core.settings WARNING  base.signals loaded
+2023-12-26 10:14:20,863 core.settings WARNING  rental.signals loaded
+2023-12-26 10:14:20,879 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-26 10:14:21,961 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 10:14:22,589 core.settings WARNING  base.signals loaded
+2023-12-26 10:14:22,589 core.settings WARNING  rental.signals loaded
+2023-12-26 10:14:22,605 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-26 10:14:22,621 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-26 10:14:23,464 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 10:14:23,464 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 10:14:23,481 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2023-12-26 10:14:23,481 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2023-12-26 10:14:23,481 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2023-12-26 10:15:34,336 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 55956]
+2023-12-26 10:15:34,470 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 10:15:34,503 django.request WARNING  Method Not Allowed (GET): /user/login/
+2023-12-26 10:15:34,503 django.request WARNING  Method Not Allowed (GET): /user/login/
+2023-12-26 10:15:34,504 daphne.http_protocol DEBUG    HTTP 405 response started for ['127.0.0.1', 55956]
+2023-12-26 10:15:34,504 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 55956]
+2023-12-26 10:15:34,504 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 55956]
+2023-12-26 10:15:34,504 django.channels.server WARNING  [31;1mHTTP GET /user/login/ 405 [0.17, 127.0.0.1:55956][0m
+2023-12-26 10:15:38,270 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 56010]
+2023-12-26 10:15:38,338 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 10:15:38,353 axes.helpers DEBUG    Using request.META.get('REMOTE_ADDR', None) fallback method to get client IP address
+2023-12-26 10:15:38,386 axes.helpers DEBUG    Using parameter credentials to get username with key settings.AXES_USERNAME_FORM_FIELD
+2023-12-26 10:15:38,386 axes.attempts DEBUG    AXES: Getting all access attempts from database because no AXES_COOLOFF_TIME is configured
+2023-12-26 10:15:38,936 axes.attempts DEBUG    AXES: Skipping clean for expired access attempts because no AXES_COOLOFF_TIME is configured
+2023-12-26 10:15:38,936 axes.handlers.database INFO     AXES: Successful login by {username: "********************", ip_address: "********************", user_agent: "Thunder Client (https://www.thunderclient.com)", path_info: "/user/login/"}.
+2023-12-26 10:15:38,956 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 56010]
+2023-12-26 10:15:38,956 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 56010]
+2023-12-26 10:15:38,956 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 56010]
+2023-12-26 10:15:38,967 django.channels.server INFO     [mHTTP POST /user/login/ 200 [0.70, 127.0.0.1:56010][0m
+2023-12-26 10:16:37,751 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\user\views.py changed, reloading.
+2023-12-26 10:16:39,547 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 10:16:40,332 core.settings WARNING  base.signals loaded
+2023-12-26 10:16:40,334 core.settings WARNING  rental.signals loaded
+2023-12-26 10:16:40,341 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-26 10:16:40,366 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-26 10:16:40,730 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 10:16:40,730 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 10:16:40,730 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2023-12-26 10:16:40,730 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2023-12-26 10:16:40,730 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2023-12-26 10:17:16,396 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\user\views.py changed, reloading.
+2023-12-26 10:17:17,827 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 10:17:18,543 core.settings WARNING  base.signals loaded
+2023-12-26 10:17:18,543 core.settings WARNING  rental.signals loaded
+2023-12-26 10:17:18,562 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-26 10:17:18,588 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-26 10:17:18,913 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 10:17:18,913 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 10:17:18,918 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2023-12-26 10:17:18,919 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2023-12-26 10:17:18,920 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2023-12-26 10:17:19,535 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 57593]
+2023-12-26 10:17:19,612 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 10:17:19,628 axes.helpers DEBUG    Using request.META.get('REMOTE_ADDR', None) fallback method to get client IP address
+2023-12-26 10:17:19,639 axes.helpers DEBUG    Using parameter credentials to get username with key settings.AXES_USERNAME_FORM_FIELD
+2023-12-26 10:17:19,639 axes.attempts DEBUG    AXES: Getting all access attempts from database because no AXES_COOLOFF_TIME is configured
+2023-12-26 10:17:20,111 axes.attempts DEBUG    AXES: Skipping clean for expired access attempts because no AXES_COOLOFF_TIME is configured
+2023-12-26 10:17:20,111 axes.handlers.database INFO     AXES: Successful login by {username: "********************", ip_address: "********************", user_agent: "Thunder Client (https://www.thunderclient.com)", path_info: "/user/login/"}.
+2023-12-26 10:17:20,134 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 57593]
+2023-12-26 10:17:20,135 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 57593]
+2023-12-26 10:17:20,136 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 57593]
+2023-12-26 10:17:20,136 django.channels.server INFO     [mHTTP POST /user/login/ 200 [0.60, 127.0.0.1:57593][0m
+2023-12-26 12:21:49,442 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\rental\views.py changed, reloading.
+2023-12-26 12:21:56,745 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 12:22:03,390 core.settings WARNING  base.signals loaded
+2023-12-26 12:22:03,393 core.settings WARNING  rental.signals loaded
+2023-12-26 12:22:03,438 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-26 12:22:03,747 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-26 12:22:06,211 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 12:22:06,211 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 12:22:06,252 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2023-12-26 12:22:06,253 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2023-12-26 12:22:06,254 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2023-12-26 13:17:34,508 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\rental\signals.py changed, reloading.
+2023-12-26 13:17:37,901 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 13:17:39,803 core.settings WARNING  base.signals loaded
+2023-12-26 13:17:39,866 core.settings WARNING  rental.signals loaded
+2023-12-26 13:17:39,885 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-26 13:17:39,989 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-26 13:17:40,589 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 13:17:40,589 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 13:17:40,593 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2023-12-26 13:17:40,595 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2023-12-26 13:17:40,596 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2023-12-26 13:17:43,323 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\rental\models.py changed, reloading.
+2023-12-26 13:17:44,912 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 13:17:45,674 core.settings WARNING  base.signals loaded
+2023-12-26 13:17:45,675 core.settings WARNING  rental.signals loaded
+2023-12-26 13:17:45,687 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-26 13:17:45,713 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-26 13:17:46,072 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 13:17:46,072 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 13:17:46,076 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2023-12-26 13:17:46,076 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2023-12-26 13:17:46,077 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2023-12-26 13:18:19,991 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\rental\urls.py changed, reloading.
+2023-12-26 13:18:21,599 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 13:18:22,683 core.settings WARNING  base.signals loaded
+2023-12-26 13:18:22,684 core.settings WARNING  rental.signals loaded
+2023-12-26 13:18:22,692 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-26 13:18:22,716 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-26 13:20:29,358 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\rental\views.py changed, reloading.
+2023-12-26 13:20:30,771 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 13:20:31,448 core.settings WARNING  base.signals loaded
+2023-12-26 13:20:31,450 core.settings WARNING  rental.signals loaded
+2023-12-26 13:20:31,459 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-26 13:20:31,483 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-26 13:20:31,814 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 13:20:31,814 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 13:20:31,819 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2023-12-26 13:20:31,819 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2023-12-26 13:20:31,821 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2023-12-26 13:21:07,431 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\base\views.py changed, reloading.
+2023-12-26 13:21:09,070 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 13:21:09,777 core.settings WARNING  base.signals loaded
+2023-12-26 13:21:09,779 core.settings WARNING  rental.signals loaded
+2023-12-26 13:21:09,789 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-26 13:21:09,817 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-26 13:21:10,200 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 13:21:10,200 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 13:21:10,204 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2023-12-26 13:21:10,204 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2023-12-26 13:21:10,206 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2023-12-26 13:21:25,173 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 64061]
+2023-12-26 13:21:25,304 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 13:21:25,354 django.request WARNING  Method Not Allowed (POST): /rental/categories/
+2023-12-26 13:21:25,354 django.request WARNING  Method Not Allowed (POST): /rental/categories/
+2023-12-26 13:21:25,359 daphne.http_protocol DEBUG    HTTP 405 response started for ['127.0.0.1', 64061]
+2023-12-26 13:21:25,360 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 64061]
+2023-12-26 13:21:25,360 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 64061]
+2023-12-26 13:21:25,360 django.channels.server WARNING  [31;1mHTTP POST /rental/categories/ 405 [0.19, 127.0.0.1:64061][0m
+2023-12-26 13:21:28,622 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 64111]
+2023-12-26 13:21:28,688 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 13:21:30,754 core.settings WARNING  the JSON object must be str, bytes or bytearray, not NoneType
+2023-12-26 13:21:30,770 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 64111]
+2023-12-26 13:21:30,770 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 64111]
+2023-12-26 13:21:30,770 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 64111]
+2023-12-26 13:21:30,770 django.channels.server INFO     [mHTTP GET /rental/categories/ 200 [2.15, 127.0.0.1:64111][0m
+2023-12-26 13:29:16,457 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\rental\models.py changed, reloading.
+2023-12-26 13:29:17,833 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 13:29:18,639 core.settings WARNING  base.signals loaded
+2023-12-26 13:29:18,650 core.settings WARNING  rental.signals loaded
+2023-12-26 13:29:18,654 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-26 13:29:18,698 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-26 13:29:19,032 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 13:29:19,032 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 13:29:19,036 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2023-12-26 13:29:19,037 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2023-12-26 13:29:19,038 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2023-12-26 14:55:46,987 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 51921]
+2023-12-26 14:55:47,230 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 14:55:47,453 django.request WARNING  Not Found: //categories/
+2023-12-26 14:55:47,453 django.request WARNING  Not Found: //categories/
+2023-12-26 14:55:47,455 daphne.http_protocol DEBUG    HTTP 404 response started for ['127.0.0.1', 51921]
+2023-12-26 14:55:47,456 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 51921]
+2023-12-26 14:55:47,457 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 51921]
+2023-12-26 14:55:47,457 django.channels.server WARNING  [33mHTTP GET //categories/ 404 [0.47, 127.0.0.1:51921][0m
+2023-12-26 14:59:01,982 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 54639]
+2023-12-26 14:59:02,074 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 14:59:02,089 django.request WARNING  Not Found: /categories/
+2023-12-26 14:59:02,089 django.request WARNING  Not Found: /categories/
+2023-12-26 14:59:02,090 daphne.http_protocol DEBUG    HTTP 404 response started for ['127.0.0.1', 54639]
+2023-12-26 14:59:02,091 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 54639]
+2023-12-26 14:59:02,091 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 54639]
+2023-12-26 14:59:02,091 django.channels.server WARNING  [33mHTTP GET /categories/ 404 [0.11, 127.0.0.1:54639][0m
+2023-12-26 15:10:12,531 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 64204]
+2023-12-26 15:10:12,604 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 15:10:14,731 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 64204]
+2023-12-26 15:10:14,732 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 64204]
+2023-12-26 15:10:14,732 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 64204]
+2023-12-26 15:10:14,733 django.channels.server INFO     [mHTTP GET /rental/categories/ 200 [2.20, 127.0.0.1:64204][0m
+2023-12-26 15:11:37,482 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 65398]
+2023-12-26 15:11:37,571 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 15:11:37,577 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 65398]
+2023-12-26 15:11:37,578 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 65398]
+2023-12-26 15:11:37,579 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 65398]
+2023-12-26 15:11:37,579 django.channels.server INFO     [mHTTP GET /rental/categories/ 200 [0.10, 127.0.0.1:65398][0m
+2023-12-26 15:17:57,284 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 54342]
+2023-12-26 15:17:57,360 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 15:17:57,372 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 54342]
+2023-12-26 15:17:57,373 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 54342]
+2023-12-26 15:17:57,373 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 54342]
+2023-12-26 15:17:57,373 django.channels.server INFO     [mHTTP GET /rental/categories/ 200 [0.09, 127.0.0.1:54342][0m
+2023-12-26 15:18:42,114 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 54959]
+2023-12-26 15:18:42,189 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 15:18:42,193 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 54959]
+2023-12-26 15:18:42,194 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 54959]
+2023-12-26 15:18:42,195 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 54959]
+2023-12-26 15:18:42,197 django.channels.server INFO     [mHTTP GET /rental/categories/ 200 [0.08, 127.0.0.1:54959][0m
+2023-12-26 15:19:39,450 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 56036]
+2023-12-26 15:19:39,548 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 15:19:39,561 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 56036]
+2023-12-26 15:19:39,563 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 56036]
+2023-12-26 15:19:39,564 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 56036]
+2023-12-26 15:19:39,564 django.channels.server INFO     [mHTTP GET /rental/categories/ 200 [0.11, 127.0.0.1:56036][0m
+2023-12-26 15:20:04,621 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 56382]
+2023-12-26 15:20:04,702 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 15:20:04,707 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 56382]
+2023-12-26 15:20:04,708 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 56382]
+2023-12-26 15:20:04,708 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 56382]
+2023-12-26 15:20:04,709 django.channels.server INFO     [mHTTP GET /rental/categories/ 200 [0.09, 127.0.0.1:56382][0m
+2023-12-26 15:23:04,138 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 58839]
+2023-12-26 15:23:04,214 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 15:23:04,218 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 58839]
+2023-12-26 15:23:04,219 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 58839]
+2023-12-26 15:23:04,220 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 58839]
+2023-12-26 15:23:04,220 django.channels.server INFO     [mHTTP GET /rental/categories/ 200 [0.08, 127.0.0.1:58839][0m
+2023-12-26 15:24:16,200 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 59785]
+2023-12-26 15:24:16,272 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 15:24:16,277 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 59785]
+2023-12-26 15:24:16,279 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 59785]
+2023-12-26 15:24:16,279 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 59785]
+2023-12-26 15:24:16,280 django.channels.server INFO     [mHTTP GET /rental/categories/ 200 [0.08, 127.0.0.1:59785][0m
+2023-12-26 15:25:57,208 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 61143]
+2023-12-26 15:25:57,287 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 15:25:57,292 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 61143]
+2023-12-26 15:25:57,293 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 61143]
+2023-12-26 15:25:57,294 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 61143]
+2023-12-26 15:25:57,294 django.channels.server INFO     [mHTTP GET /rental/categories/ 200 [0.09, 127.0.0.1:61143][0m
+2023-12-26 15:36:15,747 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 54499]
+2023-12-26 15:36:15,846 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 15:36:15,879 core.settings WARNING  That page number is less than 1
+2023-12-26 15:36:15,879 core.settings WARNING  That page contains no results
+2023-12-26 15:36:15,912 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 54499]
+2023-12-26 15:36:15,912 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 54499]
+2023-12-26 15:36:15,922 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 54499]
+2023-12-26 15:36:15,922 django.channels.server INFO     [mHTTP GET /rental/all/ 200 [0.17, 127.0.0.1:54499][0m
+2023-12-26 18:59:04,444 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 50984]
+2023-12-26 18:59:04,512 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 18:59:04,517 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 50984]
+2023-12-26 18:59:04,518 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 50984]
+2023-12-26 18:59:04,519 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 50984]
+2023-12-26 18:59:04,519 django.channels.server INFO     [mHTTP GET /rental/categories/ 200 [0.07, 127.0.0.1:50984][0m
+2023-12-26 19:51:22,733 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\rental\views.py changed, reloading.
+2023-12-26 19:51:25,887 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 19:51:28,658 core.settings WARNING  base.signals loaded
+2023-12-26 19:51:28,684 core.settings WARNING  rental.signals loaded
+2023-12-26 19:51:28,700 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-26 19:51:28,779 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-26 19:56:28,838 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\base\models.py changed, reloading.
+2023-12-26 19:56:30,334 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 19:56:30,926 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-26 19:58:48,490 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\core\settings.py changed, reloading.
+2023-12-26 19:58:50,399 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 19:58:50,986 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-26 19:59:17,314 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\core\settings.py changed, reloading.
+2023-12-26 19:59:19,313 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 19:59:19,664 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-26 21:18:07,702 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 21:18:11,559 core.settings WARNING  base.signals loaded
+2023-12-26 21:18:11,591 core.settings WARNING  rental.signals loaded
+2023-12-26 21:18:11,628 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-26 21:18:12,687 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 21:18:13,315 core.settings WARNING  base.signals loaded
+2023-12-26 21:18:13,315 core.settings WARNING  rental.signals loaded
+2023-12-26 21:18:13,330 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-26 21:18:13,346 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-26 21:18:14,361 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 21:18:14,361 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 21:18:14,376 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2023-12-26 21:18:14,376 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2023-12-26 21:18:14,391 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2023-12-26 21:25:25,153 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\rental\views.py changed, reloading.
+2023-12-26 21:25:26,535 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 21:25:27,300 core.settings WARNING  base.signals loaded
+2023-12-26 21:25:27,301 core.settings WARNING  rental.signals loaded
+2023-12-26 21:25:27,301 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-26 21:25:27,337 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-26 21:25:27,673 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 21:25:27,673 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 21:25:27,678 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2023-12-26 21:25:27,679 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2023-12-26 21:25:27,680 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2023-12-26 22:19:37,360 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\rental\views.py changed, reloading.
+2023-12-26 22:19:38,895 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 22:19:39,618 core.settings WARNING  base.signals loaded
+2023-12-26 22:19:39,619 core.settings WARNING  rental.signals loaded
+2023-12-26 22:19:39,626 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-26 22:19:39,655 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-26 22:19:39,992 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 22:19:39,992 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 22:19:39,997 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2023-12-26 22:19:39,997 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2023-12-26 22:19:39,998 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2023-12-26 22:25:16,520 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\rental\views.py changed, reloading.
+2023-12-26 22:25:17,828 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 22:25:18,452 core.settings WARNING  base.signals loaded
+2023-12-26 22:25:18,452 core.settings WARNING  rental.signals loaded
+2023-12-26 22:25:18,470 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-26 22:25:18,493 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-26 22:25:18,905 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 22:25:18,905 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 22:25:18,905 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2023-12-26 22:25:18,905 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2023-12-26 22:25:18,905 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2023-12-26 22:27:35,968 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 58486]
+2023-12-26 22:27:36,450 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 22:27:36,517 core.settings WARNING  That page number is less than 1
+2023-12-26 22:27:36,517 core.settings WARNING  That page contains no results
+2023-12-26 22:27:36,546 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 58486]
+2023-12-26 22:27:36,546 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 58486]
+2023-12-26 22:27:36,547 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 58486]
+2023-12-26 22:27:36,547 django.channels.server INFO     [mHTTP GET /rental/all/ 200 [0.58, 127.0.0.1:58486][0m
+2023-12-26 22:30:07,857 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 60304]
+2023-12-26 22:30:07,933 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 22:30:07,943 core.settings WARNING  That page number is less than 1
+2023-12-26 22:30:07,943 core.settings WARNING  That page contains no results
+2023-12-26 22:30:07,962 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 60304]
+2023-12-26 22:30:07,962 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 60304]
+2023-12-26 22:30:07,963 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 60304]
+2023-12-26 22:30:07,963 django.channels.server INFO     [mHTTP GET /rental/all/ 200 [0.11, 127.0.0.1:60304][0m
+2023-12-26 22:30:08,794 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 60318]
+2023-12-26 22:30:08,863 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 22:30:08,873 core.settings WARNING  That page number is less than 1
+2023-12-26 22:30:08,873 core.settings WARNING  That page contains no results
+2023-12-26 22:30:08,895 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 60318]
+2023-12-26 22:30:08,895 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 60318]
+2023-12-26 22:30:08,896 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 60318]
+2023-12-26 22:30:08,896 django.channels.server INFO     [mHTTP GET /rental/all/ 200 [0.10, 127.0.0.1:60318][0m
+2023-12-26 22:30:18,890 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 60438]
+2023-12-26 22:30:18,968 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 22:30:18,968 core.settings WARNING  That page number is less than 1
+2023-12-26 22:30:18,968 core.settings WARNING  That page contains no results
+2023-12-26 22:30:18,994 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 60438]
+2023-12-26 22:30:18,995 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 60438]
+2023-12-26 22:30:18,995 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 60438]
+2023-12-26 22:30:18,996 django.channels.server INFO     [mHTTP GET /rental/all/ 200 [0.11, 127.0.0.1:60438][0m
+2023-12-26 22:34:33,338 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\base\utils.py changed, reloading.
+2023-12-26 22:34:34,703 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 22:34:35,398 core.settings WARNING  base.signals loaded
+2023-12-26 22:34:35,400 core.settings WARNING  rental.signals loaded
+2023-12-26 22:34:35,409 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-26 22:34:35,432 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-26 22:34:35,732 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 22:34:35,732 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 22:34:35,747 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2023-12-26 22:34:35,747 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2023-12-26 22:34:35,748 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2023-12-26 22:34:35,798 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 63670]
+2023-12-26 22:34:35,882 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 22:34:35,899 core.settings WARNING  That page number is less than 1
+2023-12-26 22:34:35,899 core.settings WARNING  That page contains no results
+2023-12-26 22:34:35,927 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 63670]
+2023-12-26 22:34:35,927 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 63670]
+2023-12-26 22:34:35,928 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 63670]
+2023-12-26 22:34:35,928 django.channels.server INFO     [mHTTP GET /rental/all/ 200 [0.13, 127.0.0.1:63670][0m
+2023-12-26 22:44:12,929 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\base\utils.py changed, reloading.
+2023-12-26 22:44:14,215 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 22:44:14,865 core.settings WARNING  base.signals loaded
+2023-12-26 22:44:14,867 core.settings WARNING  rental.signals loaded
+2023-12-26 22:44:14,877 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-26 22:44:14,899 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-26 22:44:15,263 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 22:44:15,263 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 22:44:15,277 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2023-12-26 22:44:15,277 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2023-12-26 22:44:15,279 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2023-12-26 22:44:18,095 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 54887]
+2023-12-26 22:44:18,183 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 22:44:18,208 core.settings WARNING  That page number is less than 1
+2023-12-26 22:44:18,208 core.settings WARNING  That page contains no results
+2023-12-26 22:44:18,218 core.settings WARNING  'Rental' object has no attribute 'distance'
+2023-12-26 22:44:18,220 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 54887]
+2023-12-26 22:44:18,221 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 54887]
+2023-12-26 22:44:18,221 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 54887]
+2023-12-26 22:44:18,222 django.channels.server INFO     [mHTTP GET /rental/all/ 200 [0.13, 127.0.0.1:54887][0m
+2023-12-26 22:45:16,354 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\rental\views.py changed, reloading.
+2023-12-26 22:45:17,783 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 22:45:18,476 core.settings WARNING  base.signals loaded
+2023-12-26 22:45:18,477 core.settings WARNING  rental.signals loaded
+2023-12-26 22:45:18,485 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-26 22:45:18,505 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-26 22:45:18,805 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 22:45:18,805 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 22:45:18,822 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2023-12-26 22:45:18,823 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2023-12-26 22:45:18,824 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2023-12-26 22:45:19,125 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 55693]
+2023-12-26 22:45:19,309 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 22:45:19,323 core.settings WARNING  That page number is less than 1
+2023-12-26 22:45:19,323 core.settings WARNING  That page contains no results
+2023-12-26 22:45:19,343 core.settings WARNING  'Rental' object has no attribute 'distance'
+2023-12-26 22:45:19,343 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 55693]
+2023-12-26 22:45:19,343 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 55693]
+2023-12-26 22:45:19,343 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 55693]
+2023-12-26 22:45:19,343 django.channels.server INFO     [mHTTP GET /rental/all/ 200 [0.22, 127.0.0.1:55693][0m
+2023-12-26 22:45:47,989 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\base\utils.py changed, reloading.
+2023-12-26 22:45:49,437 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 22:45:50,145 core.settings WARNING  base.signals loaded
+2023-12-26 22:45:50,145 core.settings WARNING  rental.signals loaded
+2023-12-26 22:45:50,227 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-26 22:45:50,244 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-26 22:45:50,576 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 22:45:50,576 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 22:45:50,576 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2023-12-26 22:45:50,576 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2023-12-26 22:45:50,576 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2023-12-26 22:45:51,942 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 56149]
+2023-12-26 22:45:52,042 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 22:45:52,092 core.settings WARNING  That page number is less than 1
+2023-12-26 22:45:52,092 core.settings WARNING  That page contains no results
+2023-12-26 22:45:52,109 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 56149]
+2023-12-26 22:45:52,109 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 56149]
+2023-12-26 22:45:52,109 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 56149]
+2023-12-26 22:45:52,109 django.channels.server INFO     [mHTTP GET /rental/all/ 200 [0.17, 127.0.0.1:56149][0m
+2023-12-26 22:47:47,896 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\base\utils.py changed, reloading.
+2023-12-26 22:47:49,432 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 22:47:50,449 core.settings WARNING  base.signals loaded
+2023-12-26 22:47:50,449 core.settings WARNING  rental.signals loaded
+2023-12-26 22:47:50,466 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-26 22:47:50,495 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-26 22:47:50,896 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 22:47:50,896 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 22:47:50,902 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2023-12-26 22:47:50,902 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2023-12-26 22:47:50,904 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2023-12-26 22:48:12,717 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\rental\views.py changed, reloading.
+2023-12-26 22:48:14,163 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 22:48:14,816 core.settings WARNING  base.signals loaded
+2023-12-26 22:48:14,816 core.settings WARNING  rental.signals loaded
+2023-12-26 22:48:14,832 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-26 22:48:14,862 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-26 22:48:15,185 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 22:48:15,185 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 22:48:15,185 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2023-12-26 22:48:15,185 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2023-12-26 22:48:15,185 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2023-12-26 22:48:17,156 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 58222]
+2023-12-26 22:48:17,234 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 22:48:17,268 core.settings WARNING  That page number is less than 1
+2023-12-26 22:48:17,268 core.settings WARNING  That page contains no results
+2023-12-26 22:48:17,288 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 58222]
+2023-12-26 22:48:17,289 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 58222]
+2023-12-26 22:48:17,290 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 58222]
+2023-12-26 22:48:17,290 django.channels.server INFO     [mHTTP GET /rental/all/ 200 [0.13, 127.0.0.1:58222][0m
+2023-12-26 22:48:36,127 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\rental\views.py changed, reloading.
+2023-12-26 22:48:37,626 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 22:48:38,258 core.settings WARNING  base.signals loaded
+2023-12-26 22:48:38,258 core.settings WARNING  rental.signals loaded
+2023-12-26 22:48:38,278 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-26 22:48:38,304 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-26 22:48:38,605 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 22:48:38,605 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 22:48:38,610 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2023-12-26 22:48:38,610 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2023-12-26 22:48:38,611 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2023-12-26 22:49:14,311 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 59122]
+2023-12-26 22:49:14,396 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 22:49:14,411 core.settings WARNING  must be real number, not F
+2023-12-26 22:49:14,411 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 59122]
+2023-12-26 22:49:14,411 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 59122]
+2023-12-26 22:49:14,411 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 59122]
+2023-12-26 22:49:14,411 django.channels.server INFO     [mHTTP GET /rental/all/ 200 [0.10, 127.0.0.1:59122][0m
+2023-12-26 22:50:09,189 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\rental\views.py changed, reloading.
+2023-12-26 22:50:10,904 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 22:50:11,626 core.settings WARNING  base.signals loaded
+2023-12-26 22:50:11,626 core.settings WARNING  rental.signals loaded
+2023-12-26 22:50:11,646 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-26 22:50:11,670 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-26 22:50:11,980 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 22:50:11,980 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 22:50:11,985 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2023-12-26 22:50:11,985 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2023-12-26 22:50:11,987 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2023-12-26 22:50:14,516 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 60268]
+2023-12-26 22:50:14,587 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 22:50:14,603 core.settings ERROR    must be real number, not F
+Traceback (most recent call last):
+  File "D:\CODE_BASE\PYTHON\fiefinder\rental\views.py", line 129, in fetch_rentals
+    * cos(radians(F("location__latitude")))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: must be real number, not F
+2023-12-26 22:50:14,603 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 60268]
+2023-12-26 22:50:14,618 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 60268]
+2023-12-26 22:50:14,619 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 60268]
+2023-12-26 22:50:14,619 django.channels.server INFO     [mHTTP GET /rental/all/ 200 [0.10, 127.0.0.1:60268][0m
+2023-12-26 22:56:27,004 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\rental\views.py changed, reloading.
+2023-12-26 22:56:28,387 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 22:56:29,038 core.settings WARNING  base.signals loaded
+2023-12-26 22:56:29,040 core.settings WARNING  rental.signals loaded
+2023-12-26 22:56:29,050 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-26 22:56:29,073 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-26 22:56:29,408 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 22:56:29,408 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 22:56:29,412 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2023-12-26 22:56:29,413 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2023-12-26 22:56:29,414 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2023-12-26 22:56:31,289 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 64716]
+2023-12-26 22:56:31,385 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 22:56:31,402 core.settings ERROR    must be real number, not F
+Traceback (most recent call last):
+  File "D:\CODE_BASE\PYTHON\fiefinder\rental\views.py", line 128, in fetch_rentals
+    * cos(radians(F("location__latitude")))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: must be real number, not F
+2023-12-26 22:56:31,407 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 64716]
+2023-12-26 22:56:31,407 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 64716]
+2023-12-26 22:56:31,408 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 64716]
+2023-12-26 22:56:31,408 django.channels.server INFO     [mHTTP GET /rental/all/ 200 [0.12, 127.0.0.1:64716][0m
+2023-12-26 23:01:20,049 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\rental\views.py changed, reloading.
+2023-12-26 23:01:21,367 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 23:01:22,034 core.settings WARNING  base.signals loaded
+2023-12-26 23:01:22,034 core.settings WARNING  rental.signals loaded
+2023-12-26 23:01:22,034 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-26 23:01:22,066 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-26 23:01:22,374 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 23:01:22,374 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 23:01:22,388 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2023-12-26 23:01:22,388 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2023-12-26 23:01:22,389 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2023-12-26 23:01:25,052 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 52635]
+2023-12-26 23:01:25,134 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 23:01:25,151 core.settings ERROR    must be real number, not F
+Traceback (most recent call last):
+  File "D:\CODE_BASE\PYTHON\fiefinder\rental\views.py", line 128, in fetch_rentals
+    * cos(radians(F("location__latitude")))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: must be real number, not F
+2023-12-26 23:01:25,159 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 52635]
+2023-12-26 23:01:25,160 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 52635]
+2023-12-26 23:01:25,160 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 52635]
+2023-12-26 23:01:25,160 django.channels.server INFO     [mHTTP GET /rental/all/ 200 [0.11, 127.0.0.1:52635][0m
+2023-12-26 23:01:37,604 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 23:01:38,248 core.settings WARNING  base.signals loaded
+2023-12-26 23:01:38,248 core.settings WARNING  rental.signals loaded
+2023-12-26 23:01:38,264 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-26 23:01:39,328 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 23:01:39,981 core.settings WARNING  base.signals loaded
+2023-12-26 23:01:39,981 core.settings WARNING  rental.signals loaded
+2023-12-26 23:01:39,981 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-26 23:01:40,013 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-26 23:01:40,442 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 23:01:40,442 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 23:01:40,445 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2023-12-26 23:01:40,445 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2023-12-26 23:01:40,445 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2023-12-26 23:04:02,354 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\rental\views.py changed, reloading.
+2023-12-26 23:04:03,749 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 23:04:04,403 core.settings WARNING  base.signals loaded
+2023-12-26 23:04:04,404 core.settings WARNING  rental.signals loaded
+2023-12-26 23:04:04,414 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-26 23:04:04,440 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-26 23:04:04,872 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 23:04:04,872 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 23:04:04,876 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2023-12-26 23:04:04,877 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2023-12-26 23:04:04,878 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2023-12-26 23:10:00,237 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\rental\views.py changed, reloading.
+2023-12-26 23:10:01,621 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 23:10:02,288 core.settings WARNING  base.signals loaded
+2023-12-26 23:10:02,289 core.settings WARNING  rental.signals loaded
+2023-12-26 23:10:02,292 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-26 23:10:02,320 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-26 23:10:02,637 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 23:10:02,637 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 23:10:02,641 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2023-12-26 23:10:02,642 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2023-12-26 23:10:02,642 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2023-12-26 23:10:32,683 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\rental\utils.py changed, reloading.
+2023-12-26 23:10:34,199 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 23:10:34,914 core.settings WARNING  base.signals loaded
+2023-12-26 23:10:34,915 core.settings WARNING  rental.signals loaded
+2023-12-26 23:10:34,924 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-26 23:10:34,947 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-26 23:10:35,284 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 23:10:35,284 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 23:10:35,289 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2023-12-26 23:10:35,289 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2023-12-26 23:10:35,290 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2023-12-26 23:10:38,578 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 60693]
+2023-12-26 23:10:38,662 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 23:10:38,677 core.settings ERROR    must be real number, not Radians
+Traceback (most recent call last):
+  File "D:\CODE_BASE\PYTHON\fiefinder\rental\views.py", line 135, in fetch_rentals
+    * cos(latitude_expr)
+      ^^^^^^^^^^^^^^^^^^
+TypeError: must be real number, not Radians
+2023-12-26 23:10:38,688 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 60693]
+2023-12-26 23:10:38,688 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 60693]
+2023-12-26 23:10:38,689 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 60693]
+2023-12-26 23:10:38,689 django.channels.server INFO     [mHTTP GET /rental/all/ 200 [0.11, 127.0.0.1:60693][0m
+2023-12-26 23:13:25,841 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\rental\views.py changed, reloading.
+2023-12-26 23:13:27,173 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 23:13:27,868 core.settings WARNING  base.signals loaded
+2023-12-26 23:13:27,869 core.settings WARNING  rental.signals loaded
+2023-12-26 23:13:27,880 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-26 23:13:27,908 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-26 23:14:30,022 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\rental\views.py changed, reloading.
+2023-12-26 23:14:31,765 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 23:14:32,445 core.settings WARNING  base.signals loaded
+2023-12-26 23:14:32,445 core.settings WARNING  rental.signals loaded
+2023-12-26 23:14:32,460 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-26 23:14:32,489 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-26 23:14:34,305 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\rental\utils.py changed, reloading.
+2023-12-26 23:14:35,636 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 23:14:36,264 core.settings WARNING  base.signals loaded
+2023-12-26 23:14:36,264 core.settings WARNING  rental.signals loaded
+2023-12-26 23:14:36,264 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-26 23:14:36,301 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-26 23:14:36,615 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 23:14:36,615 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 23:14:36,623 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2023-12-26 23:14:36,624 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2023-12-26 23:14:36,625 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2023-12-26 23:15:49,153 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 65044]
+2023-12-26 23:15:49,352 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 23:15:49,369 core.settings ERROR    'NoneType' object is not a mapping
+Traceback (most recent call last):
+  File "D:\CODE_BASE\PYTHON\fiefinder\rental\views.py", line 149, in fetch_rentals
+    {"available": True, **filters},
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not a mapping
+2023-12-26 23:15:49,375 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 65044]
+2023-12-26 23:15:49,376 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 65044]
+2023-12-26 23:15:49,376 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 65044]
+2023-12-26 23:15:49,376 django.channels.server INFO     [mHTTP GET /rental/all/ 200 [0.22, 127.0.0.1:65044][0m
+2023-12-26 23:16:34,271 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\rental\views.py changed, reloading.
+2023-12-26 23:16:35,584 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 23:16:36,270 core.settings WARNING  base.signals loaded
+2023-12-26 23:16:36,271 core.settings WARNING  rental.signals loaded
+2023-12-26 23:16:36,281 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-26 23:16:36,309 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-26 23:16:36,650 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 23:16:36,650 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 23:16:36,650 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2023-12-26 23:16:36,650 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2023-12-26 23:16:36,650 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2023-12-26 23:16:37,245 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 49419]
+2023-12-26 23:16:37,328 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 23:16:37,356 core.settings WARNING  That page number is less than 1
+2023-12-26 23:16:37,356 core.settings WARNING  That page contains no results
+2023-12-26 23:16:37,368 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 49419]
+2023-12-26 23:16:37,369 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 49419]
+2023-12-26 23:16:37,369 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 49419]
+2023-12-26 23:16:37,370 django.channels.server INFO     [mHTTP GET /rental/all/ 200 [0.12, 127.0.0.1:49419][0m
+2023-12-26 23:17:00,765 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 49803]
+2023-12-26 23:17:00,952 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 23:17:00,959 core.settings WARNING  That page number is less than 1
+2023-12-26 23:17:00,959 core.settings WARNING  That page contains no results
+2023-12-26 23:17:00,975 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 49803]
+2023-12-26 23:17:00,976 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 49803]
+2023-12-26 23:17:00,976 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 49803]
+2023-12-26 23:17:00,977 django.channels.server INFO     [mHTTP GET /rental/all/ 200 [0.21, 127.0.0.1:49803][0m
+2023-12-26 23:17:26,972 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 50473]
+2023-12-26 23:17:27,047 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 23:17:27,063 core.settings WARNING  That page number is less than 1
+2023-12-26 23:17:27,063 core.settings WARNING  That page contains no results
+2023-12-26 23:17:27,063 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 50473]
+2023-12-26 23:17:27,063 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 50473]
+2023-12-26 23:17:27,063 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 50473]
+2023-12-26 23:17:27,070 django.channels.server INFO     [mHTTP GET /rental/all/ 200 [0.10, 127.0.0.1:50473][0m
+2023-12-26 23:17:28,632 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 50497]
+2023-12-26 23:17:28,806 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 23:17:28,813 core.settings WARNING  That page number is less than 1
+2023-12-26 23:17:28,813 core.settings WARNING  That page contains no results
+2023-12-26 23:17:28,813 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 50497]
+2023-12-26 23:17:28,813 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 50497]
+2023-12-26 23:17:28,813 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 50497]
+2023-12-26 23:17:28,813 django.channels.server INFO     [mHTTP GET /rental/all/ 200 [0.18, 127.0.0.1:50497][0m
+2023-12-26 23:17:36,208 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\rental\views.py changed, reloading.
+2023-12-26 23:17:37,783 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 23:17:38,473 core.settings WARNING  base.signals loaded
+2023-12-26 23:17:38,475 core.settings WARNING  rental.signals loaded
+2023-12-26 23:17:38,481 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-26 23:17:38,506 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-26 23:17:38,804 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 23:17:38,804 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 23:17:38,818 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2023-12-26 23:17:38,818 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2023-12-26 23:17:38,819 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2023-12-26 23:17:39,464 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 50755]
+2023-12-26 23:17:39,542 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 23:17:39,579 core.settings WARNING  That page number is less than 1
+2023-12-26 23:17:39,579 core.settings WARNING  That page contains no results
+2023-12-26 23:17:39,589 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 50755]
+2023-12-26 23:17:39,590 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 50755]
+2023-12-26 23:17:39,591 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 50755]
+2023-12-26 23:17:39,591 django.channels.server INFO     [mHTTP GET /rental/all/ 200 [0.13, 127.0.0.1:50755][0m
+2023-12-26 23:17:47,838 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\rental\views.py changed, reloading.
+2023-12-26 23:17:49,192 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 23:17:49,833 core.settings WARNING  base.signals loaded
+2023-12-26 23:17:49,834 core.settings WARNING  rental.signals loaded
+2023-12-26 23:17:49,843 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-26 23:17:49,867 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-26 23:17:50,180 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 23:17:50,180 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 23:17:50,185 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2023-12-26 23:17:50,185 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2023-12-26 23:17:50,186 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2023-12-26 23:18:48,964 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\base\utils.py changed, reloading.
+2023-12-26 23:18:50,259 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 23:18:50,899 core.settings WARNING  base.signals loaded
+2023-12-26 23:18:50,908 core.settings WARNING  rental.signals loaded
+2023-12-26 23:18:50,913 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-26 23:18:50,939 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-26 23:18:51,254 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 23:18:51,254 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 23:18:51,259 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2023-12-26 23:18:51,260 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2023-12-26 23:18:51,260 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2023-12-26 23:18:53,253 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 52050]
+2023-12-26 23:18:53,374 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 23:18:53,409 core.settings WARNING  That page number is less than 1
+2023-12-26 23:18:53,409 core.settings WARNING  That page contains no results
+2023-12-26 23:18:53,415 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 52050]
+2023-12-26 23:18:53,416 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 52050]
+2023-12-26 23:18:53,416 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 52050]
+2023-12-26 23:18:53,417 django.channels.server INFO     [mHTTP GET /rental/all/ 200 [0.16, 127.0.0.1:52050][0m
+2023-12-26 23:19:46,924 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\base\utils.py changed, reloading.
+2023-12-26 23:19:48,795 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 23:19:49,495 core.settings WARNING  base.signals loaded
+2023-12-26 23:19:49,497 core.settings WARNING  rental.signals loaded
+2023-12-26 23:19:49,505 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-26 23:19:49,530 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-26 23:19:49,940 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 23:19:49,940 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 23:19:49,944 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2023-12-26 23:19:49,945 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2023-12-26 23:19:49,946 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2023-12-26 23:20:00,939 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\rental\views.py changed, reloading.
+2023-12-26 23:20:02,289 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 23:20:02,939 core.settings WARNING  base.signals loaded
+2023-12-26 23:20:02,940 core.settings WARNING  rental.signals loaded
+2023-12-26 23:20:02,949 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-26 23:20:02,973 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-26 23:20:12,034 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\rental\views.py changed, reloading.
+2023-12-26 23:20:13,771 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 23:20:14,449 core.settings WARNING  base.signals loaded
+2023-12-26 23:20:14,450 core.settings WARNING  rental.signals loaded
+2023-12-26 23:20:14,459 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-26 23:20:14,479 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-26 23:20:14,809 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 23:20:14,809 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 23:20:14,814 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2023-12-26 23:20:14,814 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2023-12-26 23:20:14,816 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2023-12-26 23:20:19,580 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\rental\views.py changed, reloading.
+2023-12-26 23:20:21,014 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 23:20:21,626 core.settings WARNING  base.signals loaded
+2023-12-26 23:20:21,626 core.settings WARNING  rental.signals loaded
+2023-12-26 23:20:21,646 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-26 23:20:21,669 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-26 23:20:22,007 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 23:20:22,007 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 23:20:22,011 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2023-12-26 23:20:22,012 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2023-12-26 23:20:22,013 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2023-12-26 23:20:24,337 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 53456]
+2023-12-26 23:20:24,424 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 23:20:24,438 core.settings WARNING  That page number is less than 1
+2023-12-26 23:20:24,438 core.settings WARNING  That page contains no results
+2023-12-26 23:20:24,458 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 53456]
+2023-12-26 23:20:24,459 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 53456]
+2023-12-26 23:20:24,459 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 53456]
+2023-12-26 23:20:24,460 django.channels.server INFO     [mHTTP GET /rental/all/ 200 [0.12, 127.0.0.1:53456][0m
+2023-12-26 23:21:01,963 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\rental\views.py changed, reloading.
+2023-12-26 23:21:03,382 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 23:21:04,082 core.settings WARNING  base.signals loaded
+2023-12-26 23:21:04,082 core.settings WARNING  rental.signals loaded
+2023-12-26 23:21:04,094 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-26 23:21:04,125 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-26 23:21:04,439 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 23:21:04,439 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 23:21:04,444 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2023-12-26 23:21:04,444 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2023-12-26 23:21:04,444 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2023-12-26 23:21:13,409 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\rental\views.py changed, reloading.
+2023-12-26 23:21:14,815 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 23:21:15,479 core.settings WARNING  base.signals loaded
+2023-12-26 23:21:15,480 core.settings WARNING  rental.signals loaded
+2023-12-26 23:21:15,487 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-26 23:21:15,516 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-26 23:21:15,838 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 23:21:15,838 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 23:21:15,856 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2023-12-26 23:21:15,857 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2023-12-26 23:21:15,858 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2023-12-26 23:22:13,867 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\rental\views.py changed, reloading.
+2023-12-26 23:22:15,149 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 23:22:15,801 core.settings WARNING  base.signals loaded
+2023-12-26 23:22:15,803 core.settings WARNING  rental.signals loaded
+2023-12-26 23:22:15,814 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-26 23:22:15,840 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-26 23:22:16,281 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 23:22:16,281 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 23:22:16,298 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2023-12-26 23:22:16,298 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2023-12-26 23:22:16,298 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2023-12-26 23:22:16,632 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 55407]
+2023-12-26 23:22:16,718 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 23:22:17,129 django.request ERROR    Internal Server Error: /rental/all/
+Traceback (most recent call last):
+  File "D:\CODE_BASE\PYTHON\fiefinder\venv\Lib\site-packages\asgiref\sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "D:\CODE_BASE\PYTHON\fiefinder\venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\CODE_BASE\PYTHON\fiefinder\venv\Lib\site-packages\django\core\handlers\base.py", line 265, in _get_response_async
+    self.check_response(response, callback)
+  File "D:\CODE_BASE\PYTHON\fiefinder\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view rental.views.fetch_rentals didn't return an HttpResponse object. It returned None instead.
+2023-12-26 23:22:17,129 django.request ERROR    Internal Server Error: /rental/all/
+Traceback (most recent call last):
+  File "D:\CODE_BASE\PYTHON\fiefinder\venv\Lib\site-packages\asgiref\sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "D:\CODE_BASE\PYTHON\fiefinder\venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\CODE_BASE\PYTHON\fiefinder\venv\Lib\site-packages\django\core\handlers\base.py", line 265, in _get_response_async
+    self.check_response(response, callback)
+  File "D:\CODE_BASE\PYTHON\fiefinder\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view rental.views.fetch_rentals didn't return an HttpResponse object. It returned None instead.
+2023-12-26 23:22:17,146 daphne.http_protocol DEBUG    HTTP 500 response started for ['127.0.0.1', 55407]
+2023-12-26 23:22:17,146 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 55407]
+2023-12-26 23:22:17,146 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 55407]
+2023-12-26 23:22:17,146 django.channels.server ERROR    [35;1mHTTP GET /rental/all/ 500 [0.51, 127.0.0.1:55407][0m
+2023-12-26 23:22:38,830 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\rental\views.py changed, reloading.
+2023-12-26 23:22:40,259 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 23:22:40,871 core.settings WARNING  base.signals loaded
+2023-12-26 23:22:40,871 core.settings WARNING  rental.signals loaded
+2023-12-26 23:22:40,890 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-26 23:22:40,917 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-26 23:22:41,319 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 23:22:41,319 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 23:22:41,334 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2023-12-26 23:22:41,334 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2023-12-26 23:22:41,336 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2023-12-26 23:22:42,408 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 55780]
+2023-12-26 23:22:42,503 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 23:22:42,550 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 55780]
+2023-12-26 23:22:42,551 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 55780]
+2023-12-26 23:22:42,551 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 55780]
+2023-12-26 23:22:42,552 django.channels.server INFO     [mHTTP GET /rental/all/ 200 [0.14, 127.0.0.1:55780][0m
+2023-12-26 23:23:55,848 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\rental\views.py changed, reloading.
+2023-12-26 23:23:57,241 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 23:23:57,896 core.settings WARNING  base.signals loaded
+2023-12-26 23:23:57,896 core.settings WARNING  rental.signals loaded
+2023-12-26 23:23:57,909 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-26 23:23:57,933 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-26 23:23:58,255 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 23:23:58,255 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 23:23:58,259 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2023-12-26 23:23:58,260 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2023-12-26 23:23:58,261 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2023-12-26 23:24:08,326 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\rental\views.py changed, reloading.
+2023-12-26 23:24:09,790 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 23:24:10,428 core.settings WARNING  base.signals loaded
+2023-12-26 23:24:10,430 core.settings WARNING  rental.signals loaded
+2023-12-26 23:24:10,433 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-26 23:24:10,463 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-26 23:24:10,779 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 23:24:10,779 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 23:24:10,784 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2023-12-26 23:24:10,784 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2023-12-26 23:24:10,784 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2023-12-26 23:24:12,138 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 56968]
+2023-12-26 23:24:12,217 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 23:24:12,251 core.settings WARNING  That page number is less than 1
+2023-12-26 23:24:12,251 core.settings WARNING  That page contains no results
+2023-12-26 23:24:12,268 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 56968]
+2023-12-26 23:24:12,268 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 56968]
+2023-12-26 23:24:12,268 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 56968]
+2023-12-26 23:24:12,268 django.channels.server INFO     [mHTTP GET /rental/all/ 200 [0.13, 127.0.0.1:56968][0m
+2023-12-26 23:24:23,440 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\rental\views.py changed, reloading.
+2023-12-26 23:24:24,727 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 23:24:25,364 core.settings WARNING  base.signals loaded
+2023-12-26 23:24:25,366 core.settings WARNING  rental.signals loaded
+2023-12-26 23:24:25,375 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-26 23:24:25,397 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-26 23:24:25,709 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 23:24:25,709 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 23:24:25,718 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2023-12-26 23:24:25,718 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2023-12-26 23:24:25,719 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2023-12-26 23:24:50,471 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\rental\views.py changed, reloading.
+2023-12-26 23:24:51,885 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 23:24:52,522 core.settings WARNING  base.signals loaded
+2023-12-26 23:24:52,522 core.settings WARNING  rental.signals loaded
+2023-12-26 23:24:52,533 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-26 23:24:52,560 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-26 23:24:52,983 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 23:24:52,983 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 23:24:52,987 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2023-12-26 23:24:52,988 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2023-12-26 23:24:52,989 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2023-12-26 23:25:25,528 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\rental\views.py changed, reloading.
+2023-12-26 23:25:26,881 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 23:25:27,585 core.settings WARNING  base.signals loaded
+2023-12-26 23:25:27,585 core.settings WARNING  rental.signals loaded
+2023-12-26 23:25:27,606 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-26 23:25:27,628 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-26 23:25:27,946 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 23:25:27,946 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-26 23:25:27,951 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2023-12-26 23:25:27,951 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2023-12-26 23:25:27,952 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2023-12-26 23:25:30,195 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 58696]
+2023-12-26 23:25:30,285 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 23:25:30,318 core.settings WARNING  That page number is less than 1
+2023-12-26 23:25:30,318 core.settings WARNING  That page contains no results
+2023-12-26 23:25:30,333 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 58696]
+2023-12-26 23:25:30,334 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 58696]
+2023-12-26 23:25:30,335 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 58696]
+2023-12-26 23:25:30,335 django.channels.server INFO     [mHTTP GET /rental/all/ 200 [0.14, 127.0.0.1:58696][0m
+2023-12-26 23:25:44,099 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 23:25:44,729 core.settings WARNING  base.signals loaded
+2023-12-26 23:25:44,729 core.settings WARNING  rental.signals loaded
+2023-12-26 23:25:44,744 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-26 23:25:53,336 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-26 23:25:53,965 core.settings WARNING  base.signals loaded
+2023-12-26 23:25:53,969 core.settings WARNING  rental.signals loaded
+2023-12-26 23:25:53,969 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
