@@ -3,9 +3,7 @@ import arrow
 import bleach
 import random
 from functools import wraps
-from datetime import datetime
 from django.http import JsonResponse
-from django.contrib.auth import logout
 from core.settings import LOGGER as logger, REDIS
 from django.core.serializers.json import DjangoJSONEncoder
 from django.core.paginator import PageNotAnInteger, Paginator, EmptyPage
@@ -92,20 +90,6 @@ def token_required(func):
                     }
                 )
 
-            if token.expiry_date < arrow.now().datetime:
-                Token.objects.filter(key=token.key).delete()
-                try:
-                    template = "{}_login_details".format(user.username)
-                    logout(request)
-                    del REDIS[template]
-                except Exception as e:
-                    logger.warning(str(e))
-                return JsonResponse(
-                    {
-                        "info": "Session has expired. Please  login again",
-                        "success": False,
-                    },
-                )
             try:
                 REDIS.set(
                     f"{user.username}_last_seen", arrow.now().datetime.timestamp()
@@ -161,6 +145,8 @@ def paginator(
     annotate={},
     select_related=None,
     special_filter=None,
+    serializer_excluders=[],
+    serializer_includers=[],
     excludes=None,
     drop=20,
 ):
@@ -210,7 +196,10 @@ def paginator(
         next_page = page.number
 
     return {
-        "info": [serializer(obj) for obj in page.object_list],
+        "info": [
+            serializer(obj, serializer_includers, serializer_excluders)
+            for obj in page.object_list
+        ],
         "success": True,
         "paginator": {
             "success": True,

@@ -1,7 +1,14 @@
 from base.utils import includer, excluder
+from core.settings import REDIS, LOGGER as logger
 
 
 def user_serializer(user, fields=[], exclude=[]):
+    try:
+        last_seen = REDIS.get(f"{user.username}_last_seen")
+    except Exception as e:
+        logger.warning("cannot fetch user last seen from redis")
+        last_seen = None
+
     valid_fields = {
         "id": user.id,
         "email": user.email,
@@ -9,6 +16,7 @@ def user_serializer(user, fields=[], exclude=[]):
         "image": user.image,
         "verified": user.image,
         "phone": user.phone,
+        "last_seen": last_seen,
     }
 
     if fields:

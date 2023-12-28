@@ -20,6 +20,15 @@ def start_conversation(request):
     try:
         user = request.user
         body = request.sanitized_data
+        conversation_id = body.get("conversation_id", None)
+
+        if conversation_id:
+            conversation = Conversation.objects.get(id=conversation_id)
+            conversation = conversation_serializer(
+                conversation, exclude=["last_message"]
+            )
+            return JsonResponse({"success": True, "info": conversation})
+
         receiver = User.objects.get(id=body["receiver_id"])
 
         checker = Conversation.objects.select_related("initiator", "receiver").filter(
@@ -27,12 +36,16 @@ def start_conversation(request):
         )
 
         if checker.exists():
-            conversation = conversation_serializer(checker.first())
+            conversation = conversation_serializer(
+                checker.first(), exclude=["last_message"]
+            )
         else:
             conversation = Conversation.objects.create(
                 initiator=user, receiver=receiver
             )
-            conversation = conversation_serializer(conversation)
+            conversation = conversation_serializer(
+                conversation, exclude=["last_message"]
+            )
         return JsonResponse({"success": True, "info": conversation})
 
     except Exception as e:
@@ -73,25 +86,26 @@ def fetch_conversations(request):
         filters,
         select_related=select_related,
         special_filter=special_filter,
+        serializer_excluders=["messages"],
     )
 
     return JsonResponse(response)
 
 
-@csrf_exempt
-@ratelimit(key="ip", rate="5/m", block=True)
-@request_sanitizer
-@token_required
-@require_GET
-def fetch_conversation(request, conversation_id):
-    try:
-        conversation = Conversation.objects.select_related(
-            "initiator", "receiver"
-        ).filter(id=conversation_id)
-        if not conversation.exists():
-            return JsonResponse({"success": False, "info": "Conversation not found"})
-        conversation = conversation_serializer(conversation.first())
-        return JsonResponse({"success": True, "info": conversation})
-    except Exception as e:
-        logger.exception(str(e))
-        return JsonResponse({"success": False, "info": "Invalid request body"})
+# @csrf_exempt
+# @ratelimit(key="ip", rate="5/m", block=True)
+# @request_sanitizer
+# @token_required
+# @require_GET
+# def fetch_conversation(request, conversation_id):
+#     try:
+#         conversation = Conversation.objects.select_related(
+#             "initiator", "receiver"
+#         ).filter(id=conversation_id)
+#         if not conversation.exists():
+#             return JsonResponse({"success": False, "info": "Conversation not found"})
+#         conversation = conversation_serializer(conversation.first())
+#         return JsonResponse({"success": True, "info": conversation})
+#     except Exception as e:
+#         logger.exception(str(e))
+#         return JsonResponse({"success": False, "info": "Invalid request body"})

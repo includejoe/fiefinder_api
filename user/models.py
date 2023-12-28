@@ -58,7 +58,6 @@ class Token(models.Model):
         on_delete=models.CASCADE,
     )
     created = models.DateTimeField(auto_now_add=True)
-    expiry_date = models.DateTimeField(blank=True, null=True)
 
     def save(self, *args, **kwargs):
         if not self.key:

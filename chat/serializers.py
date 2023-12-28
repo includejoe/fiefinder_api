@@ -7,8 +7,7 @@ def message_serializer(message, fields=[], exclude=[]):
     valid_fields = {
         "id": message.id,
         "text": message.text,
-        "created_at": message.created_at,
-        "conversation": message.conversation.id,
+        "created_at": str(message.created_at),
         "sender": user_serializer(message.sender),
     }
 
@@ -24,9 +23,14 @@ def message_serializer(message, fields=[], exclude=[]):
 def conversation_serializer(conversation, fields=[], exclude=[]):
     valid_fields = {
         "id": conversation.id,
-        "text": conversation.text,
         "initiator": user_serializer(conversation.initiator),
         "receiver": user_serializer(conversation.receiver),
+        "last_message": message_serializer(conversation.message_set.last()),
+        "messages": [
+            message_serializer(message) for message in conversation.message_set.all()
+        ]
+        if conversation.message_set.exists()
+        else [],
     }
 
     if fields:

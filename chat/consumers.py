@@ -14,7 +14,6 @@ class ChatConsumer(WebsocketConsumer):
         self.room_name = self.scope["url_route"]["kwargs"]["conversation_id"]
         self.room_group_name = f"chat{self.room_name}"
 
-        # Join room group
         async_to_sync(self.channel_layer.group_add)(
             self.room_group_name, self.channel_name
         )
@@ -60,9 +59,6 @@ class ChatConsumer(WebsocketConsumer):
 
         if similar_messages.exists():
             message = message_serializer(similar_messages.first())
-
-            # Send message to WebSocket
-            self.send(text_data=json.dumps(message))
         else:
             message = Message.objects.create(
                 sender=sender,
@@ -70,8 +66,8 @@ class ChatConsumer(WebsocketConsumer):
                 conversation=conversation,
             )
             message = message_serializer(message)
-            # Send message to WebSocket
-            self.send(text_data=json.dumps(message))
+
+        self.send(text_data=json.dumps(message))
 
 
 chat_consumer_asgi = ChatConsumer.as_asgi()

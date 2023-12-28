@@ -105,12 +105,12 @@ def fetch_rentals(request):
     page_number = body.get("page", 1)
     drop = body.get("drop", 20)
     filters = body.get("filters", {})
+    email = body.get("email", None)
     select_related = ["user", "location"]
     longitude = filters.pop("longitude", None)
     latitude = filters.pop("latitude", None)
     annotate = {}
-
-    print(filters)
+    excludes = {}
 
     try:
         if not isinstance(page_number, int):
@@ -124,6 +124,9 @@ def fetch_rentals(request):
                 "success": False,
                 "info": "Page drop should be an integer",
             }
+
+        if email:
+            excludes["user__email"] = email
 
         if longitude and latitude:
             # todo: implement accurate calculation of distance
@@ -153,6 +156,7 @@ def fetch_rentals(request):
             {"available": True, **filters},
             annotate=annotate,
             select_related=select_related,
+            excludes=excludes,
         )
 
         return JsonResponse(response)
