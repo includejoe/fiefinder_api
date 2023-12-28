@@ -110,6 +110,8 @@ def fetch_rentals(request):
     latitude = filters.pop("latitude", None)
     annotate = {}
 
+    print(filters)
+
     try:
         if not isinstance(page_number, int):
             return {

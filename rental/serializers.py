@@ -1,6 +1,7 @@
 from base.utils import includer, excluder
 
 from user.serializers import user_serializer
+from base.serializers import location_serializer
 
 
 def rental_serializer(rental, fields=[], exclude=[]):
@@ -12,16 +13,7 @@ def rental_serializer(rental, fields=[], exclude=[]):
         "lease_type": rental.lease_type,
         "lease_term": rental.lease_term,
         "images": rental.images,
-        "available": rental.available,
-        "location": {
-            "country": rental.location.country.name,
-            "region_or_state": rental.location.region_or_state,
-            "city_or_town": rental.location.city_or_town,
-            "street": rental.location.street,
-            "landmark": rental.location.landmark,
-            "latitude": rental.location.latitude,
-            "longitude": rental.location.longitude,
-        },
+        "location": location_serializer(rental.location),
         "created_at": rental.created_at,
         "user": user_serializer(rental.user),
     }
