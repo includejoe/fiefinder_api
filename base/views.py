@@ -1,11 +1,11 @@
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
-from django.views.decorators.http import require_GET
+from django.views.decorators.http import require_GET, require_POST
 from django_ratelimit.decorators import ratelimit
 
-
-from base.models import Country, Language
-from base.utils import request_sanitizer, Cache
+from core.settings import LOGGER as logger
+from base.models import Country, Language, PushToken
+from base.utils import request_sanitizer, token_required, Cache
 
 
 @csrf_exempt
@@ -63,3 +63,19 @@ def fetch_languages(request):
         languages = list(Language.objects.values("id", "name", "short_code", "image"))
         Cache(Language, "base_cache_language").save_values()
     return JsonResponse({"success": True, "info": languages})
+
+
+@csrf_exempt
+@ratelimit(key="ip", rate="10/m", block=True)
+@request_sanitizer
+@token_required
+@require_POST
+def push_token(request):
+    try:
+        body = request.sanitized_data
+        body["user"] = request.user
+        PushToken.objects.create(**body)
+        return JsonResponse({"success": True, "info": "Push token saved successfully"})
+    except Exception as e:
+        logger.exception(str(e))
+        return JsonResponse({"success": False, "info": "Invalid request body"})

@@ -20,17 +20,8 @@ def start_conversation(request):
     try:
         user = request.user
         body = request.sanitized_data
-        conversation_id = body.get("conversation_id", None)
-
-        if conversation_id:
-            conversation = Conversation.objects.get(id=conversation_id)
-            conversation = conversation_serializer(
-                conversation, exclude=["last_message"]
-            )
-            return JsonResponse({"success": True, "info": conversation})
 
         receiver = User.objects.get(id=body["receiver_id"])
-
         checker = Conversation.objects.select_related("initiator", "receiver").filter(
             Q(initiator=user, receiver=receiver) | Q(initiator=receiver, receiver=user)
         )

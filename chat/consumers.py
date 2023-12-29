@@ -7,6 +7,8 @@ from datetime import datetime, timedelta
 from chat.models import Message, Conversation
 from user.models import User
 from chat.serializers import message_serializer
+from base.tasks import send_notification
+from base.models import PushToken
 
 
 class ChatConsumer(WebsocketConsumer):
@@ -68,6 +70,19 @@ class ChatConsumer(WebsocketConsumer):
             message = message_serializer(message)
 
         self.send(text_data=json.dumps(message))
+
+        notification_recipients = list(
+            PushToken.objects.filter(user=conversation.receiver).values_list(
+                "fcm_token", flat=True
+            )
+        )
+
+        notification_data = {
+            "title": message["sender"]["full_name"],
+            "message": message["text"],
+            "recipients": notification_recipients,
+        }
+        send_notification.delay(notification_data)
 
 
 chat_consumer_asgi = ChatConsumer.as_asgi()

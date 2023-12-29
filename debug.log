@@ -12756,3 +12756,1957 @@ TypeError: Object of type datetime is not JSON serializable
 2023-12-29 16:56:18,231 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 49282] open and established
 2023-12-29 16:56:18,231 django.channels.server INFO     WebSocket CONNECT /chat/1/ [127.0.0.1:49282]
 2023-12-29 16:56:18,231 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 49282] accepted by application
+2023-12-29 17:26:05,437 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 17:26:06,359 core.settings WARNING  base.signals loaded
+2023-12-29 17:26:06,360 core.settings WARNING  rental.signals loaded
+2023-12-29 17:26:06,367 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-29 17:26:07,687 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 17:26:08,437 core.settings WARNING  base.signals loaded
+2023-12-29 17:26:08,437 core.settings WARNING  rental.signals loaded
+2023-12-29 17:26:08,447 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-29 17:26:08,467 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-29 17:26:08,914 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-29 17:26:08,914 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-29 17:26:08,921 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2023-12-29 17:26:08,921 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2023-12-29 17:26:08,921 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2023-12-29 17:26:13,472 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 57384]
+2023-12-29 17:26:13,577 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 17:26:13,757 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 57384]
+2023-12-29 17:26:13,757 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 57384]
+2023-12-29 17:26:13,757 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 57384]
+2023-12-29 17:26:13,757 django.channels.server INFO     [mHTTP GET /shinobi/chat/message/ 200 [0.29, 127.0.0.1:57384][0m
+2023-12-29 17:26:13,800 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 57384]
+2023-12-29 17:26:13,917 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 17:26:13,935 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 57384]
+2023-12-29 17:26:13,935 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 57384]
+2023-12-29 17:26:13,935 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 57384]
+2023-12-29 17:26:13,935 django.channels.server INFO     [mHTTP GET /shinobi/jsi18n/ 200 [0.14, 127.0.0.1:57384][0m
+2023-12-29 17:26:14,602 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 57405]
+2023-12-29 17:26:14,772 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 17:26:14,787 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 57405]
+2023-12-29 17:26:14,787 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 57405]
+2023-12-29 17:26:14,787 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 57405]
+2023-12-29 17:26:14,791 django.channels.server INFO     [mHTTP GET /shinobi/jsi18n/ 200 [0.19, 127.0.0.1:57405][0m
+2023-12-29 17:26:30,551 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 57603]
+2023-12-29 17:26:30,596 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 57604]
+2023-12-29 17:26:30,634 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 17:26:30,680 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 17:26:30,700 core.settings WARNING  That page number is less than 1
+2023-12-29 17:26:30,700 core.settings WARNING  That page contains no results
+2023-12-29 17:26:32,716 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 57603]
+2023-12-29 17:26:32,717 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 57603]
+2023-12-29 17:26:32,718 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 57603]
+2023-12-29 17:26:32,718 django.channels.server INFO     [mHTTP GET /rental/categories/ 200 [2.17, 127.0.0.1:57603][0m
+2023-12-29 17:26:32,784 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 57604]
+2023-12-29 17:26:32,784 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 57604]
+2023-12-29 17:26:32,785 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 57604]
+2023-12-29 17:26:32,785 django.channels.server INFO     [mHTTP POST /rental/all/ 200 [2.19, 127.0.0.1:57604][0m
+2023-12-29 17:27:51,734 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 58629]
+2023-12-29 17:27:51,806 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 17:27:51,854 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 58629]
+2023-12-29 17:27:51,855 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 58629]
+2023-12-29 17:27:51,856 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 58629]
+2023-12-29 17:27:51,856 django.channels.server INFO     [mHTTP POST /chat/start/ 200 [0.12, 127.0.0.1:58629][0m
+2023-12-29 17:27:51,901 django.channels.server INFO     WebSocket HANDSHAKING /chat/1/ [127.0.0.1:58634]
+2023-12-29 17:27:51,902 daphne.http_protocol DEBUG    Upgraded connection ['127.0.0.1', 58634] to WebSocket
+2023-12-29 17:27:51,932 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 58634] open and established
+2023-12-29 17:27:51,933 django.channels.server INFO     WebSocket CONNECT /chat/1/ [127.0.0.1:58634]
+2023-12-29 17:27:51,933 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 58634] accepted by application
+2023-12-29 17:27:57,254 daphne.ws_protocol DEBUG    WebSocket closed for ['127.0.0.1', 58634]
+2023-12-29 17:27:57,254 django.channels.server INFO     WebSocket DISCONNECT /chat/1/ [127.0.0.1:58634]
+2023-12-29 17:27:58,281 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 58716]
+2023-12-29 17:27:58,361 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 17:27:58,412 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 58716]
+2023-12-29 17:27:58,413 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 58716]
+2023-12-29 17:27:58,414 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 58716]
+2023-12-29 17:27:58,414 django.channels.server INFO     [mHTTP POST /chat/start/ 200 [0.13, 127.0.0.1:58716][0m
+2023-12-29 17:27:58,430 django.channels.server INFO     WebSocket HANDSHAKING /chat/1/ [127.0.0.1:58721]
+2023-12-29 17:27:58,431 daphne.http_protocol DEBUG    Upgraded connection ['127.0.0.1', 58721] to WebSocket
+2023-12-29 17:27:58,434 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 58721] open and established
+2023-12-29 17:27:58,434 django.channels.server INFO     WebSocket CONNECT /chat/1/ [127.0.0.1:58721]
+2023-12-29 17:27:58,435 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 58721] accepted by application
+2023-12-29 17:28:10,501 daphne.ws_protocol DEBUG    WebSocket closed for ['127.0.0.1', 58721]
+2023-12-29 17:28:10,502 django.channels.server INFO     WebSocket DISCONNECT /chat/1/ [127.0.0.1:58721]
+2023-12-29 17:28:11,585 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 58898]
+2023-12-29 17:28:11,659 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 17:28:11,705 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 58898]
+2023-12-29 17:28:11,706 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 58898]
+2023-12-29 17:28:11,706 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 58898]
+2023-12-29 17:28:11,707 django.channels.server INFO     [mHTTP POST /chat/start/ 200 [0.12, 127.0.0.1:58898][0m
+2023-12-29 17:28:11,731 django.channels.server INFO     WebSocket HANDSHAKING /chat/1/ [127.0.0.1:58903]
+2023-12-29 17:28:11,733 daphne.http_protocol DEBUG    Upgraded connection ['127.0.0.1', 58903] to WebSocket
+2023-12-29 17:28:11,738 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 58903] open and established
+2023-12-29 17:28:11,738 django.channels.server INFO     WebSocket CONNECT /chat/1/ [127.0.0.1:58903]
+2023-12-29 17:28:11,739 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 58903] accepted by application
+2023-12-29 17:32:06,050 daphne.ws_protocol DEBUG    WebSocket closed for ['127.0.0.1', 58903]
+2023-12-29 17:32:06,050 django.channels.server INFO     WebSocket DISCONNECT /chat/1/ [127.0.0.1:58903]
+2023-12-29 17:32:07,153 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 61775]
+2023-12-29 17:32:07,231 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 17:32:07,283 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 61775]
+2023-12-29 17:32:07,283 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 61775]
+2023-12-29 17:32:07,284 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 61775]
+2023-12-29 17:32:07,284 django.channels.server INFO     [mHTTP POST /chat/start/ 200 [0.13, 127.0.0.1:61775][0m
+2023-12-29 17:32:07,313 django.channels.server INFO     WebSocket HANDSHAKING /chat/1/ [127.0.0.1:61780]
+2023-12-29 17:32:07,314 daphne.http_protocol DEBUG    Upgraded connection ['127.0.0.1', 61780] to WebSocket
+2023-12-29 17:32:07,322 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 61780] open and established
+2023-12-29 17:32:07,323 django.channels.server INFO     WebSocket CONNECT /chat/1/ [127.0.0.1:61780]
+2023-12-29 17:32:07,323 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 61780] accepted by application
+2023-12-29 17:32:09,731 daphne.ws_protocol DEBUG    WebSocket closed for ['127.0.0.1', 61780]
+2023-12-29 17:32:09,731 django.channels.server INFO     WebSocket DISCONNECT /chat/1/ [127.0.0.1:61780]
+2023-12-29 17:32:10,458 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 61820]
+2023-12-29 17:32:10,530 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 17:32:10,587 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 61820]
+2023-12-29 17:32:10,588 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 61820]
+2023-12-29 17:32:10,589 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 61820]
+2023-12-29 17:32:10,590 django.channels.server INFO     [mHTTP POST /chat/start/ 200 [0.13, 127.0.0.1:61820][0m
+2023-12-29 17:32:10,613 django.channels.server INFO     WebSocket HANDSHAKING /chat/1/ [127.0.0.1:61827]
+2023-12-29 17:32:10,613 daphne.http_protocol DEBUG    Upgraded connection ['127.0.0.1', 61827] to WebSocket
+2023-12-29 17:32:10,617 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 61827] open and established
+2023-12-29 17:32:10,617 django.channels.server INFO     WebSocket CONNECT /chat/1/ [127.0.0.1:61827]
+2023-12-29 17:32:10,618 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 61827] accepted by application
+2023-12-29 17:32:26,757 daphne.ws_protocol DEBUG    WebSocket closed for ['127.0.0.1', 61827]
+2023-12-29 17:32:26,757 django.channels.server INFO     WebSocket DISCONNECT /chat/1/ [127.0.0.1:61827]
+2023-12-29 17:32:27,732 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 62054]
+2023-12-29 17:32:27,808 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 17:32:27,854 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 62054]
+2023-12-29 17:32:27,855 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 62054]
+2023-12-29 17:32:27,855 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 62054]
+2023-12-29 17:32:27,855 django.channels.server INFO     [mHTTP POST /chat/start/ 200 [0.12, 127.0.0.1:62054][0m
+2023-12-29 17:32:27,882 django.channels.server INFO     WebSocket HANDSHAKING /chat/1/ [127.0.0.1:62059]
+2023-12-29 17:32:27,883 daphne.http_protocol DEBUG    Upgraded connection ['127.0.0.1', 62059] to WebSocket
+2023-12-29 17:32:27,887 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 62059] open and established
+2023-12-29 17:32:27,888 django.channels.server INFO     WebSocket CONNECT /chat/1/ [127.0.0.1:62059]
+2023-12-29 17:32:27,888 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 62059] accepted by application
+2023-12-29 17:32:30,174 daphne.ws_protocol DEBUG    WebSocket closed for ['127.0.0.1', 62059]
+2023-12-29 17:32:30,175 django.channels.server INFO     WebSocket DISCONNECT /chat/1/ [127.0.0.1:62059]
+2023-12-29 17:32:30,918 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 62100]
+2023-12-29 17:32:30,988 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 17:32:31,039 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 62100]
+2023-12-29 17:32:31,039 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 62100]
+2023-12-29 17:32:31,040 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 62100]
+2023-12-29 17:32:31,040 django.channels.server INFO     [mHTTP POST /chat/start/ 200 [0.12, 127.0.0.1:62100][0m
+2023-12-29 17:32:31,061 django.channels.server INFO     WebSocket HANDSHAKING /chat/1/ [127.0.0.1:62108]
+2023-12-29 17:32:31,064 daphne.http_protocol DEBUG    Upgraded connection ['127.0.0.1', 62108] to WebSocket
+2023-12-29 17:32:31,067 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 62108] open and established
+2023-12-29 17:32:31,068 django.channels.server INFO     WebSocket CONNECT /chat/1/ [127.0.0.1:62108]
+2023-12-29 17:32:31,068 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 62108] accepted by application
+2023-12-29 17:32:55,835 daphne.ws_protocol DEBUG    WebSocket incoming frame on ['127.0.0.1', 62108]
+2023-12-29 17:32:55,956 daphne.ws_protocol DEBUG    Sent WebSocket packet to client for ['127.0.0.1', 62108]
+2023-12-29 17:33:08,373 daphne.ws_protocol DEBUG    WebSocket incoming frame on ['127.0.0.1', 62108]
+2023-12-29 17:33:08,481 daphne.ws_protocol DEBUG    Sent WebSocket packet to client for ['127.0.0.1', 62108]
+2023-12-29 17:33:24,902 daphne.ws_protocol DEBUG    WebSocket incoming frame on ['127.0.0.1', 62108]
+2023-12-29 17:33:25,013 daphne.ws_protocol DEBUG    Sent WebSocket packet to client for ['127.0.0.1', 62108]
+2023-12-29 17:35:15,364 daphne.ws_protocol DEBUG    WebSocket closed for ['127.0.0.1', 62108]
+2023-12-29 17:35:15,364 django.channels.server INFO     WebSocket DISCONNECT /chat/1/ [127.0.0.1:62108]
+2023-12-29 17:35:16,208 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 64202]
+2023-12-29 17:35:16,286 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 17:35:16,339 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 64202]
+2023-12-29 17:35:16,340 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 64202]
+2023-12-29 17:35:16,340 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 64202]
+2023-12-29 17:35:16,340 django.channels.server INFO     [mHTTP POST /chat/start/ 200 [0.13, 127.0.0.1:64202][0m
+2023-12-29 17:35:16,367 django.channels.server INFO     WebSocket HANDSHAKING /chat/1/ [127.0.0.1:64208]
+2023-12-29 17:35:16,368 daphne.http_protocol DEBUG    Upgraded connection ['127.0.0.1', 64208] to WebSocket
+2023-12-29 17:35:16,372 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 64208] open and established
+2023-12-29 17:35:16,372 django.channels.server INFO     WebSocket CONNECT /chat/1/ [127.0.0.1:64208]
+2023-12-29 17:35:16,373 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 64208] accepted by application
+2023-12-29 17:35:24,674 daphne.ws_protocol DEBUG    WebSocket incoming frame on ['127.0.0.1', 64208]
+2023-12-29 17:35:24,768 daphne.ws_protocol DEBUG    Sent WebSocket packet to client for ['127.0.0.1', 64208]
+2023-12-29 17:36:13,667 daphne.ws_protocol DEBUG    WebSocket closed for ['127.0.0.1', 64208]
+2023-12-29 17:36:13,667 django.channels.server INFO     WebSocket DISCONNECT /chat/1/ [127.0.0.1:64208]
+2023-12-29 17:36:14,832 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 64957]
+2023-12-29 17:36:14,903 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 17:36:14,961 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 64957]
+2023-12-29 17:36:14,962 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 64957]
+2023-12-29 17:36:14,962 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 64957]
+2023-12-29 17:36:14,963 django.channels.server INFO     [mHTTP POST /chat/start/ 200 [0.13, 127.0.0.1:64957][0m
+2023-12-29 17:36:14,994 django.channels.server INFO     WebSocket HANDSHAKING /chat/1/ [127.0.0.1:64962]
+2023-12-29 17:36:14,995 daphne.http_protocol DEBUG    Upgraded connection ['127.0.0.1', 64962] to WebSocket
+2023-12-29 17:36:14,998 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 64962] open and established
+2023-12-29 17:36:14,999 django.channels.server INFO     WebSocket CONNECT /chat/1/ [127.0.0.1:64962]
+2023-12-29 17:36:14,999 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 64962] accepted by application
+2023-12-29 17:36:20,604 daphne.ws_protocol DEBUG    WebSocket incoming frame on ['127.0.0.1', 64962]
+2023-12-29 17:36:20,742 daphne.ws_protocol DEBUG    Sent WebSocket packet to client for ['127.0.0.1', 64962]
+2023-12-29 17:36:25,250 daphne.ws_protocol DEBUG    WebSocket incoming frame on ['127.0.0.1', 64962]
+2023-12-29 17:36:25,383 daphne.ws_protocol DEBUG    Sent WebSocket packet to client for ['127.0.0.1', 64962]
+2023-12-29 17:36:56,076 daphne.ws_protocol DEBUG    WebSocket incoming frame on ['127.0.0.1', 64962]
+2023-12-29 17:36:56,174 daphne.ws_protocol DEBUG    Sent WebSocket packet to client for ['127.0.0.1', 64962]
+2023-12-29 17:38:37,442 daphne.ws_protocol DEBUG    WebSocket closed for ['127.0.0.1', 64962]
+2023-12-29 17:38:37,443 django.channels.server INFO     WebSocket DISCONNECT /chat/1/ [127.0.0.1:64962]
+2023-12-29 17:38:38,322 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 50624]
+2023-12-29 17:38:38,391 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 17:38:38,453 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 50624]
+2023-12-29 17:38:38,454 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 50624]
+2023-12-29 17:38:38,456 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 50624]
+2023-12-29 17:38:38,456 django.channels.server INFO     [mHTTP POST /chat/start/ 200 [0.13, 127.0.0.1:50624][0m
+2023-12-29 17:38:38,490 django.channels.server INFO     WebSocket HANDSHAKING /chat/1/ [127.0.0.1:50630]
+2023-12-29 17:38:38,491 daphne.http_protocol DEBUG    Upgraded connection ['127.0.0.1', 50630] to WebSocket
+2023-12-29 17:38:38,497 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 50630] open and established
+2023-12-29 17:38:38,498 django.channels.server INFO     WebSocket CONNECT /chat/1/ [127.0.0.1:50630]
+2023-12-29 17:38:38,499 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 50630] accepted by application
+2023-12-29 17:39:00,356 daphne.ws_protocol DEBUG    WebSocket incoming frame on ['127.0.0.1', 50630]
+2023-12-29 17:39:00,475 daphne.ws_protocol DEBUG    Sent WebSocket packet to client for ['127.0.0.1', 50630]
+2023-12-29 17:39:06,387 daphne.ws_protocol DEBUG    WebSocket incoming frame on ['127.0.0.1', 50630]
+2023-12-29 17:39:06,479 daphne.ws_protocol DEBUG    Sent WebSocket packet to client for ['127.0.0.1', 50630]
+2023-12-29 17:39:11,987 daphne.ws_protocol DEBUG    WebSocket incoming frame on ['127.0.0.1', 50630]
+2023-12-29 17:39:12,081 daphne.ws_protocol DEBUG    Sent WebSocket packet to client for ['127.0.0.1', 50630]
+2023-12-29 17:40:33,286 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 52095]
+2023-12-29 17:40:33,355 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 17:40:33,392 daphne.http_protocol DEBUG    HTTP 302 response started for ['127.0.0.1', 52095]
+2023-12-29 17:40:33,392 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 52095]
+2023-12-29 17:40:33,393 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 52095]
+2023-12-29 17:40:33,393 django.channels.server INFO     [32mHTTP GET /shinobi/ 302 [0.11, 127.0.0.1:52095][0m
+2023-12-29 17:40:34,205 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 52095]
+2023-12-29 17:40:34,271 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 17:40:34,393 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 52095]
+2023-12-29 17:40:34,394 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 52095]
+2023-12-29 17:40:34,395 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 52095]
+2023-12-29 17:40:34,395 django.channels.server INFO     [mHTTP GET /shinobi/login/?next=/shinobi/ 200 [0.19, 127.0.0.1:52095][0m
+2023-12-29 17:40:35,744 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 52095]
+2023-12-29 17:40:35,795 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 51960]
+2023-12-29 17:40:35,939 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 51960]
+2023-12-29 17:40:35,940 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 52095]
+2023-12-29 17:40:35,940 daphne.http_protocol DEBUG    HTTP response chunk for ['127.0.0.1', 51960]
+2023-12-29 17:40:35,940 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 51960]
+2023-12-29 17:40:35,942 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 51960]
+2023-12-29 17:40:35,942 django.channels.server INFO     [mHTTP GET /static/admin/css/dark_mode.css 200 [0.15, 127.0.0.1:51960][0m
+2023-12-29 17:40:35,944 daphne.http_protocol DEBUG    HTTP response chunk for ['127.0.0.1', 52095]
+2023-12-29 17:40:35,944 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 52095]
+2023-12-29 17:40:35,944 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 52095]
+2023-12-29 17:40:35,945 django.channels.server INFO     [mHTTP GET /static/admin/css/base.css 200 [0.20, 127.0.0.1:52095][0m
+2023-12-29 17:40:38,323 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 52095]
+2023-12-29 17:40:38,373 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 52095]
+2023-12-29 17:40:38,374 daphne.http_protocol DEBUG    HTTP response chunk for ['127.0.0.1', 52095]
+2023-12-29 17:40:38,374 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 52095]
+2023-12-29 17:40:38,375 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 52095]
+2023-12-29 17:40:38,375 django.channels.server INFO     [mHTTP GET /static/admin/css/login.css 200 [0.05, 127.0.0.1:52095][0m
+2023-12-29 17:40:38,548 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 51960]
+2023-12-29 17:40:38,550 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 52175]
+2023-12-29 17:40:38,560 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 52175]
+2023-12-29 17:40:38,561 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 51960]
+2023-12-29 17:40:38,562 daphne.http_protocol DEBUG    HTTP response chunk for ['127.0.0.1', 52175]
+2023-12-29 17:40:38,562 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 52175]
+2023-12-29 17:40:38,563 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 52175]
+2023-12-29 17:40:38,563 django.channels.server INFO     [mHTTP GET /static/admin/css/nav_sidebar.css 200 [0.01, 127.0.0.1:52175][0m
+2023-12-29 17:40:38,565 daphne.http_protocol DEBUG    HTTP response chunk for ['127.0.0.1', 51960]
+2023-12-29 17:40:38,565 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 51960]
+2023-12-29 17:40:38,565 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 51960]
+2023-12-29 17:40:38,566 django.channels.server INFO     [mHTTP GET /static/admin/css/responsive.css 200 [0.02, 127.0.0.1:51960][0m
+2023-12-29 17:40:43,282 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 52095]
+2023-12-29 17:40:43,304 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 52095]
+2023-12-29 17:40:43,305 daphne.http_protocol DEBUG    HTTP response chunk for ['127.0.0.1', 52095]
+2023-12-29 17:40:43,305 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 52095]
+2023-12-29 17:40:43,305 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 52095]
+2023-12-29 17:40:43,306 django.channels.server INFO     [mHTTP GET /static/admin/js/theme.js 200 [0.03, 127.0.0.1:52095][0m
+2023-12-29 17:40:43,498 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 52208]
+2023-12-29 17:40:43,518 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 52208]
+2023-12-29 17:40:43,519 daphne.http_protocol DEBUG    HTTP response chunk for ['127.0.0.1', 52208]
+2023-12-29 17:40:43,520 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 52208]
+2023-12-29 17:40:43,520 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 52208]
+2023-12-29 17:40:43,520 django.channels.server INFO     [mHTTP GET /static/admin/js/nav_sidebar.js 200 [0.02, 127.0.0.1:52208][0m
+2023-12-29 17:40:44,227 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 52208]
+2023-12-29 17:40:44,229 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 17:40:44,410 django.request WARNING  Not Found: /favicon.ico
+2023-12-29 17:40:44,410 django.request WARNING  Not Found: /favicon.ico
+2023-12-29 17:40:44,411 daphne.http_protocol DEBUG    HTTP 404 response started for ['127.0.0.1', 52208]
+2023-12-29 17:40:44,412 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 52208]
+2023-12-29 17:40:44,412 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 52208]
+2023-12-29 17:40:44,412 django.channels.server WARNING  [33mHTTP GET /favicon.ico 404 [0.19, 127.0.0.1:52208][0m
+2023-12-29 17:40:48,497 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 52329]
+2023-12-29 17:40:48,499 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 52329]
+2023-12-29 17:40:48,500 daphne.http_protocol DEBUG    HTTP response chunk for ['127.0.0.1', 52329]
+2023-12-29 17:40:48,501 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 52329]
+2023-12-29 17:40:48,501 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 52329]
+2023-12-29 17:40:48,502 django.channels.server INFO     [mHTTP GET /static/admin/js/theme.js 200 [0.00, 127.0.0.1:52329][0m
+2023-12-29 17:40:53,313 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 52362]
+2023-12-29 17:40:53,316 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 52362]
+2023-12-29 17:40:53,317 daphne.http_protocol DEBUG    HTTP response chunk for ['127.0.0.1', 52362]
+2023-12-29 17:40:53,317 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 52362]
+2023-12-29 17:40:53,318 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 52362]
+2023-12-29 17:40:53,318 django.channels.server INFO     [mHTTP GET /static/admin/js/nav_sidebar.js 200 [0.01, 127.0.0.1:52362][0m
+2023-12-29 17:44:15,308 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 54972]
+2023-12-29 17:44:15,496 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 17:44:15,499 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 54972]
+2023-12-29 17:44:15,500 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 54972]
+2023-12-29 17:44:15,501 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 54972]
+2023-12-29 17:44:15,501 django.channels.server INFO     [mHTTP GET /rental/categories/ 200 [0.19, 127.0.0.1:54972][0m
+2023-12-29 17:44:17,773 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 55009]
+2023-12-29 17:44:17,838 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 17:44:17,857 core.settings WARNING  That page number is less than 1
+2023-12-29 17:44:17,858 core.settings WARNING  That page contains no results
+2023-12-29 17:44:17,875 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 55009]
+2023-12-29 17:44:17,876 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 55009]
+2023-12-29 17:44:17,877 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 55009]
+2023-12-29 17:44:17,877 django.channels.server INFO     [mHTTP POST /rental/all/ 200 [0.10, 127.0.0.1:55009][0m
+2023-12-29 17:44:58,297 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 55926]
+2023-12-29 17:44:58,468 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 17:44:58,481 core.settings WARNING  Token matching query does not exist.
+2023-12-29 17:44:58,482 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 55926]
+2023-12-29 17:44:58,482 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 55926]
+2023-12-29 17:44:58,483 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 55926]
+2023-12-29 17:44:58,483 django.channels.server INFO     [mHTTP POST /chat/start/ 200 [0.19, 127.0.0.1:55926][0m
+2023-12-29 17:45:22,530 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 56525]
+2023-12-29 17:45:22,605 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 17:45:22,620 core.settings WARNING  Token matching query does not exist.
+2023-12-29 17:45:22,620 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 56525]
+2023-12-29 17:45:22,620 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 56525]
+2023-12-29 17:45:22,620 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 56525]
+2023-12-29 17:45:22,620 django.channels.server INFO     [mHTTP POST /chat/start/ 200 [0.09, 127.0.0.1:56525][0m
+2023-12-29 17:45:46,529 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 56925]
+2023-12-29 17:45:46,596 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 17:45:46,613 core.settings WARNING  Token matching query does not exist.
+2023-12-29 17:45:46,613 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 56925]
+2023-12-29 17:45:46,613 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 56925]
+2023-12-29 17:45:46,613 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 56925]
+2023-12-29 17:45:46,613 django.channels.server INFO     [mHTTP POST /user/logout/ 200 [0.08, 127.0.0.1:56925][0m
+2023-12-29 17:46:07,308 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 57184]
+2023-12-29 17:46:07,382 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 17:46:07,396 core.settings WARNING  Token matching query does not exist.
+2023-12-29 17:46:07,397 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 57184]
+2023-12-29 17:46:07,399 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 57184]
+2023-12-29 17:46:07,400 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 57184]
+2023-12-29 17:46:07,400 django.channels.server INFO     [mHTTP POST /user/logout/ 200 [0.09, 127.0.0.1:57184][0m
+2023-12-29 17:46:34,094 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 57516]
+2023-12-29 17:46:34,158 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 17:46:34,170 core.settings WARNING  Token matching query does not exist.
+2023-12-29 17:46:34,173 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 57516]
+2023-12-29 17:46:34,174 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 57516]
+2023-12-29 17:46:34,174 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 57516]
+2023-12-29 17:46:34,174 django.channels.server INFO     [mHTTP POST /user/logout/ 200 [0.08, 127.0.0.1:57516][0m
+2023-12-29 17:47:12,610 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 58008]
+2023-12-29 17:47:12,693 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 17:47:12,693 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 58008]
+2023-12-29 17:47:12,693 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 58008]
+2023-12-29 17:47:12,704 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 58008]
+2023-12-29 17:47:12,705 django.channels.server INFO     [mHTTP GET /rental/categories/ 200 [0.09, 127.0.0.1:58008][0m
+2023-12-29 17:47:15,076 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 58042]
+2023-12-29 17:47:15,142 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 17:47:15,159 core.settings WARNING  That page number is less than 1
+2023-12-29 17:47:15,159 core.settings WARNING  That page contains no results
+2023-12-29 17:47:15,177 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 58042]
+2023-12-29 17:47:15,177 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 58042]
+2023-12-29 17:47:15,177 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 58042]
+2023-12-29 17:47:15,177 django.channels.server INFO     [mHTTP POST /rental/all/ 200 [0.10, 127.0.0.1:58042][0m
+2023-12-29 17:47:35,192 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 58289]
+2023-12-29 17:47:35,267 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 17:47:35,285 axes.helpers DEBUG    Using request.META.get('REMOTE_ADDR', None) fallback method to get client IP address
+2023-12-29 17:47:35,316 axes.helpers DEBUG    Using parameter credentials to get username with key settings.AXES_USERNAME_FORM_FIELD
+2023-12-29 17:47:35,325 axes.attempts DEBUG    AXES: Getting all access attempts from database because no AXES_COOLOFF_TIME is configured
+2023-12-29 17:47:35,825 axes.attempts DEBUG    AXES: Skipping clean for expired access attempts because no AXES_COOLOFF_TIME is configured
+2023-12-29 17:47:35,825 axes.handlers.database INFO     AXES: Successful login by {username: "********************", ip_address: "********************", user_agent: "Dart/3.1 (dart:io)", path_info: "/user/login/"}.
+2023-12-29 17:47:35,843 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 58289]
+2023-12-29 17:47:35,845 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 58289]
+2023-12-29 17:47:35,846 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 58289]
+2023-12-29 17:47:35,846 django.channels.server INFO     [mHTTP POST /user/login/ 200 [0.65, 127.0.0.1:58289][0m
+2023-12-29 17:47:42,892 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 58386]
+2023-12-29 17:47:42,968 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 17:47:42,987 core.settings WARNING  That page number is less than 1
+2023-12-29 17:47:42,987 core.settings WARNING  That page contains no results
+2023-12-29 17:47:43,001 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 58386]
+2023-12-29 17:47:43,001 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 58386]
+2023-12-29 17:47:43,001 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 58386]
+2023-12-29 17:47:43,001 django.channels.server INFO     [mHTTP POST /rental/all/ 200 [0.11, 127.0.0.1:58386][0m
+2023-12-29 17:47:45,841 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 58428]
+2023-12-29 17:47:45,913 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 17:47:45,924 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 58428]
+2023-12-29 17:47:45,925 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 58428]
+2023-12-29 17:47:45,926 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 58428]
+2023-12-29 17:47:45,927 django.channels.server INFO     [mHTTP GET /rental/categories/ 200 [0.09, 127.0.0.1:58428][0m
+2023-12-29 17:47:50,941 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 58494]
+2023-12-29 17:47:51,107 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 17:47:51,159 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 58494]
+2023-12-29 17:47:51,159 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 58494]
+2023-12-29 17:47:51,159 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 58494]
+2023-12-29 17:47:51,159 django.channels.server INFO     [mHTTP POST /chat/start/ 200 [0.22, 127.0.0.1:58494][0m
+2023-12-29 17:47:55,293 django.channels.server INFO     WebSocket HANDSHAKING /chat/1/ [127.0.0.1:58550]
+2023-12-29 17:47:55,293 daphne.http_protocol DEBUG    Upgraded connection ['127.0.0.1', 58550] to WebSocket
+2023-12-29 17:47:55,295 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 58550] open and established
+2023-12-29 17:47:55,295 django.channels.server INFO     WebSocket CONNECT /chat/1/ [127.0.0.1:58550]
+2023-12-29 17:47:55,295 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 58550] accepted by application
+2023-12-29 17:49:50,311 daphne.ws_protocol DEBUG    WebSocket incoming frame on ['127.0.0.1', 58550]
+2023-12-29 17:49:50,495 daphne.ws_protocol DEBUG    Sent WebSocket packet to client for ['127.0.0.1', 50630]
+2023-12-29 17:49:50,608 daphne.ws_protocol DEBUG    Sent WebSocket packet to client for ['127.0.0.1', 58550]
+2023-12-29 17:50:36,531 django.channels.server INFO     WebSocket HANDSHAKING /chat/1/ [127.0.0.1:60692]
+2023-12-29 17:50:36,532 daphne.http_protocol DEBUG    Upgraded connection ['127.0.0.1', 60692] to WebSocket
+2023-12-29 17:50:36,535 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 60692] open and established
+2023-12-29 17:50:36,535 django.channels.server INFO     WebSocket CONNECT /chat/1/ [127.0.0.1:60692]
+2023-12-29 17:50:36,535 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 60692] accepted by application
+2023-12-29 17:50:56,903 daphne.ws_protocol DEBUG    WebSocket incoming frame on ['127.0.0.1', 60692]
+2023-12-29 17:50:57,006 daphne.ws_protocol DEBUG    Sent WebSocket packet to client for ['127.0.0.1', 50630]
+2023-12-29 17:50:57,183 daphne.ws_protocol DEBUG    Sent WebSocket packet to client for ['127.0.0.1', 58550]
+2023-12-29 17:50:57,276 daphne.ws_protocol DEBUG    Sent WebSocket packet to client for ['127.0.0.1', 60692]
+2023-12-29 17:51:13,866 daphne.ws_protocol DEBUG    WebSocket closed for ['127.0.0.1', 58550]
+2023-12-29 17:51:13,866 django.channels.server INFO     WebSocket DISCONNECT /chat/1/ [127.0.0.1:58550]
+2023-12-29 17:51:21,405 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 61230]
+2023-12-29 17:51:21,482 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 17:51:21,498 core.settings WARNING  That page number is less than 1
+2023-12-29 17:51:21,499 core.settings WARNING  That page contains no results
+2023-12-29 17:51:21,516 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 61230]
+2023-12-29 17:51:21,518 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 61230]
+2023-12-29 17:51:21,518 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 61230]
+2023-12-29 17:51:21,518 django.channels.server INFO     [mHTTP POST /rental/all/ 200 [0.11, 127.0.0.1:61230][0m
+2023-12-29 17:51:23,982 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 61267]
+2023-12-29 17:51:24,066 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 17:51:24,075 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 61267]
+2023-12-29 17:51:24,075 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 61267]
+2023-12-29 17:51:24,075 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 61267]
+2023-12-29 17:51:24,075 django.channels.server INFO     [mHTTP GET /rental/categories/ 200 [0.09, 127.0.0.1:61267][0m
+2023-12-29 17:51:38,649 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 61443]
+2023-12-29 17:51:38,724 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 17:51:38,734 core.settings WARNING  That page number is less than 1
+2023-12-29 17:51:38,734 core.settings WARNING  That page contains no results
+2023-12-29 17:51:38,752 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 61443]
+2023-12-29 17:51:38,752 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 61443]
+2023-12-29 17:51:38,752 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 61443]
+2023-12-29 17:51:38,752 django.channels.server INFO     [mHTTP POST /rental/all/ 200 [0.10, 127.0.0.1:61443][0m
+2023-12-29 17:51:41,198 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 61483]
+2023-12-29 17:51:41,265 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 17:51:41,265 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 61483]
+2023-12-29 17:51:41,265 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 61483]
+2023-12-29 17:51:41,278 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 61483]
+2023-12-29 17:51:41,278 django.channels.server INFO     [mHTTP GET /rental/categories/ 200 [0.08, 127.0.0.1:61483][0m
+2023-12-29 17:51:47,827 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 61572]
+2023-12-29 17:51:48,000 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 17:51:48,000 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 61572]
+2023-12-29 17:51:48,000 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 61572]
+2023-12-29 17:51:48,000 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 61572]
+2023-12-29 17:51:48,000 django.channels.server INFO     [mHTTP GET /rental/categories/ 200 [0.17, 127.0.0.1:61572][0m
+2023-12-29 17:51:50,248 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 61608]
+2023-12-29 17:51:50,418 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 17:51:50,433 core.settings WARNING  That page number is less than 1
+2023-12-29 17:51:50,433 core.settings WARNING  That page contains no results
+2023-12-29 17:51:50,449 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 61608]
+2023-12-29 17:51:50,452 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 61608]
+2023-12-29 17:51:50,452 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 61608]
+2023-12-29 17:51:50,452 django.channels.server INFO     [mHTTP POST /rental/all/ 200 [0.20, 127.0.0.1:61608][0m
+2023-12-29 17:52:11,014 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 61853]
+2023-12-29 17:52:11,098 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 17:52:11,172 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 61853]
+2023-12-29 17:52:11,181 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 61853]
+2023-12-29 17:52:11,181 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 61853]
+2023-12-29 17:52:11,181 django.channels.server INFO     [mHTTP POST /chat/start/ 200 [0.17, 127.0.0.1:61853][0m
+2023-12-29 17:52:15,064 django.channels.server INFO     WebSocket HANDSHAKING /chat/1/ [127.0.0.1:61926]
+2023-12-29 17:52:15,064 daphne.http_protocol DEBUG    Upgraded connection ['127.0.0.1', 61926] to WebSocket
+2023-12-29 17:52:15,065 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 61926] open and established
+2023-12-29 17:52:15,065 django.channels.server INFO     WebSocket CONNECT /chat/1/ [127.0.0.1:61926]
+2023-12-29 17:52:15,065 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 61926] accepted by application
+2023-12-29 17:52:21,681 daphne.ws_protocol DEBUG    WebSocket incoming frame on ['127.0.0.1', 61926]
+2023-12-29 17:52:21,764 daphne.ws_protocol DEBUG    Sent WebSocket packet to client for ['127.0.0.1', 50630]
+2023-12-29 17:52:21,860 daphne.ws_protocol DEBUG    Sent WebSocket packet to client for ['127.0.0.1', 60692]
+2023-12-29 17:52:22,030 daphne.ws_protocol DEBUG    Sent WebSocket packet to client for ['127.0.0.1', 61926]
+2023-12-29 17:52:29,915 daphne.ws_protocol DEBUG    WebSocket incoming frame on ['127.0.0.1', 60692]
+2023-12-29 17:52:30,038 daphne.ws_protocol DEBUG    Sent WebSocket packet to client for ['127.0.0.1', 50630]
+2023-12-29 17:52:30,145 daphne.ws_protocol DEBUG    Sent WebSocket packet to client for ['127.0.0.1', 60692]
+2023-12-29 17:52:30,230 daphne.ws_protocol DEBUG    Sent WebSocket packet to client for ['127.0.0.1', 61926]
+2023-12-29 17:52:37,971 daphne.ws_protocol DEBUG    WebSocket closed for ['127.0.0.1', 61926]
+2023-12-29 17:52:37,971 django.channels.server INFO     WebSocket DISCONNECT /chat/1/ [127.0.0.1:61926]
+2023-12-29 17:52:58,566 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 62436]
+2023-12-29 17:52:58,646 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 17:52:58,646 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 62436]
+2023-12-29 17:52:58,646 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 62436]
+2023-12-29 17:52:58,646 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 62436]
+2023-12-29 17:52:58,646 django.channels.server INFO     [mHTTP GET /rental/categories/ 200 [0.08, 127.0.0.1:62436][0m
+2023-12-29 17:52:58,789 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 62471]
+2023-12-29 17:52:58,855 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 17:52:58,869 core.settings WARNING  That page number is less than 1
+2023-12-29 17:52:58,869 core.settings WARNING  That page contains no results
+2023-12-29 17:52:58,889 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 62471]
+2023-12-29 17:52:58,895 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 62471]
+2023-12-29 17:52:58,895 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 62471]
+2023-12-29 17:52:58,895 django.channels.server INFO     [mHTTP POST /rental/all/ 200 [0.11, 127.0.0.1:62471][0m
+2023-12-29 17:53:06,086 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 62556]
+2023-12-29 17:53:06,153 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 17:53:06,166 axes.helpers DEBUG    Using request.META.get('REMOTE_ADDR', None) fallback method to get client IP address
+2023-12-29 17:53:06,166 axes.attempts DEBUG    AXES: Skipping clean for expired access attempts because no AXES_COOLOFF_TIME is configured
+2023-12-29 17:53:06,178 axes.handlers.database INFO     AXES: Successful logout by {username: "********************", ip_address: "********************", user_agent: "Dart/3.1 (dart:io)", path_info: "/user/logout/"}.
+2023-12-29 17:53:06,182 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 62556]
+2023-12-29 17:53:06,182 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 62556]
+2023-12-29 17:53:06,182 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 62556]
+2023-12-29 17:53:06,182 django.channels.server INFO     [mHTTP POST /user/logout/ 200 [0.10, 127.0.0.1:62556][0m
+2023-12-29 17:53:15,595 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 62681]
+2023-12-29 17:53:15,668 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 17:53:15,678 core.settings WARNING  That page number is less than 1
+2023-12-29 17:53:15,678 core.settings WARNING  That page contains no results
+2023-12-29 17:53:15,700 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 62681]
+2023-12-29 17:53:15,700 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 62681]
+2023-12-29 17:53:15,700 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 62681]
+2023-12-29 17:53:15,700 django.channels.server INFO     [mHTTP POST /rental/all/ 200 [0.11, 127.0.0.1:62681][0m
+2023-12-29 17:53:18,594 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 62721]
+2023-12-29 17:53:18,767 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 17:53:18,767 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 62721]
+2023-12-29 17:53:18,767 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 62721]
+2023-12-29 17:53:18,767 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 62721]
+2023-12-29 17:53:18,767 django.channels.server INFO     [mHTTP GET /rental/categories/ 200 [0.17, 127.0.0.1:62721][0m
+2023-12-29 17:55:56,054 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 64680]
+2023-12-29 17:55:56,126 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 17:55:56,137 axes.helpers DEBUG    Using request.META.get('REMOTE_ADDR', None) fallback method to get client IP address
+2023-12-29 17:55:56,137 axes.helpers DEBUG    Using parameter credentials to get username with key settings.AXES_USERNAME_FORM_FIELD
+2023-12-29 17:55:56,137 axes.attempts DEBUG    AXES: Getting all access attempts from database because no AXES_COOLOFF_TIME is configured
+2023-12-29 17:55:56,625 axes.attempts DEBUG    AXES: Skipping clean for expired access attempts because no AXES_COOLOFF_TIME is configured
+2023-12-29 17:55:56,625 axes.handlers.database INFO     AXES: Successful login by {username: "********************", ip_address: "********************", user_agent: "Dart/3.1 (dart:io)", path_info: "/user/login/"}.
+2023-12-29 17:55:56,637 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 64680]
+2023-12-29 17:55:56,638 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 64680]
+2023-12-29 17:55:56,638 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 64680]
+2023-12-29 17:55:56,640 django.channels.server INFO     [mHTTP POST /user/login/ 200 [0.59, 127.0.0.1:64680][0m
+2023-12-29 17:56:00,002 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 64735]
+2023-12-29 17:56:00,074 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 17:56:00,142 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 64735]
+2023-12-29 17:56:00,143 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 64735]
+2023-12-29 17:56:00,144 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 64735]
+2023-12-29 17:56:00,144 django.channels.server INFO     [mHTTP POST /chat/start/ 200 [0.14, 127.0.0.1:64735][0m
+2023-12-29 17:56:04,504 django.channels.server INFO     WebSocket HANDSHAKING /chat/1/ [127.0.0.1:64804]
+2023-12-29 17:56:04,504 daphne.http_protocol DEBUG    Upgraded connection ['127.0.0.1', 64804] to WebSocket
+2023-12-29 17:56:04,507 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 64804] open and established
+2023-12-29 17:56:04,507 django.channels.server INFO     WebSocket CONNECT /chat/1/ [127.0.0.1:64804]
+2023-12-29 17:56:04,507 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 64804] accepted by application
+2023-12-29 17:56:21,800 daphne.ws_protocol DEBUG    WebSocket closed for ['127.0.0.1', 64804]
+2023-12-29 17:56:21,800 django.channels.server INFO     WebSocket DISCONNECT /chat/1/ [127.0.0.1:64804]
+2023-12-29 17:56:57,573 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 65449]
+2023-12-29 17:56:57,648 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 17:56:57,666 core.settings WARNING  That page number is less than 1
+2023-12-29 17:56:57,667 core.settings WARNING  That page contains no results
+2023-12-29 17:56:57,670 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 65449]
+2023-12-29 17:56:57,671 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 65449]
+2023-12-29 17:56:57,672 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 65449]
+2023-12-29 17:56:57,673 django.channels.server INFO     [mHTTP POST /rental/all/ 200 [0.10, 127.0.0.1:65449][0m
+2023-12-29 17:57:10,758 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 49227]
+2023-12-29 17:57:10,826 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 17:57:10,841 core.settings WARNING  That page number is less than 1
+2023-12-29 17:57:10,842 core.settings WARNING  That page contains no results
+2023-12-29 17:57:10,861 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 49227]
+2023-12-29 17:57:10,861 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 49227]
+2023-12-29 17:57:10,862 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 49227]
+2023-12-29 17:57:10,862 django.channels.server INFO     [mHTTP POST /rental/all/ 200 [0.10, 127.0.0.1:49227][0m
+2023-12-29 17:57:19,256 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 49340]
+2023-12-29 17:57:19,332 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 17:57:19,336 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 49340]
+2023-12-29 17:57:19,336 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 49340]
+2023-12-29 17:57:19,336 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 49340]
+2023-12-29 17:57:19,337 django.channels.server INFO     [mHTTP GET /rental/categories/ 200 [0.08, 127.0.0.1:49340][0m
+2023-12-29 17:57:21,724 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 49374]
+2023-12-29 17:57:21,800 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 17:57:21,814 core.settings WARNING  That page number is less than 1
+2023-12-29 17:57:21,815 core.settings WARNING  That page contains no results
+2023-12-29 17:57:21,832 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 49374]
+2023-12-29 17:57:21,833 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 49374]
+2023-12-29 17:57:21,833 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 49374]
+2023-12-29 17:57:21,834 django.channels.server INFO     [mHTTP POST /rental/all/ 200 [0.11, 127.0.0.1:49374][0m
+2023-12-29 17:58:34,333 daphne.ws_protocol DEBUG    WebSocket closed for ['127.0.0.1', 50630]
+2023-12-29 17:58:34,333 django.channels.server INFO     WebSocket DISCONNECT /chat/1/ [127.0.0.1:50630]
+2023-12-29 17:59:11,424 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 51090]
+2023-12-29 17:59:11,465 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 51091]
+2023-12-29 17:59:11,506 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 17:59:11,511 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 51090]
+2023-12-29 17:59:11,511 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 51090]
+2023-12-29 17:59:11,512 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 51090]
+2023-12-29 17:59:11,513 django.channels.server INFO     [mHTTP GET /rental/categories/ 200 [0.09, 127.0.0.1:51090][0m
+2023-12-29 17:59:11,554 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 17:59:11,575 core.settings WARNING  That page number is less than 1
+2023-12-29 17:59:11,576 core.settings WARNING  That page contains no results
+2023-12-29 17:59:11,599 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 51091]
+2023-12-29 17:59:11,601 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 51091]
+2023-12-29 17:59:11,602 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 51091]
+2023-12-29 17:59:11,603 django.channels.server INFO     [mHTTP POST /rental/all/ 200 [0.14, 127.0.0.1:51091][0m
+2023-12-29 18:00:54,954 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 52463]
+2023-12-29 18:00:55,135 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 18:00:55,147 core.settings WARNING  Token matching query does not exist.
+2023-12-29 18:00:55,149 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 52463]
+2023-12-29 18:00:55,150 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 52463]
+2023-12-29 18:00:55,151 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 52463]
+2023-12-29 18:00:55,151 django.channels.server INFO     [mHTTP POST /user/logout/ 200 [0.20, 127.0.0.1:52463][0m
+2023-12-29 18:01:07,171 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 52615]
+2023-12-29 18:01:07,247 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 18:01:07,258 core.settings WARNING  Token matching query does not exist.
+2023-12-29 18:01:07,259 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 52615]
+2023-12-29 18:01:07,260 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 52615]
+2023-12-29 18:01:07,260 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 52615]
+2023-12-29 18:01:07,260 django.channels.server INFO     [mHTTP POST /user/logout/ 200 [0.09, 127.0.0.1:52615][0m
+2023-12-29 18:01:11,825 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 52676]
+2023-12-29 18:01:11,896 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 18:01:11,908 core.settings WARNING  Token matching query does not exist.
+2023-12-29 18:01:11,910 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 52676]
+2023-12-29 18:01:11,910 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 52676]
+2023-12-29 18:01:11,910 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 52676]
+2023-12-29 18:01:11,911 django.channels.server INFO     [mHTTP POST /user/logout/ 200 [0.09, 127.0.0.1:52676][0m
+2023-12-29 19:11:00,806 daphne.ws_protocol DEBUG    WebSocket closed for ['127.0.0.1', 60692]
+2023-12-29 19:11:00,807 django.channels.server INFO     WebSocket DISCONNECT /chat/1/ [127.0.0.1:60692]
+2023-12-29 19:11:34,230 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 59114]
+2023-12-29 19:11:34,395 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 19:11:34,405 core.settings WARNING  Token matching query does not exist.
+2023-12-29 19:11:34,408 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 59114]
+2023-12-29 19:11:34,408 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 59114]
+2023-12-29 19:11:34,409 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 59114]
+2023-12-29 19:11:34,409 django.channels.server INFO     [mHTTP POST /user/logout/ 200 [0.18, 127.0.0.1:59114][0m
+2023-12-29 19:11:35,717 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 59137]
+2023-12-29 19:11:35,782 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 19:11:35,792 core.settings WARNING  Token matching query does not exist.
+2023-12-29 19:11:35,794 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 59137]
+2023-12-29 19:11:35,794 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 59137]
+2023-12-29 19:11:35,794 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 59137]
+2023-12-29 19:11:35,795 django.channels.server INFO     [mHTTP POST /user/logout/ 200 [0.08, 127.0.0.1:59137][0m
+2023-12-29 19:11:36,161 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 59146]
+2023-12-29 19:11:36,227 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 19:11:36,237 core.settings WARNING  Token matching query does not exist.
+2023-12-29 19:11:36,239 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 59146]
+2023-12-29 19:11:36,240 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 59146]
+2023-12-29 19:11:36,240 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 59146]
+2023-12-29 19:11:36,240 django.channels.server INFO     [mHTTP POST /user/logout/ 200 [0.08, 127.0.0.1:59146][0m
+2023-12-29 19:13:26,757 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 60534]
+2023-12-29 19:13:26,841 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 19:13:26,841 django.request WARNING  Method Not Allowed (GET): /user/login/
+2023-12-29 19:13:26,841 django.request WARNING  Method Not Allowed (GET): /user/login/
+2023-12-29 19:13:26,841 daphne.http_protocol DEBUG    HTTP 405 response started for ['127.0.0.1', 60534]
+2023-12-29 19:13:26,841 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 60534]
+2023-12-29 19:13:26,841 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 60534]
+2023-12-29 19:13:26,849 django.channels.server WARNING  [31;1mHTTP GET /user/login/ 405 [0.09, 127.0.0.1:60534][0m
+2023-12-29 19:13:30,410 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 60582]
+2023-12-29 19:13:30,488 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 19:13:30,502 axes.helpers DEBUG    Using request.META.get('REMOTE_ADDR', None) fallback method to get client IP address
+2023-12-29 19:13:30,503 axes.helpers DEBUG    Using parameter credentials to get username with key settings.AXES_USERNAME_FORM_FIELD
+2023-12-29 19:13:30,504 axes.attempts DEBUG    AXES: Getting all access attempts from database because no AXES_COOLOFF_TIME is configured
+2023-12-29 19:13:30,975 axes.attempts DEBUG    AXES: Skipping clean for expired access attempts because no AXES_COOLOFF_TIME is configured
+2023-12-29 19:13:30,975 axes.handlers.database INFO     AXES: Successful login by {username: "********************", ip_address: "********************", user_agent: "Thunder Client (https://www.thunderclient.com)", path_info: "/user/login/"}.
+2023-12-29 19:13:30,991 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 60582]
+2023-12-29 19:13:30,991 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 60582]
+2023-12-29 19:13:30,992 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 60582]
+2023-12-29 19:13:30,992 django.channels.server INFO     [mHTTP POST /user/login/ 200 [0.58, 127.0.0.1:60582][0m
+2023-12-29 19:14:00,439 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 60981]
+2023-12-29 19:14:00,521 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 19:14:00,555 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 60981]
+2023-12-29 19:14:00,556 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 60981]
+2023-12-29 19:14:00,557 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 60981]
+2023-12-29 19:14:00,557 django.channels.server INFO     [mHTTP GET /shinobi/user/token/ 200 [0.12, 127.0.0.1:60981][0m
+2023-12-29 19:14:00,587 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 60981]
+2023-12-29 19:14:00,681 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 19:14:00,687 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 60981]
+2023-12-29 19:14:00,688 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 60981]
+2023-12-29 19:14:00,688 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 60981]
+2023-12-29 19:14:00,688 django.channels.server INFO     [mHTTP GET /shinobi/jsi18n/ 200 [0.10, 127.0.0.1:60981][0m
+2023-12-29 19:14:00,991 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 60995]
+2023-12-29 19:14:01,095 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 19:14:01,101 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 60995]
+2023-12-29 19:14:01,101 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 60995]
+2023-12-29 19:14:01,109 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 60995]
+2023-12-29 19:14:01,109 django.channels.server INFO     [mHTTP GET /shinobi/jsi18n/ 200 [0.12, 127.0.0.1:60995][0m
+2023-12-29 19:14:08,828 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 61091]
+2023-12-29 19:14:08,914 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 19:14:08,917 axes.helpers DEBUG    Using request.META.get('REMOTE_ADDR', None) fallback method to get client IP address
+2023-12-29 19:14:08,917 axes.helpers DEBUG    Using parameter credentials to get username with key settings.AXES_USERNAME_FORM_FIELD
+2023-12-29 19:14:08,917 axes.attempts DEBUG    AXES: Getting all access attempts from database because no AXES_COOLOFF_TIME is configured
+2023-12-29 19:14:09,403 axes.attempts DEBUG    AXES: Skipping clean for expired access attempts because no AXES_COOLOFF_TIME is configured
+2023-12-29 19:14:09,403 axes.handlers.database INFO     AXES: Successful login by {username: "********************", ip_address: "********************", user_agent: "Thunder Client (https://www.thunderclient.com)", path_info: "/user/login/"}.
+2023-12-29 19:14:09,419 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 61091]
+2023-12-29 19:14:09,419 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 61091]
+2023-12-29 19:14:09,419 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 61091]
+2023-12-29 19:14:09,419 django.channels.server INFO     [mHTTP POST /user/login/ 200 [0.59, 127.0.0.1:61091][0m
+2023-12-29 19:14:13,221 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 61152]
+2023-12-29 19:14:13,298 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 19:14:13,301 axes.helpers DEBUG    Using request.META.get('REMOTE_ADDR', None) fallback method to get client IP address
+2023-12-29 19:14:13,301 axes.helpers DEBUG    Using parameter credentials to get username with key settings.AXES_USERNAME_FORM_FIELD
+2023-12-29 19:14:13,301 axes.attempts DEBUG    AXES: Getting all access attempts from database because no AXES_COOLOFF_TIME is configured
+2023-12-29 19:14:13,767 axes.attempts DEBUG    AXES: Skipping clean for expired access attempts because no AXES_COOLOFF_TIME is configured
+2023-12-29 19:14:13,767 axes.handlers.database INFO     AXES: Successful login by {username: "********************", ip_address: "********************", user_agent: "Thunder Client (https://www.thunderclient.com)", path_info: "/user/login/"}.
+2023-12-29 19:14:13,784 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 61152]
+2023-12-29 19:14:13,784 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 61152]
+2023-12-29 19:14:13,784 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 61152]
+2023-12-29 19:14:13,784 django.channels.server INFO     [mHTTP POST /user/login/ 200 [0.56, 127.0.0.1:61152][0m
+2023-12-29 19:14:16,994 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 61200]
+2023-12-29 19:14:17,069 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 19:14:17,072 axes.helpers DEBUG    Using request.META.get('REMOTE_ADDR', None) fallback method to get client IP address
+2023-12-29 19:14:17,072 axes.helpers DEBUG    Using parameter credentials to get username with key settings.AXES_USERNAME_FORM_FIELD
+2023-12-29 19:14:17,072 axes.attempts DEBUG    AXES: Getting all access attempts from database because no AXES_COOLOFF_TIME is configured
+2023-12-29 19:14:17,536 axes.attempts DEBUG    AXES: Skipping clean for expired access attempts because no AXES_COOLOFF_TIME is configured
+2023-12-29 19:14:17,536 axes.handlers.database INFO     AXES: Successful login by {username: "********************", ip_address: "********************", user_agent: "Thunder Client (https://www.thunderclient.com)", path_info: "/user/login/"}.
+2023-12-29 19:14:17,560 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 61200]
+2023-12-29 19:14:17,561 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 61200]
+2023-12-29 19:14:17,562 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 61200]
+2023-12-29 19:14:17,562 django.channels.server INFO     [mHTTP POST /user/login/ 200 [0.57, 127.0.0.1:61200][0m
+2023-12-29 19:14:21,767 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 61262]
+2023-12-29 19:14:21,945 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 19:14:21,950 core.settings WARNING  Token matching query does not exist.
+2023-12-29 19:14:21,950 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 61262]
+2023-12-29 19:14:21,950 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 61262]
+2023-12-29 19:14:21,950 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 61262]
+2023-12-29 19:14:21,950 django.channels.server INFO     [mHTTP POST /user/logout/ 200 [0.18, 127.0.0.1:61262][0m
+2023-12-29 19:14:46,849 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 61567]
+2023-12-29 19:14:46,924 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 19:14:46,932 core.settings WARNING  'authorization'
+2023-12-29 19:14:46,932 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 61567]
+2023-12-29 19:14:46,932 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 61567]
+2023-12-29 19:14:46,932 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 61567]
+2023-12-29 19:14:46,932 django.channels.server INFO     [mHTTP POST /user/logout/ 200 [0.08, 127.0.0.1:61567][0m
+2023-12-29 19:15:02,715 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 61766]
+2023-12-29 19:15:02,787 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 19:15:02,819 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 61766]
+2023-12-29 19:15:02,819 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 61766]
+2023-12-29 19:15:02,819 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 61766]
+2023-12-29 19:15:02,819 django.channels.server INFO     [mHTTP GET /shinobi/user/token/ 200 [0.10, 127.0.0.1:61766][0m
+2023-12-29 19:15:02,852 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 61766]
+2023-12-29 19:15:03,035 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 19:15:03,035 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 61766]
+2023-12-29 19:15:03,049 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 61766]
+2023-12-29 19:15:03,049 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 61766]
+2023-12-29 19:15:03,049 django.channels.server INFO     [mHTTP GET /shinobi/jsi18n/ 200 [0.20, 127.0.0.1:61766][0m
+2023-12-29 19:15:03,052 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 61778]
+2023-12-29 19:15:03,154 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 19:15:03,154 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 61778]
+2023-12-29 19:15:03,154 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 61778]
+2023-12-29 19:15:03,154 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 61778]
+2023-12-29 19:15:03,165 django.channels.server INFO     [mHTTP GET /shinobi/jsi18n/ 200 [0.11, 127.0.0.1:61778][0m
+2023-12-29 19:15:43,944 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\base\utils.py changed, reloading.
+2023-12-29 19:15:48,661 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 19:15:50,714 core.settings WARNING  base.signals loaded
+2023-12-29 19:15:50,734 core.settings WARNING  rental.signals loaded
+2023-12-29 19:15:50,750 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-29 19:15:50,813 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-29 19:15:51,612 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-29 19:15:51,612 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-29 19:15:51,617 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2023-12-29 19:15:51,617 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2023-12-29 19:15:51,618 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2023-12-29 19:15:52,133 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 62578]
+2023-12-29 19:15:52,218 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 19:15:52,221 core.settings WARNING  'authorization'
+2023-12-29 19:15:52,223 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 62578]
+2023-12-29 19:15:52,224 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 62578]
+2023-12-29 19:15:52,225 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 62578]
+2023-12-29 19:15:52,225 django.channels.server INFO     [mHTTP POST /user/logout/ 200 [0.09, 127.0.0.1:62578][0m
+2023-12-29 19:18:00,758 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 64209]
+2023-12-29 19:18:00,830 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 19:18:02,981 axes.helpers DEBUG    Using request.META.get('REMOTE_ADDR', None) fallback method to get client IP address
+2023-12-29 19:18:02,984 axes.attempts DEBUG    AXES: Skipping clean for expired access attempts because no AXES_COOLOFF_TIME is configured
+2023-12-29 19:18:02,985 axes.handlers.database INFO     AXES: Successful logout by {username: "********************", ip_address: "********************", user_agent: "Thunder Client (https://www.thunderclient.com)", path_info: "/user/logout/"}.
+2023-12-29 19:18:02,998 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 64209]
+2023-12-29 19:18:02,999 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 64209]
+2023-12-29 19:18:03,000 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 64209]
+2023-12-29 19:18:03,000 django.channels.server INFO     [mHTTP POST /user/logout/ 200 [2.24, 127.0.0.1:64209][0m
+2023-12-29 19:18:11,441 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 64345]
+2023-12-29 19:18:11,503 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 19:18:11,513 core.settings WARNING  Token matching query does not exist.
+2023-12-29 19:18:11,515 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 64345]
+2023-12-29 19:18:11,516 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 64345]
+2023-12-29 19:18:11,516 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 64345]
+2023-12-29 19:18:11,516 django.channels.server INFO     [mHTTP POST /user/logout/ 200 [0.07, 127.0.0.1:64345][0m
+2023-12-29 20:32:04,056 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 55683]
+2023-12-29 20:32:04,106 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 55684]
+2023-12-29 20:32:04,166 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 20:32:04,177 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 55683]
+2023-12-29 20:32:04,177 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 55683]
+2023-12-29 20:32:04,178 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 55683]
+2023-12-29 20:32:04,178 django.channels.server INFO     [mHTTP GET /rental/categories/ 200 [0.12, 127.0.0.1:55683][0m
+2023-12-29 20:32:04,217 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 20:32:04,231 core.settings WARNING  That page number is less than 1
+2023-12-29 20:32:04,232 core.settings WARNING  That page contains no results
+2023-12-29 20:32:04,269 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 55684]
+2023-12-29 20:32:04,269 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 55684]
+2023-12-29 20:32:04,269 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 55684]
+2023-12-29 20:32:04,269 django.channels.server INFO     [mHTTP POST /rental/all/ 200 [0.16, 127.0.0.1:55684][0m
+2023-12-29 20:42:20,133 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 64781]
+2023-12-29 20:42:20,204 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 20:42:20,217 axes.helpers DEBUG    Using request.META.get('REMOTE_ADDR', None) fallback method to get client IP address
+2023-12-29 20:42:20,218 axes.helpers DEBUG    Using parameter credentials to get username with key settings.AXES_USERNAME_FORM_FIELD
+2023-12-29 20:42:20,220 axes.attempts DEBUG    AXES: Getting all access attempts from database because no AXES_COOLOFF_TIME is configured
+2023-12-29 20:42:20,794 axes.attempts DEBUG    AXES: Skipping clean for expired access attempts because no AXES_COOLOFF_TIME is configured
+2023-12-29 20:42:20,795 axes.handlers.database INFO     AXES: Successful login by {username: "********************", ip_address: "********************", user_agent: "Thunder Client (https://www.thunderclient.com)", path_info: "/user/login/"}.
+2023-12-29 20:42:20,811 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 64781]
+2023-12-29 20:42:20,812 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 64781]
+2023-12-29 20:42:20,812 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 64781]
+2023-12-29 20:42:20,813 django.channels.server INFO     [mHTTP POST /user/login/ 200 [0.68, 127.0.0.1:64781][0m
+2023-12-29 20:42:37,813 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 64996]
+2023-12-29 20:42:37,892 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 20:42:37,900 django.request WARNING  Method Not Allowed (POST): /chat/all/
+2023-12-29 20:42:37,900 django.request WARNING  Method Not Allowed (POST): /chat/all/
+2023-12-29 20:42:37,903 daphne.http_protocol DEBUG    HTTP 405 response started for ['127.0.0.1', 64996]
+2023-12-29 20:42:37,905 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 64996]
+2023-12-29 20:42:37,905 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 64996]
+2023-12-29 20:42:37,905 django.channels.server WARNING  [31;1mHTTP POST /chat/all/ 405 [0.09, 127.0.0.1:64996][0m
+2023-12-29 20:42:41,155 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 65041]
+2023-12-29 20:42:41,234 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 20:42:41,248 core.settings WARNING  That page number is less than 1
+2023-12-29 20:42:41,248 core.settings WARNING  That page contains no results
+2023-12-29 20:42:41,301 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 65041]
+2023-12-29 20:42:41,301 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 65041]
+2023-12-29 20:42:41,302 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 65041]
+2023-12-29 20:42:41,302 django.channels.server INFO     [mHTTP GET /chat/all/ 200 [0.15, 127.0.0.1:65041][0m
+2023-12-29 20:50:24,244 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 55020]
+2023-12-29 20:50:24,343 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 20:50:24,359 axes.helpers DEBUG    Using request.META.get('REMOTE_ADDR', None) fallback method to get client IP address
+2023-12-29 20:50:24,359 axes.helpers DEBUG    Using parameter credentials to get username with key settings.AXES_USERNAME_FORM_FIELD
+2023-12-29 20:50:24,360 axes.attempts DEBUG    AXES: Getting all access attempts from database because no AXES_COOLOFF_TIME is configured
+2023-12-29 20:50:24,895 axes.attempts DEBUG    AXES: Skipping clean for expired access attempts because no AXES_COOLOFF_TIME is configured
+2023-12-29 20:50:24,896 axes.handlers.database INFO     AXES: Successful login by {username: "********************", ip_address: "********************", user_agent: "Dart/3.1 (dart:io)", path_info: "/user/login/"}.
+2023-12-29 20:50:24,910 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 55020]
+2023-12-29 20:50:24,911 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 55020]
+2023-12-29 20:50:24,911 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 55020]
+2023-12-29 20:50:24,912 django.channels.server INFO     [mHTTP POST /user/login/ 200 [0.67, 127.0.0.1:55020][0m
+2023-12-29 20:50:24,985 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 55034]
+2023-12-29 20:50:25,056 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 20:50:25,069 core.settings WARNING  That page number is less than 1
+2023-12-29 20:50:25,069 core.settings WARNING  That page contains no results
+2023-12-29 20:50:25,109 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 55034]
+2023-12-29 20:50:25,110 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 55034]
+2023-12-29 20:50:25,110 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 55034]
+2023-12-29 20:50:25,110 django.channels.server INFO     [mHTTP GET /chat/all/ 200 [0.13, 127.0.0.1:55034][0m
+2023-12-29 20:50:39,024 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 55630]
+2023-12-29 20:50:39,027 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 55631]
+2023-12-29 20:50:39,127 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 20:50:39,129 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 20:50:39,136 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 55630]
+2023-12-29 20:50:39,136 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 55630]
+2023-12-29 20:50:39,137 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 55630]
+2023-12-29 20:50:39,137 django.channels.server INFO     [mHTTP GET /rental/categories/ 200 [0.11, 127.0.0.1:55630][0m
+2023-12-29 20:50:39,147 core.settings WARNING  That page number is less than 1
+2023-12-29 20:50:39,147 core.settings WARNING  That page contains no results
+2023-12-29 20:50:39,165 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 55631]
+2023-12-29 20:50:39,166 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 55631]
+2023-12-29 20:50:39,166 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 55631]
+2023-12-29 20:50:39,167 django.channels.server INFO     [mHTTP POST /rental/all/ 200 [0.14, 127.0.0.1:55631][0m
+2023-12-29 20:50:40,483 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 55662]
+2023-12-29 20:50:40,555 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 20:50:40,571 core.settings WARNING  That page number is less than 1
+2023-12-29 20:50:40,571 core.settings WARNING  That page contains no results
+2023-12-29 20:50:40,615 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 55662]
+2023-12-29 20:50:40,616 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 55662]
+2023-12-29 20:50:40,616 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 55662]
+2023-12-29 20:50:40,617 django.channels.server INFO     [mHTTP GET /chat/all/ 200 [0.13, 127.0.0.1:55662][0m
+2023-12-29 20:51:04,673 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 55991]
+2023-12-29 20:51:04,797 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 20:51:04,818 core.settings WARNING  That page number is less than 1
+2023-12-29 20:51:04,819 core.settings WARNING  That page contains no results
+2023-12-29 20:51:04,886 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 55991]
+2023-12-29 20:51:04,887 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 55991]
+2023-12-29 20:51:04,887 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 55991]
+2023-12-29 20:51:04,888 django.channels.server INFO     [mHTTP GET /chat/all/ 200 [0.21, 127.0.0.1:55991][0m
+2023-12-29 20:52:20,656 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 57327]
+2023-12-29 20:52:20,730 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 20:52:20,746 core.settings WARNING  That page number is less than 1
+2023-12-29 20:52:20,747 core.settings WARNING  That page contains no results
+2023-12-29 20:52:20,790 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 57327]
+2023-12-29 20:52:20,791 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 57327]
+2023-12-29 20:52:20,791 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 57327]
+2023-12-29 20:52:20,791 django.channels.server INFO     [mHTTP GET /chat/all/ 200 [0.14, 127.0.0.1:57327][0m
+2023-12-29 21:01:33,087 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 64153]
+2023-12-29 21:01:33,117 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 64154]
+2023-12-29 21:01:33,165 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:01:33,168 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 64153]
+2023-12-29 21:01:33,169 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 64153]
+2023-12-29 21:01:33,170 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 64153]
+2023-12-29 21:01:33,170 django.channels.server INFO     [mHTTP GET /rental/categories/ 200 [0.08, 127.0.0.1:64153][0m
+2023-12-29 21:01:33,187 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:01:33,199 core.settings WARNING  That page number is less than 1
+2023-12-29 21:01:33,199 core.settings WARNING  That page contains no results
+2023-12-29 21:01:33,213 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 64154]
+2023-12-29 21:01:33,213 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 64154]
+2023-12-29 21:01:33,214 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 64154]
+2023-12-29 21:01:33,215 django.channels.server INFO     [mHTTP POST /rental/all/ 200 [0.10, 127.0.0.1:64154][0m
+2023-12-29 21:01:41,911 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 64276]
+2023-12-29 21:01:41,999 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:01:42,019 core.settings WARNING  That page number is less than 1
+2023-12-29 21:01:42,019 core.settings WARNING  That page contains no results
+2023-12-29 21:01:42,081 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 64276]
+2023-12-29 21:01:42,081 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 64276]
+2023-12-29 21:01:42,083 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 64276]
+2023-12-29 21:01:42,083 django.channels.server INFO     [mHTTP GET /chat/all/ 200 [0.17, 127.0.0.1:64276][0m
+2023-12-29 21:03:40,901 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 49432]
+2023-12-29 21:03:40,993 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 49433]
+2023-12-29 21:03:40,996 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:03:40,999 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 49432]
+2023-12-29 21:03:41,000 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 49432]
+2023-12-29 21:03:41,000 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 49432]
+2023-12-29 21:03:41,001 django.channels.server INFO     [mHTTP GET /rental/categories/ 200 [0.10, 127.0.0.1:49432][0m
+2023-12-29 21:03:41,077 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:03:41,094 core.settings WARNING  That page number is less than 1
+2023-12-29 21:03:41,095 core.settings WARNING  That page contains no results
+2023-12-29 21:03:41,119 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 49433]
+2023-12-29 21:03:41,121 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 49433]
+2023-12-29 21:03:41,121 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 49433]
+2023-12-29 21:03:41,122 django.channels.server INFO     [mHTTP POST /rental/all/ 200 [0.13, 127.0.0.1:49433][0m
+2023-12-29 21:03:46,034 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 49503]
+2023-12-29 21:03:46,107 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:03:46,120 core.settings WARNING  That page number is less than 1
+2023-12-29 21:03:46,121 core.settings WARNING  That page contains no results
+2023-12-29 21:03:46,161 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 49503]
+2023-12-29 21:03:46,161 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 49503]
+2023-12-29 21:03:46,162 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 49503]
+2023-12-29 21:03:46,162 django.channels.server INFO     [mHTTP GET /chat/all/ 200 [0.13, 127.0.0.1:49503][0m
+2023-12-29 21:08:55,567 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 53626]
+2023-12-29 21:08:55,571 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 53627]
+2023-12-29 21:08:55,646 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:08:55,647 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:08:55,651 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 53626]
+2023-12-29 21:08:55,653 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 53626]
+2023-12-29 21:08:55,654 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 53626]
+2023-12-29 21:08:55,654 django.channels.server INFO     [mHTTP GET /rental/categories/ 200 [0.09, 127.0.0.1:53626][0m
+2023-12-29 21:08:55,663 core.settings WARNING  That page number is less than 1
+2023-12-29 21:08:55,664 core.settings WARNING  That page contains no results
+2023-12-29 21:08:55,678 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 53627]
+2023-12-29 21:08:55,679 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 53627]
+2023-12-29 21:08:55,679 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 53627]
+2023-12-29 21:08:55,679 django.channels.server INFO     [mHTTP POST /rental/all/ 200 [0.11, 127.0.0.1:53627][0m
+2023-12-29 21:09:46,254 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 54298]
+2023-12-29 21:09:46,324 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:09:46,338 core.settings WARNING  That page number is less than 1
+2023-12-29 21:09:46,339 core.settings WARNING  That page contains no results
+2023-12-29 21:09:46,377 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 54298]
+2023-12-29 21:09:46,378 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 54298]
+2023-12-29 21:09:46,379 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 54298]
+2023-12-29 21:09:46,379 django.channels.server INFO     [mHTTP GET /chat/all/ 200 [0.13, 127.0.0.1:54298][0m
+2023-12-29 21:28:12,156 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 53215]
+2023-12-29 21:28:12,239 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:28:12,251 core.settings WARNING  That page number is less than 1
+2023-12-29 21:28:12,251 core.settings WARNING  That page contains no results
+2023-12-29 21:28:12,301 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 53215]
+2023-12-29 21:28:12,301 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 53215]
+2023-12-29 21:28:12,302 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 53215]
+2023-12-29 21:28:12,302 django.channels.server INFO     [mHTTP GET /chat/all/ 200 [0.15, 127.0.0.1:53215][0m
+2023-12-29 21:29:21,295 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 54129]
+2023-12-29 21:29:21,343 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 54130]
+2023-12-29 21:29:21,373 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:29:21,377 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 54129]
+2023-12-29 21:29:21,377 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 54129]
+2023-12-29 21:29:21,378 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 54129]
+2023-12-29 21:29:21,378 django.channels.server INFO     [mHTTP GET /rental/categories/ 200 [0.08, 127.0.0.1:54129][0m
+2023-12-29 21:29:21,411 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:29:21,423 core.settings WARNING  That page number is less than 1
+2023-12-29 21:29:21,424 core.settings WARNING  That page contains no results
+2023-12-29 21:29:21,439 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 54130]
+2023-12-29 21:29:21,439 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 54130]
+2023-12-29 21:29:21,440 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 54130]
+2023-12-29 21:29:21,440 django.channels.server INFO     [mHTTP POST /rental/all/ 200 [0.10, 127.0.0.1:54130][0m
+2023-12-29 21:29:27,840 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 54218]
+2023-12-29 21:29:27,911 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:29:27,925 core.settings WARNING  That page number is less than 1
+2023-12-29 21:29:27,926 core.settings WARNING  That page contains no results
+2023-12-29 21:29:27,971 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 54218]
+2023-12-29 21:29:27,972 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 54218]
+2023-12-29 21:29:27,972 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 54218]
+2023-12-29 21:29:27,972 django.channels.server INFO     [mHTTP GET /chat/all/ 200 [0.13, 127.0.0.1:54218][0m
+2023-12-29 21:29:54,930 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 54573]
+2023-12-29 21:29:54,934 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 54574]
+2023-12-29 21:29:55,007 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:29:55,010 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 54573]
+2023-12-29 21:29:55,010 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 54573]
+2023-12-29 21:29:55,011 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 54573]
+2023-12-29 21:29:55,011 django.channels.server INFO     [mHTTP GET /rental/categories/ 200 [0.08, 127.0.0.1:54573][0m
+2023-12-29 21:29:55,012 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:29:55,026 core.settings WARNING  That page number is less than 1
+2023-12-29 21:29:55,026 core.settings WARNING  That page contains no results
+2023-12-29 21:29:55,039 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 54574]
+2023-12-29 21:29:55,039 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 54574]
+2023-12-29 21:29:55,040 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 54574]
+2023-12-29 21:29:55,040 django.channels.server INFO     [mHTTP POST /rental/all/ 200 [0.11, 127.0.0.1:54574][0m
+2023-12-29 21:29:56,618 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 54604]
+2023-12-29 21:29:56,695 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:29:56,711 core.settings WARNING  That page number is less than 1
+2023-12-29 21:29:56,711 core.settings WARNING  That page contains no results
+2023-12-29 21:29:56,752 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 54604]
+2023-12-29 21:29:56,754 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 54604]
+2023-12-29 21:29:56,754 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 54604]
+2023-12-29 21:29:56,754 django.channels.server INFO     [mHTTP GET /chat/all/ 200 [0.14, 127.0.0.1:54604][0m
+2023-12-29 21:30:53,059 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 55818]
+2023-12-29 21:30:53,062 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 55819]
+2023-12-29 21:30:53,145 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:30:53,152 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:30:53,157 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 55818]
+2023-12-29 21:30:53,158 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 55818]
+2023-12-29 21:30:53,159 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 55818]
+2023-12-29 21:30:53,159 django.channels.server INFO     [mHTTP GET /rental/categories/ 200 [0.10, 127.0.0.1:55818][0m
+2023-12-29 21:30:53,161 core.settings WARNING  That page number is less than 1
+2023-12-29 21:30:53,162 core.settings WARNING  That page contains no results
+2023-12-29 21:30:53,181 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 55819]
+2023-12-29 21:30:53,181 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 55819]
+2023-12-29 21:30:53,182 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 55819]
+2023-12-29 21:30:53,182 django.channels.server INFO     [mHTTP POST /rental/all/ 200 [0.12, 127.0.0.1:55819][0m
+2023-12-29 21:30:53,999 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 55836]
+2023-12-29 21:30:54,076 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:30:54,093 core.settings WARNING  That page number is less than 1
+2023-12-29 21:30:54,094 core.settings WARNING  That page contains no results
+2023-12-29 21:30:54,137 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 55836]
+2023-12-29 21:30:54,137 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 55836]
+2023-12-29 21:30:54,138 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 55836]
+2023-12-29 21:30:54,138 django.channels.server INFO     [mHTTP GET /chat/all/ 200 [0.14, 127.0.0.1:55836][0m
+2023-12-29 21:41:19,453 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 64182]
+2023-12-29 21:41:19,456 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 64183]
+2023-12-29 21:41:19,527 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:41:19,531 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 64182]
+2023-12-29 21:41:19,531 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 64182]
+2023-12-29 21:41:19,531 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 64182]
+2023-12-29 21:41:19,531 django.channels.server INFO     [mHTTP GET /rental/categories/ 200 [0.08, 127.0.0.1:64182][0m
+2023-12-29 21:41:19,533 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:41:19,546 core.settings WARNING  That page number is less than 1
+2023-12-29 21:41:19,547 core.settings WARNING  That page contains no results
+2023-12-29 21:41:19,560 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 64183]
+2023-12-29 21:41:19,561 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 64183]
+2023-12-29 21:41:19,561 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 64183]
+2023-12-29 21:41:19,561 django.channels.server INFO     [mHTTP POST /rental/all/ 200 [0.11, 127.0.0.1:64183][0m
+2023-12-29 21:41:22,974 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 64232]
+2023-12-29 21:41:23,050 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:41:23,108 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 64232]
+2023-12-29 21:41:23,108 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 64232]
+2023-12-29 21:41:23,109 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 64232]
+2023-12-29 21:41:23,109 django.channels.server INFO     [mHTTP POST /chat/start/ 200 [0.13, 127.0.0.1:64232][0m
+2023-12-29 21:41:23,288 django.channels.server INFO     WebSocket HANDSHAKING /chat/1/ [127.0.0.1:64242]
+2023-12-29 21:41:23,289 daphne.http_protocol DEBUG    Upgraded connection ['127.0.0.1', 64242] to WebSocket
+2023-12-29 21:41:23,373 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 64242] open and established
+2023-12-29 21:41:23,373 django.channels.server INFO     WebSocket CONNECT /chat/1/ [127.0.0.1:64242]
+2023-12-29 21:41:23,374 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 64242] accepted by application
+2023-12-29 21:41:37,310 daphne.ws_protocol DEBUG    WebSocket incoming frame on ['127.0.0.1', 64242]
+2023-12-29 21:41:37,491 daphne.ws_protocol DEBUG    Sent WebSocket packet to client for ['127.0.0.1', 64242]
+2023-12-29 21:41:47,914 daphne.ws_protocol DEBUG    WebSocket closed for ['127.0.0.1', 64242]
+2023-12-29 21:41:47,915 django.channels.server INFO     WebSocket DISCONNECT /chat/1/ [127.0.0.1:64242]
+2023-12-29 21:41:51,137 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 64583]
+2023-12-29 21:41:51,207 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:41:51,222 core.settings WARNING  That page number is less than 1
+2023-12-29 21:41:51,223 core.settings WARNING  That page contains no results
+2023-12-29 21:41:51,264 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 64583]
+2023-12-29 21:41:51,265 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 64583]
+2023-12-29 21:41:51,265 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 64583]
+2023-12-29 21:41:51,265 django.channels.server INFO     [mHTTP GET /chat/all/ 200 [0.13, 127.0.0.1:64583][0m
+2023-12-29 21:49:06,065 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\chat\views.py changed, reloading.
+2023-12-29 21:49:10,033 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:49:11,884 core.settings WARNING  base.signals loaded
+2023-12-29 21:49:11,902 core.settings WARNING  rental.signals loaded
+2023-12-29 21:49:11,916 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-29 21:49:11,979 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-29 21:49:12,935 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-29 21:49:12,935 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-29 21:49:12,962 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2023-12-29 21:49:12,963 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2023-12-29 21:49:12,964 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2023-12-29 21:49:31,405 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 54655]
+2023-12-29 21:49:31,493 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:49:33,665 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 54655]
+2023-12-29 21:49:33,666 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 54655]
+2023-12-29 21:49:33,666 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 54655]
+2023-12-29 21:49:33,667 django.channels.server INFO     [mHTTP POST /chat/start/ 200 [2.26, 127.0.0.1:54655][0m
+2023-12-29 21:49:33,702 django.channels.server INFO     WebSocket HANDSHAKING /chat/1/ [127.0.0.1:54692]
+2023-12-29 21:49:33,702 daphne.http_protocol DEBUG    Upgraded connection ['127.0.0.1', 54692] to WebSocket
+2023-12-29 21:49:33,711 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 54692] open and established
+2023-12-29 21:49:33,712 django.channels.server INFO     WebSocket CONNECT /chat/1/ [127.0.0.1:54692]
+2023-12-29 21:49:33,712 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 54692] accepted by application
+2023-12-29 21:49:35,156 daphne.ws_protocol DEBUG    WebSocket closed for ['127.0.0.1', 54692]
+2023-12-29 21:49:35,156 django.channels.server INFO     WebSocket DISCONNECT /chat/1/ [127.0.0.1:54692]
+2023-12-29 21:49:36,196 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 54725]
+2023-12-29 21:49:36,266 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:49:36,332 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 54725]
+2023-12-29 21:49:36,333 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 54725]
+2023-12-29 21:49:36,334 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 54725]
+2023-12-29 21:49:36,334 django.channels.server INFO     [mHTTP POST /chat/start/ 200 [0.14, 127.0.0.1:54725][0m
+2023-12-29 21:49:36,358 django.channels.server INFO     WebSocket HANDSHAKING /chat/1/ [127.0.0.1:54730]
+2023-12-29 21:49:36,359 daphne.http_protocol DEBUG    Upgraded connection ['127.0.0.1', 54730] to WebSocket
+2023-12-29 21:49:36,365 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 54730] open and established
+2023-12-29 21:49:36,365 django.channels.server INFO     WebSocket CONNECT /chat/1/ [127.0.0.1:54730]
+2023-12-29 21:49:36,366 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 54730] accepted by application
+2023-12-29 21:49:37,912 daphne.ws_protocol DEBUG    WebSocket closed for ['127.0.0.1', 54730]
+2023-12-29 21:49:37,912 django.channels.server INFO     WebSocket DISCONNECT /chat/1/ [127.0.0.1:54730]
+2023-12-29 21:49:38,494 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 54759]
+2023-12-29 21:49:38,565 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:49:38,625 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 54759]
+2023-12-29 21:49:38,626 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 54759]
+2023-12-29 21:49:38,626 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 54759]
+2023-12-29 21:49:38,626 django.channels.server INFO     [mHTTP POST /chat/start/ 200 [0.13, 127.0.0.1:54759][0m
+2023-12-29 21:49:38,641 django.channels.server INFO     WebSocket HANDSHAKING /chat/1/ [127.0.0.1:54764]
+2023-12-29 21:49:38,642 daphne.http_protocol DEBUG    Upgraded connection ['127.0.0.1', 54764] to WebSocket
+2023-12-29 21:49:38,647 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 54764] open and established
+2023-12-29 21:49:38,647 django.channels.server INFO     WebSocket CONNECT /chat/1/ [127.0.0.1:54764]
+2023-12-29 21:49:38,648 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 54764] accepted by application
+2023-12-29 21:49:40,216 daphne.ws_protocol DEBUG    WebSocket closed for ['127.0.0.1', 54764]
+2023-12-29 21:49:40,217 django.channels.server INFO     WebSocket DISCONNECT /chat/1/ [127.0.0.1:54764]
+2023-12-29 21:49:40,726 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 54790]
+2023-12-29 21:49:40,794 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:49:40,849 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 54790]
+2023-12-29 21:49:40,850 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 54790]
+2023-12-29 21:49:40,850 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 54790]
+2023-12-29 21:49:40,850 django.channels.server INFO     [mHTTP POST /chat/start/ 200 [0.12, 127.0.0.1:54790][0m
+2023-12-29 21:49:40,868 django.channels.server INFO     WebSocket HANDSHAKING /chat/1/ [127.0.0.1:54795]
+2023-12-29 21:49:40,869 daphne.http_protocol DEBUG    Upgraded connection ['127.0.0.1', 54795] to WebSocket
+2023-12-29 21:49:40,872 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 54795] open and established
+2023-12-29 21:49:40,873 django.channels.server INFO     WebSocket CONNECT /chat/1/ [127.0.0.1:54795]
+2023-12-29 21:49:40,873 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 54795] accepted by application
+2023-12-29 21:49:42,314 daphne.ws_protocol DEBUG    WebSocket closed for ['127.0.0.1', 54795]
+2023-12-29 21:49:42,314 django.channels.server INFO     WebSocket DISCONNECT /chat/1/ [127.0.0.1:54795]
+2023-12-29 21:51:35,991 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 57023]
+2023-12-29 21:51:36,067 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:51:36,127 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 57023]
+2023-12-29 21:51:36,127 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 57023]
+2023-12-29 21:51:36,128 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 57023]
+2023-12-29 21:51:36,128 django.channels.server INFO     [mHTTP POST /chat/start/ 200 [0.14, 127.0.0.1:57023][0m
+2023-12-29 21:51:36,147 django.channels.server INFO     WebSocket HANDSHAKING /chat/1/ [127.0.0.1:57030]
+2023-12-29 21:51:36,147 daphne.http_protocol DEBUG    Upgraded connection ['127.0.0.1', 57030] to WebSocket
+2023-12-29 21:51:36,152 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 57030] open and established
+2023-12-29 21:51:36,152 django.channels.server INFO     WebSocket CONNECT /chat/1/ [127.0.0.1:57030]
+2023-12-29 21:51:36,153 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 57030] accepted by application
+2023-12-29 21:51:57,323 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 57306]
+2023-12-29 21:51:57,514 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:51:57,838 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 57306]
+2023-12-29 21:51:57,839 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 57306]
+2023-12-29 21:51:57,840 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 57306]
+2023-12-29 21:51:57,841 django.channels.server INFO     [mHTTP GET /shinobi/chat/message/ 200 [0.52, 127.0.0.1:57306][0m
+2023-12-29 21:51:57,863 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 57306]
+2023-12-29 21:51:57,866 daphne.http_protocol DEBUG    HTTP 304 response started for ['127.0.0.1', 57306]
+2023-12-29 21:51:57,867 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 57306]
+2023-12-29 21:51:57,869 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 57306]
+2023-12-29 21:51:57,869 django.channels.server INFO     [36mHTTP GET /static/admin/css/base.css 304 [0.01, 127.0.0.1:57306][0m
+2023-12-29 21:51:57,872 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 57308]
+2023-12-29 21:51:57,875 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 57319]
+2023-12-29 21:51:57,877 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 57318]
+2023-12-29 21:51:57,880 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 57306]
+2023-12-29 21:51:57,881 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 57321]
+2023-12-29 21:51:57,881 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 57320]
+2023-12-29 21:51:57,889 daphne.http_protocol DEBUG    HTTP 304 response started for ['127.0.0.1', 57308]
+2023-12-29 21:51:57,891 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 57308]
+2023-12-29 21:51:57,891 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 57308]
+2023-12-29 21:51:57,892 django.channels.server INFO     [36mHTTP GET /static/admin/css/dark_mode.css 304 [0.02, 127.0.0.1:57308][0m
+2023-12-29 21:51:57,895 daphne.http_protocol DEBUG    HTTP 304 response started for ['127.0.0.1', 57319]
+2023-12-29 21:51:57,896 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 57319]
+2023-12-29 21:51:57,897 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 57319]
+2023-12-29 21:51:57,897 django.channels.server INFO     [36mHTTP GET /static/admin/css/changelists.css 304 [0.02, 127.0.0.1:57319][0m
+2023-12-29 21:51:57,899 daphne.http_protocol DEBUG    HTTP 304 response started for ['127.0.0.1', 57318]
+2023-12-29 21:51:57,900 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 57318]
+2023-12-29 21:51:57,901 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 57318]
+2023-12-29 21:51:57,901 django.channels.server INFO     [36mHTTP GET /static/admin/css/nav_sidebar.css 304 [0.02, 127.0.0.1:57318][0m
+2023-12-29 21:51:57,903 daphne.http_protocol DEBUG    HTTP 304 response started for ['127.0.0.1', 57321]
+2023-12-29 21:51:57,904 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 57321]
+2023-12-29 21:51:57,905 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 57321]
+2023-12-29 21:51:57,907 django.channels.server INFO     [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.03, 127.0.0.1:57321][0m
+2023-12-29 21:51:57,908 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 57308]
+2023-12-29 21:51:57,909 daphne.http_protocol DEBUG    HTTP 304 response started for ['127.0.0.1', 57320]
+2023-12-29 21:51:57,909 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 57320]
+2023-12-29 21:51:57,910 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 57320]
+2023-12-29 21:51:57,911 django.channels.server INFO     [36mHTTP GET /static/admin/js/vendor/jquery/jquery.js 304 [0.03, 127.0.0.1:57320][0m
+2023-12-29 21:51:57,913 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 57319]
+2023-12-29 21:51:57,915 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 57321]
+2023-12-29 21:51:57,920 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 57318]
+2023-12-29 21:51:57,928 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 57320]
+2023-12-29 21:51:57,932 daphne.http_protocol DEBUG    HTTP 304 response started for ['127.0.0.1', 57308]
+2023-12-29 21:51:57,933 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 57308]
+2023-12-29 21:51:57,934 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 57308]
+2023-12-29 21:51:57,935 django.channels.server INFO     [36mHTTP GET /static/admin/css/responsive.css 304 [0.03, 127.0.0.1:57308][0m
+2023-12-29 21:51:57,937 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 57324]
+2023-12-29 21:51:57,939 daphne.http_protocol DEBUG    HTTP 304 response started for ['127.0.0.1', 57319]
+2023-12-29 21:51:57,941 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 57319]
+2023-12-29 21:51:57,941 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 57319]
+2023-12-29 21:51:57,942 django.channels.server INFO     [36mHTTP GET /static/admin/js/core.js 304 [0.03, 127.0.0.1:57319][0m
+2023-12-29 21:51:57,944 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 57325]
+2023-12-29 21:51:57,945 daphne.http_protocol DEBUG    HTTP 304 response started for ['127.0.0.1', 57321]
+2023-12-29 21:51:57,945 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 57321]
+2023-12-29 21:51:57,946 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 57321]
+2023-12-29 21:51:57,946 django.channels.server INFO     [36mHTTP GET /static/admin/js/actions.js 304 [0.03, 127.0.0.1:57321][0m
+2023-12-29 21:51:57,950 daphne.http_protocol DEBUG    HTTP 304 response started for ['127.0.0.1', 57318]
+2023-12-29 21:51:57,951 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 57318]
+2023-12-29 21:51:57,951 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 57318]
+2023-12-29 21:51:57,952 django.channels.server INFO     [36mHTTP GET /static/admin/js/prepopulate.js 304 [0.03, 127.0.0.1:57318][0m
+2023-12-29 21:51:57,954 daphne.http_protocol DEBUG    HTTP 304 response started for ['127.0.0.1', 57320]
+2023-12-29 21:51:57,954 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 57320]
+2023-12-29 21:51:57,955 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 57320]
+2023-12-29 21:51:57,955 django.channels.server INFO     [36mHTTP GET /static/admin/js/admin/RelatedObjectLookups.js 304 [0.03, 127.0.0.1:57320][0m
+2023-12-29 21:51:57,957 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 57308]
+2023-12-29 21:51:57,960 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 57319]
+2023-12-29 21:51:57,961 daphne.http_protocol DEBUG    HTTP 304 response started for ['127.0.0.1', 57324]
+2023-12-29 21:51:57,962 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 57324]
+2023-12-29 21:51:57,963 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 57324]
+2023-12-29 21:51:57,964 django.channels.server INFO     [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.03, 127.0.0.1:57324][0m
+2023-12-29 21:51:57,968 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 57326]
+2023-12-29 21:51:57,969 daphne.http_protocol DEBUG    HTTP 304 response started for ['127.0.0.1', 57325]
+2023-12-29 21:51:57,970 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 57325]
+2023-12-29 21:51:57,971 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 57325]
+2023-12-29 21:51:57,972 django.channels.server INFO     [36mHTTP GET /static/admin/js/vendor/jquery/jquery.js 304 [0.03, 127.0.0.1:57325][0m
+2023-12-29 21:51:57,976 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 57327]
+2023-12-29 21:51:57,977 daphne.http_protocol DEBUG    HTTP 304 response started for ['127.0.0.1', 57308]
+2023-12-29 21:51:57,978 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 57308]
+2023-12-29 21:51:57,978 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 57308]
+2023-12-29 21:51:57,979 django.channels.server INFO     [36mHTTP GET /static/admin/js/urlify.js 304 [0.02, 127.0.0.1:57308][0m
+2023-12-29 21:51:57,982 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 57329]
+2023-12-29 21:51:57,984 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 57330]
+2023-12-29 21:51:57,987 daphne.http_protocol DEBUG    HTTP 304 response started for ['127.0.0.1', 57319]
+2023-12-29 21:51:57,988 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 57319]
+2023-12-29 21:51:57,989 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 57319]
+2023-12-29 21:51:57,989 django.channels.server INFO     [36mHTTP GET /static/admin/js/vendor/xregexp/xregexp.js 304 [0.03, 127.0.0.1:57319][0m
+2023-12-29 21:51:57,991 daphne.http_protocol DEBUG    HTTP 304 response started for ['127.0.0.1', 57326]
+2023-12-29 21:51:57,991 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 57326]
+2023-12-29 21:51:57,992 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 57326]
+2023-12-29 21:51:57,992 django.channels.server INFO     [36mHTTP GET /static/admin/js/core.js 304 [0.02, 127.0.0.1:57326][0m
+2023-12-29 21:51:57,996 daphne.http_protocol DEBUG    HTTP 304 response started for ['127.0.0.1', 57327]
+2023-12-29 21:51:57,997 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 57327]
+2023-12-29 21:51:57,998 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 57327]
+2023-12-29 21:51:57,998 django.channels.server INFO     [36mHTTP GET /static/admin/js/actions.js 304 [0.02, 127.0.0.1:57327][0m
+2023-12-29 21:51:58,000 daphne.http_protocol DEBUG    HTTP 304 response started for ['127.0.0.1', 57329]
+2023-12-29 21:51:58,001 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 57329]
+2023-12-29 21:51:58,002 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 57329]
+2023-12-29 21:51:58,002 django.channels.server INFO     [36mHTTP GET /static/admin/js/admin/RelatedObjectLookups.js 304 [0.02, 127.0.0.1:57329][0m
+2023-12-29 21:51:58,006 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:51:58,007 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 57319]
+2023-12-29 21:51:58,008 daphne.http_protocol DEBUG    HTTP 304 response started for ['127.0.0.1', 57330]
+2023-12-29 21:51:58,009 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 57330]
+2023-12-29 21:51:58,010 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 57330]
+2023-12-29 21:51:58,011 django.channels.server INFO     [36mHTTP GET /static/admin/js/prepopulate.js 304 [0.03, 127.0.0.1:57330][0m
+2023-12-29 21:51:58,019 daphne.http_protocol DEBUG    HTTP 304 response started for ['127.0.0.1', 57319]
+2023-12-29 21:51:58,020 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 57319]
+2023-12-29 21:51:58,020 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 57319]
+2023-12-29 21:51:58,020 django.channels.server INFO     [36mHTTP GET /static/admin/js/theme.js 304 [0.01, 127.0.0.1:57319][0m
+2023-12-29 21:51:58,022 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 57306]
+2023-12-29 21:51:58,023 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 57306]
+2023-12-29 21:51:58,023 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 57306]
+2023-12-29 21:51:58,023 django.channels.server INFO     [mHTTP GET /shinobi/jsi18n/ 200 [0.14, 127.0.0.1:57306][0m
+2023-12-29 21:51:58,030 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 57306]
+2023-12-29 21:51:58,032 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 57319]
+2023-12-29 21:51:58,036 daphne.http_protocol DEBUG    HTTP 304 response started for ['127.0.0.1', 57319]
+2023-12-29 21:51:58,037 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 57319]
+2023-12-29 21:51:58,037 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 57319]
+2023-12-29 21:51:58,039 django.channels.server INFO     [36mHTTP GET /static/admin/js/filters.js 304 [0.01, 127.0.0.1:57319][0m
+2023-12-29 21:51:58,039 daphne.http_protocol DEBUG    HTTP 304 response started for ['127.0.0.1', 57306]
+2023-12-29 21:51:58,040 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 57306]
+2023-12-29 21:51:58,041 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 57306]
+2023-12-29 21:51:58,041 django.channels.server INFO     [36mHTTP GET /static/admin/js/nav_sidebar.js 304 [0.01, 127.0.0.1:57306][0m
+2023-12-29 21:51:58,066 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 57319]
+2023-12-29 21:51:58,069 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 57306]
+2023-12-29 21:51:58,072 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 57308]
+2023-12-29 21:51:58,075 daphne.http_protocol DEBUG    HTTP 304 response started for ['127.0.0.1', 57319]
+2023-12-29 21:51:58,075 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 57319]
+2023-12-29 21:51:58,076 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 57319]
+2023-12-29 21:51:58,076 django.channels.server INFO     [36mHTTP GET /static/admin/img/icon-addlink.svg 304 [0.01, 127.0.0.1:57319][0m
+2023-12-29 21:51:58,077 daphne.http_protocol DEBUG    HTTP 304 response started for ['127.0.0.1', 57306]
+2023-12-29 21:51:58,079 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 57306]
+2023-12-29 21:51:58,080 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 57306]
+2023-12-29 21:51:58,080 django.channels.server INFO     [36mHTTP GET /static/admin/img/tooltag-add.svg 304 [0.01, 127.0.0.1:57306][0m
+2023-12-29 21:51:58,082 daphne.http_protocol DEBUG    HTTP 304 response started for ['127.0.0.1', 57308]
+2023-12-29 21:51:58,082 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 57308]
+2023-12-29 21:51:58,083 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 57308]
+2023-12-29 21:51:58,083 django.channels.server INFO     [36mHTTP GET /static/admin/img/sorting-icons.svg 304 [0.01, 127.0.0.1:57308][0m
+2023-12-29 21:51:58,178 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 57330]
+2023-12-29 21:51:58,181 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 57329]
+2023-12-29 21:51:58,182 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 57327]
+2023-12-29 21:51:58,185 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 57324]
+2023-12-29 21:51:58,186 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 57326]
+2023-12-29 21:51:58,187 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 57325]
+2023-12-29 21:51:58,191 daphne.http_protocol DEBUG    HTTP 304 response started for ['127.0.0.1', 57330]
+2023-12-29 21:51:58,192 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 57330]
+2023-12-29 21:51:58,192 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 57330]
+2023-12-29 21:51:58,193 django.channels.server INFO     [36mHTTP GET /static/admin/js/urlify.js 304 [0.02, 127.0.0.1:57330][0m
+2023-12-29 21:51:58,194 daphne.http_protocol DEBUG    HTTP 304 response started for ['127.0.0.1', 57329]
+2023-12-29 21:51:58,195 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 57329]
+2023-12-29 21:51:58,195 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 57329]
+2023-12-29 21:51:58,196 django.channels.server INFO     [36mHTTP GET /static/admin/js/vendor/xregexp/xregexp.js 304 [0.02, 127.0.0.1:57329][0m
+2023-12-29 21:51:58,198 daphne.http_protocol DEBUG    HTTP 304 response started for ['127.0.0.1', 57327]
+2023-12-29 21:51:58,199 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 57327]
+2023-12-29 21:51:58,200 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 57327]
+2023-12-29 21:51:58,200 django.channels.server INFO     [36mHTTP GET /static/admin/js/theme.js 304 [0.02, 127.0.0.1:57327][0m
+2023-12-29 21:51:58,203 daphne.http_protocol DEBUG    HTTP 304 response started for ['127.0.0.1', 57324]
+2023-12-29 21:51:58,204 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 57324]
+2023-12-29 21:51:58,204 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 57324]
+2023-12-29 21:51:58,205 django.channels.server INFO     [36mHTTP GET /static/admin/js/nav_sidebar.js 304 [0.02, 127.0.0.1:57324][0m
+2023-12-29 21:51:58,206 daphne.http_protocol DEBUG    HTTP 304 response started for ['127.0.0.1', 57325]
+2023-12-29 21:51:58,207 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 57325]
+2023-12-29 21:51:58,208 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 57325]
+2023-12-29 21:51:58,209 django.channels.server INFO     [36mHTTP GET /static/admin/js/filters.js 304 [0.02, 127.0.0.1:57325][0m
+2023-12-29 21:51:58,292 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:51:58,303 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 57326]
+2023-12-29 21:51:58,303 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 57326]
+2023-12-29 21:51:58,304 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 57326]
+2023-12-29 21:51:58,304 django.channels.server INFO     [mHTTP GET /shinobi/jsi18n/ 200 [0.12, 127.0.0.1:57326][0m
+2023-12-29 21:53:11,152 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 58236]
+2023-12-29 21:53:11,234 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:53:11,276 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 58236]
+2023-12-29 21:53:11,277 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 58236]
+2023-12-29 21:53:11,277 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 58236]
+2023-12-29 21:53:11,279 django.channels.server INFO     [mHTTP POST /shinobi/chat/message/ 200 [0.13, 127.0.0.1:58236][0m
+2023-12-29 21:53:12,200 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 58236]
+2023-12-29 21:53:12,282 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:53:12,419 daphne.http_protocol DEBUG    HTTP 302 response started for ['127.0.0.1', 58236]
+2023-12-29 21:53:12,420 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 58236]
+2023-12-29 21:53:12,421 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 58236]
+2023-12-29 21:53:12,421 django.channels.server INFO     [32mHTTP POST /shinobi/chat/message/ 302 [0.22, 127.0.0.1:58236][0m
+2023-12-29 21:53:12,426 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 58236]
+2023-12-29 21:53:12,501 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:53:12,571 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 58236]
+2023-12-29 21:53:12,572 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 58236]
+2023-12-29 21:53:12,572 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 58236]
+2023-12-29 21:53:12,572 django.channels.server INFO     [mHTTP GET /shinobi/chat/message/ 200 [0.15, 127.0.0.1:58236][0m
+2023-12-29 21:53:12,632 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 58236]
+2023-12-29 21:53:12,716 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:53:12,723 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 58236]
+2023-12-29 21:53:12,724 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 58236]
+2023-12-29 21:53:12,724 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 58236]
+2023-12-29 21:53:12,725 django.channels.server INFO     [mHTTP GET /shinobi/jsi18n/ 200 [0.09, 127.0.0.1:58236][0m
+2023-12-29 21:53:12,733 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 58267]
+2023-12-29 21:53:12,830 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:53:12,839 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 58267]
+2023-12-29 21:53:12,840 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 58267]
+2023-12-29 21:53:12,840 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 58267]
+2023-12-29 21:53:12,841 django.channels.server INFO     [mHTTP GET /shinobi/jsi18n/ 200 [0.11, 127.0.0.1:58267][0m
+2023-12-29 21:53:20,446 daphne.ws_protocol DEBUG    WebSocket closed for ['127.0.0.1', 57030]
+2023-12-29 21:53:20,447 django.channels.server INFO     WebSocket DISCONNECT /chat/1/ [127.0.0.1:57030]
+2023-12-29 21:53:21,602 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 58383]
+2023-12-29 21:53:21,675 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:53:21,720 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 58383]
+2023-12-29 21:53:21,721 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 58383]
+2023-12-29 21:53:21,721 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 58383]
+2023-12-29 21:53:21,722 django.channels.server INFO     [mHTTP POST /chat/start/ 200 [0.12, 127.0.0.1:58383][0m
+2023-12-29 21:53:21,737 django.channels.server INFO     WebSocket HANDSHAKING /chat/1/ [127.0.0.1:58389]
+2023-12-29 21:53:21,739 daphne.http_protocol DEBUG    Upgraded connection ['127.0.0.1', 58389] to WebSocket
+2023-12-29 21:53:21,742 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 58389] open and established
+2023-12-29 21:53:21,742 django.channels.server INFO     WebSocket CONNECT /chat/1/ [127.0.0.1:58389]
+2023-12-29 21:53:21,742 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 58389] accepted by application
+2023-12-29 21:53:46,866 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 58236]
+2023-12-29 21:53:47,055 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:53:47,086 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 58236]
+2023-12-29 21:53:47,087 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 58236]
+2023-12-29 21:53:47,087 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 58236]
+2023-12-29 21:53:47,087 django.channels.server INFO     [mHTTP POST /shinobi/chat/message/ 200 [0.22, 127.0.0.1:58236][0m
+2023-12-29 21:53:48,117 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 58236]
+2023-12-29 21:53:48,194 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:53:48,243 daphne.http_protocol DEBUG    HTTP 302 response started for ['127.0.0.1', 58236]
+2023-12-29 21:53:48,244 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 58236]
+2023-12-29 21:53:48,244 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 58236]
+2023-12-29 21:53:48,245 django.channels.server INFO     [32mHTTP POST /shinobi/chat/message/ 302 [0.13, 127.0.0.1:58236][0m
+2023-12-29 21:53:48,248 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 58236]
+2023-12-29 21:53:48,424 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:53:48,470 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 58236]
+2023-12-29 21:53:48,471 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 58236]
+2023-12-29 21:53:48,471 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 58236]
+2023-12-29 21:53:48,472 django.channels.server INFO     [mHTTP GET /shinobi/chat/message/ 200 [0.22, 127.0.0.1:58236][0m
+2023-12-29 21:53:48,495 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 58236]
+2023-12-29 21:53:48,579 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:53:48,587 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 58236]
+2023-12-29 21:53:48,587 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 58236]
+2023-12-29 21:53:48,589 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 58236]
+2023-12-29 21:53:48,589 django.channels.server INFO     [mHTTP GET /shinobi/jsi18n/ 200 [0.09, 127.0.0.1:58236][0m
+2023-12-29 21:53:48,596 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 58267]
+2023-12-29 21:53:48,685 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:53:48,694 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 58267]
+2023-12-29 21:53:48,695 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 58267]
+2023-12-29 21:53:48,695 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 58267]
+2023-12-29 21:53:48,695 django.channels.server INFO     [mHTTP GET /shinobi/jsi18n/ 200 [0.10, 127.0.0.1:58267][0m
+2023-12-29 21:53:51,746 daphne.ws_protocol DEBUG    WebSocket closed for ['127.0.0.1', 58389]
+2023-12-29 21:53:51,746 django.channels.server INFO     WebSocket DISCONNECT /chat/1/ [127.0.0.1:58389]
+2023-12-29 21:53:52,714 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 58782]
+2023-12-29 21:53:52,782 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:53:52,821 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 58782]
+2023-12-29 21:53:52,821 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 58782]
+2023-12-29 21:53:52,822 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 58782]
+2023-12-29 21:53:52,822 django.channels.server INFO     [mHTTP POST /chat/start/ 200 [0.11, 127.0.0.1:58782][0m
+2023-12-29 21:53:52,840 django.channels.server INFO     WebSocket HANDSHAKING /chat/1/ [127.0.0.1:58787]
+2023-12-29 21:53:52,840 daphne.http_protocol DEBUG    Upgraded connection ['127.0.0.1', 58787] to WebSocket
+2023-12-29 21:53:52,844 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 58787] open and established
+2023-12-29 21:53:52,844 django.channels.server INFO     WebSocket CONNECT /chat/1/ [127.0.0.1:58787]
+2023-12-29 21:53:52,844 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 58787] accepted by application
+2023-12-29 21:54:17,485 daphne.ws_protocol DEBUG    WebSocket closed for ['127.0.0.1', 58787]
+2023-12-29 21:54:17,485 django.channels.server INFO     WebSocket DISCONNECT /chat/1/ [127.0.0.1:58787]
+2023-12-29 21:54:18,525 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 59098]
+2023-12-29 21:54:18,591 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:54:18,634 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 59098]
+2023-12-29 21:54:18,635 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 59098]
+2023-12-29 21:54:18,635 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 59098]
+2023-12-29 21:54:18,636 django.channels.server INFO     [mHTTP POST /chat/start/ 200 [0.11, 127.0.0.1:59098][0m
+2023-12-29 21:54:18,653 django.channels.server INFO     WebSocket HANDSHAKING /chat/1/ [127.0.0.1:59103]
+2023-12-29 21:54:18,654 daphne.http_protocol DEBUG    Upgraded connection ['127.0.0.1', 59103] to WebSocket
+2023-12-29 21:54:18,657 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 59103] open and established
+2023-12-29 21:54:18,658 django.channels.server INFO     WebSocket CONNECT /chat/1/ [127.0.0.1:59103]
+2023-12-29 21:54:18,659 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 59103] accepted by application
+2023-12-29 21:54:20,352 daphne.ws_protocol DEBUG    WebSocket closed for ['127.0.0.1', 59103]
+2023-12-29 21:54:20,353 django.channels.server INFO     WebSocket DISCONNECT /chat/1/ [127.0.0.1:59103]
+2023-12-29 21:54:21,598 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 59139]
+2023-12-29 21:54:21,600 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 59140]
+2023-12-29 21:54:21,681 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:54:21,685 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:54:21,687 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 59139]
+2023-12-29 21:54:21,687 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 59139]
+2023-12-29 21:54:21,689 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 59139]
+2023-12-29 21:54:21,691 django.channels.server INFO     [mHTTP GET /rental/categories/ 200 [0.09, 127.0.0.1:59139][0m
+2023-12-29 21:54:21,701 core.settings WARNING  That page number is less than 1
+2023-12-29 21:54:21,701 core.settings WARNING  That page contains no results
+2023-12-29 21:54:21,715 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 59140]
+2023-12-29 21:54:21,716 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 59140]
+2023-12-29 21:54:21,716 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 59140]
+2023-12-29 21:54:21,716 django.channels.server INFO     [mHTTP POST /rental/all/ 200 [0.12, 127.0.0.1:59140][0m
+2023-12-29 21:54:22,745 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 59161]
+2023-12-29 21:54:22,809 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:54:22,824 core.settings WARNING  That page number is less than 1
+2023-12-29 21:54:22,824 core.settings WARNING  That page contains no results
+2023-12-29 21:54:22,849 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 59161]
+2023-12-29 21:54:22,849 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 59161]
+2023-12-29 21:54:22,850 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 59161]
+2023-12-29 21:54:22,850 django.channels.server INFO     [mHTTP GET /chat/all/ 200 [0.11, 127.0.0.1:59161][0m
+2023-12-29 21:54:24,223 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 59182]
+2023-12-29 21:54:24,297 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:54:24,339 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 59182]
+2023-12-29 21:54:24,340 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 59182]
+2023-12-29 21:54:24,340 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 59182]
+2023-12-29 21:54:24,340 django.channels.server INFO     [mHTTP POST /chat/start/ 200 [0.12, 127.0.0.1:59182][0m
+2023-12-29 21:54:24,355 django.channels.server INFO     WebSocket HANDSHAKING /chat/1/ [127.0.0.1:59188]
+2023-12-29 21:54:24,356 daphne.http_protocol DEBUG    Upgraded connection ['127.0.0.1', 59188] to WebSocket
+2023-12-29 21:54:24,360 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 59188] open and established
+2023-12-29 21:54:24,360 django.channels.server INFO     WebSocket CONNECT /chat/1/ [127.0.0.1:59188]
+2023-12-29 21:54:24,361 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 59188] accepted by application
+2023-12-29 21:54:32,349 daphne.ws_protocol DEBUG    WebSocket closed for ['127.0.0.1', 59188]
+2023-12-29 21:54:32,350 django.channels.server INFO     WebSocket DISCONNECT /chat/1/ [127.0.0.1:59188]
+2023-12-29 21:56:46,166 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 60974]
+2023-12-29 21:56:46,240 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:56:46,257 core.settings WARNING  That page number is less than 1
+2023-12-29 21:56:46,258 core.settings WARNING  That page contains no results
+2023-12-29 21:56:46,374 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 60974]
+2023-12-29 21:56:46,375 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 60974]
+2023-12-29 21:56:46,375 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 60974]
+2023-12-29 21:56:46,375 django.channels.server INFO     [mHTTP GET /chat/all/ 200 [0.21, 127.0.0.1:60974][0m
+2023-12-29 21:58:00,552 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 61876]
+2023-12-29 21:58:00,623 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:58:00,664 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 61876]
+2023-12-29 21:58:00,664 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 61876]
+2023-12-29 21:58:00,665 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 61876]
+2023-12-29 21:58:00,665 django.channels.server INFO     [mHTTP POST /chat/start/ 200 [0.11, 127.0.0.1:61876][0m
+2023-12-29 21:58:00,679 django.channels.server INFO     WebSocket HANDSHAKING /chat/1/ [127.0.0.1:61881]
+2023-12-29 21:58:00,680 daphne.http_protocol DEBUG    Upgraded connection ['127.0.0.1', 61881] to WebSocket
+2023-12-29 21:58:00,684 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 61881] open and established
+2023-12-29 21:58:00,684 django.channels.server INFO     WebSocket CONNECT /chat/1/ [127.0.0.1:61881]
+2023-12-29 21:58:00,685 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 61881] accepted by application
+2023-12-29 21:58:04,480 daphne.ws_protocol DEBUG    WebSocket closed for ['127.0.0.1', 61881]
+2023-12-29 21:58:04,480 django.channels.server INFO     WebSocket DISCONNECT /chat/1/ [127.0.0.1:61881]
+2023-12-29 21:58:06,198 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 61951]
+2023-12-29 21:58:06,202 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 61952]
+2023-12-29 21:58:06,275 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:58:06,279 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 61951]
+2023-12-29 21:58:06,279 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 61951]
+2023-12-29 21:58:06,280 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 61951]
+2023-12-29 21:58:06,280 django.channels.server INFO     [mHTTP GET /rental/categories/ 200 [0.08, 127.0.0.1:61951][0m
+2023-12-29 21:58:06,292 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:58:06,303 core.settings WARNING  That page number is less than 1
+2023-12-29 21:58:06,304 core.settings WARNING  That page contains no results
+2023-12-29 21:58:06,317 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 61952]
+2023-12-29 21:58:06,318 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 61952]
+2023-12-29 21:58:06,318 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 61952]
+2023-12-29 21:58:06,320 django.channels.server INFO     [mHTTP POST /rental/all/ 200 [0.12, 127.0.0.1:61952][0m
+2023-12-29 21:58:08,893 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 61989]
+2023-12-29 21:58:09,084 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:58:09,146 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 61989]
+2023-12-29 21:58:09,146 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 61989]
+2023-12-29 21:58:09,147 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 61989]
+2023-12-29 21:58:09,147 django.channels.server INFO     [mHTTP POST /chat/start/ 200 [0.25, 127.0.0.1:61989][0m
+2023-12-29 21:58:09,260 django.channels.server INFO     WebSocket HANDSHAKING /chat/1/ [127.0.0.1:61998]
+2023-12-29 21:58:09,260 daphne.http_protocol DEBUG    Upgraded connection ['127.0.0.1', 61998] to WebSocket
+2023-12-29 21:58:09,265 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 61998] open and established
+2023-12-29 21:58:09,265 django.channels.server INFO     WebSocket CONNECT /chat/1/ [127.0.0.1:61998]
+2023-12-29 21:58:09,266 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 61998] accepted by application
+2023-12-29 21:58:11,264 daphne.ws_protocol DEBUG    WebSocket closed for ['127.0.0.1', 61998]
+2023-12-29 21:58:11,265 django.channels.server INFO     WebSocket DISCONNECT /chat/1/ [127.0.0.1:61998]
+2023-12-29 21:58:25,724 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 62202]
+2023-12-29 21:58:25,797 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:58:25,813 core.settings WARNING  That page number is less than 1
+2023-12-29 21:58:25,814 core.settings WARNING  That page contains no results
+2023-12-29 21:58:25,842 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 62202]
+2023-12-29 21:58:25,843 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 62202]
+2023-12-29 21:58:25,843 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 62202]
+2023-12-29 21:58:25,843 django.channels.server INFO     [mHTTP GET /chat/all/ 200 [0.12, 127.0.0.1:62202][0m
+2023-12-29 21:58:26,793 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 62220]
+2023-12-29 21:58:26,861 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 21:58:26,901 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 62220]
+2023-12-29 21:58:26,902 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 62220]
+2023-12-29 21:58:26,902 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 62220]
+2023-12-29 21:58:26,903 django.channels.server INFO     [mHTTP POST /chat/start/ 200 [0.11, 127.0.0.1:62220][0m
+2023-12-29 21:58:26,919 django.channels.server INFO     WebSocket HANDSHAKING /chat/1/ [127.0.0.1:62225]
+2023-12-29 21:58:26,919 daphne.http_protocol DEBUG    Upgraded connection ['127.0.0.1', 62225] to WebSocket
+2023-12-29 21:58:26,923 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 62225] open and established
+2023-12-29 21:58:26,923 django.channels.server INFO     WebSocket CONNECT /chat/1/ [127.0.0.1:62225]
+2023-12-29 21:58:26,924 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 62225] accepted by application
+2023-12-29 22:02:26,904 daphne.ws_protocol DEBUG    WebSocket closed for ['127.0.0.1', 62225]
+2023-12-29 22:02:26,904 django.channels.server INFO     WebSocket DISCONNECT /chat/1/ [127.0.0.1:62225]
+2023-12-29 22:02:27,954 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 65331]
+2023-12-29 22:02:28,021 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 22:02:28,063 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 65331]
+2023-12-29 22:02:28,065 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 65331]
+2023-12-29 22:02:28,065 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 65331]
+2023-12-29 22:02:28,066 django.channels.server INFO     [mHTTP POST /chat/start/ 200 [0.11, 127.0.0.1:65331][0m
+2023-12-29 22:02:28,088 django.channels.server INFO     WebSocket HANDSHAKING /chat/1/ [127.0.0.1:65337]
+2023-12-29 22:02:28,089 daphne.http_protocol DEBUG    Upgraded connection ['127.0.0.1', 65337] to WebSocket
+2023-12-29 22:02:28,092 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 65337] open and established
+2023-12-29 22:02:28,093 django.channels.server INFO     WebSocket CONNECT /chat/1/ [127.0.0.1:65337]
+2023-12-29 22:02:28,093 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 65337] accepted by application
+2023-12-29 22:02:29,820 daphne.ws_protocol DEBUG    WebSocket closed for ['127.0.0.1', 65337]
+2023-12-29 22:02:29,820 django.channels.server INFO     WebSocket DISCONNECT /chat/1/ [127.0.0.1:65337]
+2023-12-29 22:02:30,400 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 65369]
+2023-12-29 22:02:30,473 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 22:02:30,514 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 65369]
+2023-12-29 22:02:30,514 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 65369]
+2023-12-29 22:02:30,515 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 65369]
+2023-12-29 22:02:30,515 django.channels.server INFO     [mHTTP POST /chat/start/ 200 [0.12, 127.0.0.1:65369][0m
+2023-12-29 22:02:30,530 django.channels.server INFO     WebSocket HANDSHAKING /chat/1/ [127.0.0.1:65375]
+2023-12-29 22:02:30,531 daphne.http_protocol DEBUG    Upgraded connection ['127.0.0.1', 65375] to WebSocket
+2023-12-29 22:02:30,534 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 65375] open and established
+2023-12-29 22:02:30,534 django.channels.server INFO     WebSocket CONNECT /chat/1/ [127.0.0.1:65375]
+2023-12-29 22:02:30,535 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 65375] accepted by application
+2023-12-29 22:02:32,302 daphne.ws_protocol DEBUG    WebSocket closed for ['127.0.0.1', 65375]
+2023-12-29 22:02:32,303 django.channels.server INFO     WebSocket DISCONNECT /chat/1/ [127.0.0.1:65375]
+2023-12-29 22:02:33,988 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 65419]
+2023-12-29 22:02:33,990 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 65420]
+2023-12-29 22:02:34,074 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 22:02:34,081 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 22:02:34,081 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 65419]
+2023-12-29 22:02:34,082 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 65419]
+2023-12-29 22:02:34,083 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 65419]
+2023-12-29 22:02:34,083 django.channels.server INFO     [mHTTP GET /rental/categories/ 200 [0.09, 127.0.0.1:65419][0m
+2023-12-29 22:02:34,099 core.settings WARNING  That page number is less than 1
+2023-12-29 22:02:34,099 core.settings WARNING  That page contains no results
+2023-12-29 22:02:34,115 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 65420]
+2023-12-29 22:02:34,115 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 65420]
+2023-12-29 22:02:34,116 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 65420]
+2023-12-29 22:02:34,116 django.channels.server INFO     [mHTTP POST /rental/all/ 200 [0.13, 127.0.0.1:65420][0m
+2023-12-29 22:02:37,218 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 65466]
+2023-12-29 22:02:37,285 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 22:02:37,327 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 65466]
+2023-12-29 22:02:37,328 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 65466]
+2023-12-29 22:02:37,329 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 65466]
+2023-12-29 22:02:37,329 django.channels.server INFO     [mHTTP POST /chat/start/ 200 [0.11, 127.0.0.1:65466][0m
+2023-12-29 22:02:37,346 django.channels.server INFO     WebSocket HANDSHAKING /chat/1/ [127.0.0.1:65471]
+2023-12-29 22:02:37,347 daphne.http_protocol DEBUG    Upgraded connection ['127.0.0.1', 65471] to WebSocket
+2023-12-29 22:02:37,350 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 65471] open and established
+2023-12-29 22:02:37,351 django.channels.server INFO     WebSocket CONNECT /chat/1/ [127.0.0.1:65471]
+2023-12-29 22:02:37,351 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 65471] accepted by application
+2023-12-29 22:02:39,607 daphne.ws_protocol DEBUG    WebSocket closed for ['127.0.0.1', 65471]
+2023-12-29 22:02:39,607 django.channels.server INFO     WebSocket DISCONNECT /chat/1/ [127.0.0.1:65471]
+2023-12-29 22:02:40,345 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 65509]
+2023-12-29 22:02:40,410 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 22:02:40,457 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 65509]
+2023-12-29 22:02:40,457 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 65509]
+2023-12-29 22:02:40,458 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 65509]
+2023-12-29 22:02:40,458 django.channels.server INFO     [mHTTP POST /chat/start/ 200 [0.11, 127.0.0.1:65509][0m
+2023-12-29 22:02:40,475 django.channels.server INFO     WebSocket HANDSHAKING /chat/1/ [127.0.0.1:65514]
+2023-12-29 22:02:40,475 daphne.http_protocol DEBUG    Upgraded connection ['127.0.0.1', 65514] to WebSocket
+2023-12-29 22:02:40,478 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 65514] open and established
+2023-12-29 22:02:40,479 django.channels.server INFO     WebSocket CONNECT /chat/1/ [127.0.0.1:65514]
+2023-12-29 22:02:40,479 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 65514] accepted by application
+2023-12-29 22:02:42,298 daphne.ws_protocol DEBUG    WebSocket closed for ['127.0.0.1', 65514]
+2023-12-29 22:02:42,299 django.channels.server INFO     WebSocket DISCONNECT /chat/1/ [127.0.0.1:65514]
+2023-12-29 22:03:36,140 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 50078]
+2023-12-29 22:03:36,262 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 22:03:36,341 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 50078]
+2023-12-29 22:03:36,342 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 50078]
+2023-12-29 22:03:36,342 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 50078]
+2023-12-29 22:03:36,343 django.channels.server INFO     [mHTTP POST /chat/start/ 200 [0.20, 127.0.0.1:50078][0m
+2023-12-29 22:03:36,413 django.channels.server INFO     WebSocket HANDSHAKING /chat/1/ [127.0.0.1:50085]
+2023-12-29 22:03:36,414 daphne.http_protocol DEBUG    Upgraded connection ['127.0.0.1', 50085] to WebSocket
+2023-12-29 22:03:36,419 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 50085] open and established
+2023-12-29 22:03:36,419 django.channels.server INFO     WebSocket CONNECT /chat/1/ [127.0.0.1:50085]
+2023-12-29 22:03:36,420 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 50085] accepted by application
+2023-12-29 22:03:49,552 daphne.ws_protocol DEBUG    WebSocket incoming frame on ['127.0.0.1', 50085]
+2023-12-29 22:03:49,678 daphne.ws_protocol DEBUG    Sent WebSocket packet to client for ['127.0.0.1', 50085]
+2023-12-29 22:03:56,255 daphne.ws_protocol DEBUG    WebSocket closed for ['127.0.0.1', 50085]
+2023-12-29 22:03:56,255 django.channels.server INFO     WebSocket DISCONNECT /chat/1/ [127.0.0.1:50085]
+2023-12-29 22:04:00,412 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 50388]
+2023-12-29 22:04:00,491 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 22:04:00,506 core.settings WARNING  That page number is less than 1
+2023-12-29 22:04:00,507 core.settings WARNING  That page contains no results
+2023-12-29 22:04:00,539 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 50388]
+2023-12-29 22:04:00,540 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 50388]
+2023-12-29 22:04:00,540 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 50388]
+2023-12-29 22:04:00,541 django.channels.server INFO     [mHTTP GET /chat/all/ 200 [0.13, 127.0.0.1:50388][0m
+2023-12-29 22:04:02,836 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 50422]
+2023-12-29 22:04:02,931 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 22:04:03,000 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 50422]
+2023-12-29 22:04:03,000 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 50422]
+2023-12-29 22:04:03,001 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 50422]
+2023-12-29 22:04:03,001 django.channels.server INFO     [mHTTP POST /chat/start/ 200 [0.16, 127.0.0.1:50422][0m
+2023-12-29 22:04:03,022 django.channels.server INFO     WebSocket HANDSHAKING /chat/1/ [127.0.0.1:50427]
+2023-12-29 22:04:03,023 daphne.http_protocol DEBUG    Upgraded connection ['127.0.0.1', 50427] to WebSocket
+2023-12-29 22:04:03,028 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 50427] open and established
+2023-12-29 22:04:03,028 django.channels.server INFO     WebSocket CONNECT /chat/1/ [127.0.0.1:50427]
+2023-12-29 22:04:03,029 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 50427] accepted by application
+2023-12-29 22:04:15,317 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 50578]
+2023-12-29 22:04:15,497 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 22:04:15,549 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 50578]
+2023-12-29 22:04:15,550 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 50578]
+2023-12-29 22:04:15,550 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 50578]
+2023-12-29 22:04:15,551 django.channels.server INFO     [mHTTP GET /shinobi/chat/message/ 200 [0.23, 127.0.0.1:50578][0m
+2023-12-29 22:04:15,576 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 50578]
+2023-12-29 22:04:15,672 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 22:04:15,679 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 50578]
+2023-12-29 22:04:15,680 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 50578]
+2023-12-29 22:04:15,680 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 50578]
+2023-12-29 22:04:15,680 django.channels.server INFO     [mHTTP GET /shinobi/jsi18n/ 200 [0.10, 127.0.0.1:50578][0m
+2023-12-29 22:04:15,941 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 50596]
+2023-12-29 22:04:16,020 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 22:04:16,026 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 50596]
+2023-12-29 22:04:16,028 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 50596]
+2023-12-29 22:04:16,029 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 50596]
+2023-12-29 22:04:16,029 django.channels.server INFO     [mHTTP GET /shinobi/jsi18n/ 200 [0.09, 127.0.0.1:50596][0m
+2023-12-29 22:04:20,200 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 50578]
+2023-12-29 22:04:20,283 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 22:04:20,314 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 50578]
+2023-12-29 22:04:20,315 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 50578]
+2023-12-29 22:04:20,316 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 50578]
+2023-12-29 22:04:20,316 django.channels.server INFO     [mHTTP POST /shinobi/chat/message/ 200 [0.12, 127.0.0.1:50578][0m
+2023-12-29 22:04:21,204 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 50578]
+2023-12-29 22:04:21,381 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 22:04:21,416 daphne.http_protocol DEBUG    HTTP 302 response started for ['127.0.0.1', 50578]
+2023-12-29 22:04:21,417 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 50578]
+2023-12-29 22:04:21,417 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 50578]
+2023-12-29 22:04:21,417 django.channels.server INFO     [32mHTTP POST /shinobi/chat/message/ 302 [0.21, 127.0.0.1:50578][0m
+2023-12-29 22:04:21,422 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 50578]
+2023-12-29 22:04:21,602 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 22:04:21,656 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 50578]
+2023-12-29 22:04:21,657 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 50578]
+2023-12-29 22:04:21,657 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 50578]
+2023-12-29 22:04:21,658 django.channels.server INFO     [mHTTP GET /shinobi/chat/message/ 200 [0.24, 127.0.0.1:50578][0m
+2023-12-29 22:04:21,682 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 50578]
+2023-12-29 22:04:21,765 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 22:04:21,773 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 50578]
+2023-12-29 22:04:21,774 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 50578]
+2023-12-29 22:04:21,774 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 50578]
+2023-12-29 22:04:21,775 django.channels.server INFO     [mHTTP GET /shinobi/jsi18n/ 200 [0.09, 127.0.0.1:50578][0m
+2023-12-29 22:04:21,781 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 50596]
+2023-12-29 22:04:21,874 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 22:04:21,882 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 50596]
+2023-12-29 22:04:21,883 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 50596]
+2023-12-29 22:04:21,883 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 50596]
+2023-12-29 22:04:21,883 django.channels.server INFO     [mHTTP GET /shinobi/jsi18n/ 200 [0.10, 127.0.0.1:50596][0m
+2023-12-29 22:04:29,451 daphne.ws_protocol DEBUG    WebSocket closed for ['127.0.0.1', 50427]
+2023-12-29 22:04:29,452 django.channels.server INFO     WebSocket DISCONNECT /chat/1/ [127.0.0.1:50427]
+2023-12-29 22:04:30,413 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 50785]
+2023-12-29 22:04:30,477 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 22:04:30,537 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 50785]
+2023-12-29 22:04:30,537 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 50785]
+2023-12-29 22:04:30,538 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 50785]
+2023-12-29 22:04:30,538 django.channels.server INFO     [mHTTP POST /chat/start/ 200 [0.12, 127.0.0.1:50785][0m
+2023-12-29 22:04:30,555 django.channels.server INFO     WebSocket HANDSHAKING /chat/1/ [127.0.0.1:50793]
+2023-12-29 22:04:30,556 daphne.http_protocol DEBUG    Upgraded connection ['127.0.0.1', 50793] to WebSocket
+2023-12-29 22:04:30,558 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 50793] open and established
+2023-12-29 22:04:30,560 django.channels.server INFO     WebSocket CONNECT /chat/1/ [127.0.0.1:50793]
+2023-12-29 22:04:30,560 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 50793] accepted by application
+2023-12-29 22:08:09,794 daphne.ws_protocol DEBUG    WebSocket closed for ['127.0.0.1', 50793]
+2023-12-29 22:08:09,795 django.channels.server INFO     WebSocket DISCONNECT /chat/1/ [127.0.0.1:50793]
+2023-12-29 22:08:15,985 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 53659]
+2023-12-29 22:08:15,989 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 53660]
+2023-12-29 22:08:16,068 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 22:08:16,072 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 53659]
+2023-12-29 22:08:16,072 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 53659]
+2023-12-29 22:08:16,073 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 53659]
+2023-12-29 22:08:16,073 django.channels.server INFO     [mHTTP GET /rental/categories/ 200 [0.09, 127.0.0.1:53659][0m
+2023-12-29 22:08:16,075 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 22:08:16,087 core.settings WARNING  That page number is less than 1
+2023-12-29 22:08:16,088 core.settings WARNING  That page contains no results
+2023-12-29 22:08:16,102 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 53660]
+2023-12-29 22:08:16,102 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 53660]
+2023-12-29 22:08:16,103 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 53660]
+2023-12-29 22:08:16,103 django.channels.server INFO     [mHTTP POST /rental/all/ 200 [0.11, 127.0.0.1:53660][0m
+2023-12-29 22:08:18,177 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 53693]
+2023-12-29 22:08:18,245 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 22:08:18,262 core.settings WARNING  That page number is less than 1
+2023-12-29 22:08:18,263 core.settings WARNING  That page contains no results
+2023-12-29 22:08:18,291 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 53693]
+2023-12-29 22:08:18,292 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 53693]
+2023-12-29 22:08:18,292 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 53693]
+2023-12-29 22:08:18,292 django.channels.server INFO     [mHTTP GET /chat/all/ 200 [0.12, 127.0.0.1:53693][0m
+2023-12-29 22:08:37,229 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 53960]
+2023-12-29 22:08:37,233 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 53961]
+2023-12-29 22:08:37,312 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 22:08:37,315 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 53960]
+2023-12-29 22:08:37,316 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 53960]
+2023-12-29 22:08:37,316 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 53960]
+2023-12-29 22:08:37,317 django.channels.server INFO     [mHTTP GET /rental/categories/ 200 [0.09, 127.0.0.1:53960][0m
+2023-12-29 22:08:37,318 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 22:08:37,332 core.settings WARNING  That page number is less than 1
+2023-12-29 22:08:37,332 core.settings WARNING  That page contains no results
+2023-12-29 22:08:37,345 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 53961]
+2023-12-29 22:08:37,346 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 53961]
+2023-12-29 22:08:37,346 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 53961]
+2023-12-29 22:08:37,346 django.channels.server INFO     [mHTTP POST /rental/all/ 200 [0.11, 127.0.0.1:53961][0m
+2023-12-29 22:08:38,289 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 53982]
+2023-12-29 22:08:38,358 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 22:08:38,373 core.settings WARNING  That page number is less than 1
+2023-12-29 22:08:38,373 core.settings WARNING  That page contains no results
+2023-12-29 22:08:38,401 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 53982]
+2023-12-29 22:08:38,401 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 53982]
+2023-12-29 22:08:38,402 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 53982]
+2023-12-29 22:08:38,402 django.channels.server INFO     [mHTTP GET /chat/all/ 200 [0.11, 127.0.0.1:53982][0m
+2023-12-29 22:08:41,321 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 54022]
+2023-12-29 22:08:41,324 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 54023]
+2023-12-29 22:08:41,403 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 22:08:41,404 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 22:08:41,413 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 54022]
+2023-12-29 22:08:41,413 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 54022]
+2023-12-29 22:08:41,415 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 54022]
+2023-12-29 22:08:41,415 django.channels.server INFO     [mHTTP GET /rental/categories/ 200 [0.10, 127.0.0.1:54022][0m
+2023-12-29 22:08:41,423 core.settings WARNING  That page number is less than 1
+2023-12-29 22:08:41,423 core.settings WARNING  That page contains no results
+2023-12-29 22:08:41,437 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 54023]
+2023-12-29 22:08:41,438 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 54023]
+2023-12-29 22:08:41,439 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 54023]
+2023-12-29 22:08:41,439 django.channels.server INFO     [mHTTP POST /rental/all/ 200 [0.12, 127.0.0.1:54023][0m
+2023-12-29 22:09:35,457 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 54691]
+2023-12-29 22:09:35,638 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 22:09:35,654 core.settings WARNING  That page number is less than 1
+2023-12-29 22:09:35,655 core.settings WARNING  That page contains no results
+2023-12-29 22:09:35,688 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 54691]
+2023-12-29 22:09:35,688 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 54691]
+2023-12-29 22:09:35,689 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 54691]
+2023-12-29 22:09:35,689 django.channels.server INFO     [mHTTP GET /chat/all/ 200 [0.23, 127.0.0.1:54691][0m
+2023-12-29 22:09:36,706 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 54711]
+2023-12-29 22:09:36,782 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 22:09:36,822 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 54711]
+2023-12-29 22:09:36,823 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 54711]
+2023-12-29 22:09:36,823 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 54711]
+2023-12-29 22:09:36,824 django.channels.server INFO     [mHTTP POST /chat/start/ 200 [0.12, 127.0.0.1:54711][0m
+2023-12-29 22:09:36,843 django.channels.server INFO     WebSocket HANDSHAKING /chat/1/ [127.0.0.1:54717]
+2023-12-29 22:09:36,843 daphne.http_protocol DEBUG    Upgraded connection ['127.0.0.1', 54717] to WebSocket
+2023-12-29 22:09:36,847 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 54717] open and established
+2023-12-29 22:09:36,847 django.channels.server INFO     WebSocket CONNECT /chat/1/ [127.0.0.1:54717]
+2023-12-29 22:09:36,848 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 54717] accepted by application
+2023-12-29 22:10:44,449 daphne.ws_protocol DEBUG    WebSocket closed for ['127.0.0.1', 54717]
+2023-12-29 22:10:44,450 django.channels.server INFO     WebSocket DISCONNECT /chat/1/ [127.0.0.1:54717]
+2023-12-29 22:10:46,297 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 56012]
+2023-12-29 22:10:46,300 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 56013]
+2023-12-29 22:10:46,375 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 22:10:46,379 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 56012]
+2023-12-29 22:10:46,380 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 56012]
+2023-12-29 22:10:46,380 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 56012]
+2023-12-29 22:10:46,381 django.channels.server INFO     [mHTTP GET /rental/categories/ 200 [0.08, 127.0.0.1:56012][0m
+2023-12-29 22:10:46,385 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 22:10:46,401 core.settings WARNING  That page number is less than 1
+2023-12-29 22:10:46,401 core.settings WARNING  That page contains no results
+2023-12-29 22:10:46,416 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 56013]
+2023-12-29 22:10:46,416 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 56013]
+2023-12-29 22:10:46,417 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 56013]
+2023-12-29 22:10:46,417 django.channels.server INFO     [mHTTP POST /rental/all/ 200 [0.12, 127.0.0.1:56013][0m
+2023-12-29 22:11:05,363 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 56550]
+2023-12-29 22:11:05,428 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 22:11:05,442 core.settings WARNING  That page number is less than 1
+2023-12-29 22:11:05,443 core.settings WARNING  That page contains no results
+2023-12-29 22:11:05,472 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 56550]
+2023-12-29 22:11:05,472 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 56550]
+2023-12-29 22:11:05,473 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 56550]
+2023-12-29 22:11:05,473 django.channels.server INFO     [mHTTP GET /chat/all/ 200 [0.11, 127.0.0.1:56550][0m
+2023-12-29 22:11:06,901 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 56571]
+2023-12-29 22:11:06,977 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 22:11:07,017 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 56571]
+2023-12-29 22:11:07,018 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 56571]
+2023-12-29 22:11:07,018 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 56571]
+2023-12-29 22:11:07,018 django.channels.server INFO     [mHTTP POST /chat/start/ 200 [0.12, 127.0.0.1:56571][0m
+2023-12-29 22:11:07,035 django.channels.server INFO     WebSocket HANDSHAKING /chat/1/ [127.0.0.1:56577]
+2023-12-29 22:11:07,036 daphne.http_protocol DEBUG    Upgraded connection ['127.0.0.1', 56577] to WebSocket
+2023-12-29 22:11:07,040 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 56577] open and established
+2023-12-29 22:11:07,040 django.channels.server INFO     WebSocket CONNECT /chat/1/ [127.0.0.1:56577]
+2023-12-29 22:11:07,041 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 56577] accepted by application
+2023-12-29 22:13:50,055 daphne.ws_protocol DEBUG    WebSocket closed for ['127.0.0.1', 56577]
+2023-12-29 22:13:50,057 django.channels.server INFO     WebSocket DISCONNECT /chat/1/ [127.0.0.1:56577]
+2023-12-29 22:14:03,611 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 58830]
+2023-12-29 22:14:03,690 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 22:14:03,710 core.settings WARNING  That page number is less than 1
+2023-12-29 22:14:03,710 core.settings WARNING  That page contains no results
+2023-12-29 22:14:03,746 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 58830]
+2023-12-29 22:14:03,746 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 58830]
+2023-12-29 22:14:03,747 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 58830]
+2023-12-29 22:14:03,747 django.channels.server INFO     [mHTTP GET /chat/all/ 200 [0.14, 127.0.0.1:58830][0m
+2023-12-29 22:14:06,033 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 58862]
+2023-12-29 22:14:06,036 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 58863]
+2023-12-29 22:14:06,123 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 22:14:06,127 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 58862]
+2023-12-29 22:14:06,128 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 58862]
+2023-12-29 22:14:06,129 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 58862]
+2023-12-29 22:14:06,130 django.channels.server INFO     [mHTTP GET /rental/categories/ 200 [0.10, 127.0.0.1:58862][0m
+2023-12-29 22:14:06,142 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 22:14:06,154 core.settings WARNING  That page number is less than 1
+2023-12-29 22:14:06,155 core.settings WARNING  That page contains no results
+2023-12-29 22:14:06,174 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 58863]
+2023-12-29 22:14:06,174 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 58863]
+2023-12-29 22:14:06,175 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 58863]
+2023-12-29 22:14:06,175 django.channels.server INFO     [mHTTP POST /rental/all/ 200 [0.14, 127.0.0.1:58863][0m
+2023-12-29 22:14:06,545 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 58878]
+2023-12-29 22:14:06,614 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 22:14:06,629 core.settings WARNING  That page number is less than 1
+2023-12-29 22:14:06,629 core.settings WARNING  That page contains no results
+2023-12-29 22:14:06,653 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 58878]
+2023-12-29 22:14:06,653 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 58878]
+2023-12-29 22:14:06,654 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 58878]
+2023-12-29 22:14:06,654 django.channels.server INFO     [mHTTP GET /chat/all/ 200 [0.11, 127.0.0.1:58878][0m
+2023-12-29 22:14:12,457 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 58951]
+2023-12-29 22:14:12,524 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 22:14:12,540 core.settings WARNING  That page number is less than 1
+2023-12-29 22:14:12,540 core.settings WARNING  That page contains no results
+2023-12-29 22:14:12,566 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 58951]
+2023-12-29 22:14:12,567 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 58951]
+2023-12-29 22:14:12,568 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 58951]
+2023-12-29 22:14:12,568 django.channels.server INFO     [mHTTP GET /chat/all/ 200 [0.11, 127.0.0.1:58951][0m
+2023-12-29 22:14:26,431 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 59119]
+2023-12-29 22:14:26,433 daphne.http_protocol DEBUG    HTTP b'POST' request for ['127.0.0.1', 59120]
+2023-12-29 22:14:26,510 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 22:14:26,517 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 22:14:26,521 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 59119]
+2023-12-29 22:14:26,522 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 59119]
+2023-12-29 22:14:26,523 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 59119]
+2023-12-29 22:14:26,523 core.settings WARNING  That page number is less than 1
+2023-12-29 22:14:26,523 django.channels.server INFO     [mHTTP GET /rental/categories/ 200 [0.09, 127.0.0.1:59119][0m
+2023-12-29 22:14:26,524 core.settings WARNING  That page contains no results
+2023-12-29 22:14:26,544 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 59120]
+2023-12-29 22:14:26,545 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 59120]
+2023-12-29 22:14:26,545 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 59120]
+2023-12-29 22:14:26,545 django.channels.server INFO     [mHTTP POST /rental/all/ 200 [0.11, 127.0.0.1:59120][0m
+2023-12-29 22:14:58,844 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 59515]
+2023-12-29 22:14:58,919 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 22:14:58,935 core.settings WARNING  That page number is less than 1
+2023-12-29 22:14:58,935 core.settings WARNING  That page contains no results
+2023-12-29 22:14:58,961 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 59515]
+2023-12-29 22:14:58,962 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 59515]
+2023-12-29 22:14:58,962 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 59515]
+2023-12-29 22:14:58,963 django.channels.server INFO     [mHTTP GET /chat/all/ 200 [0.12, 127.0.0.1:59515][0m
+2023-12-29 22:21:56,228 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\user\views.py changed, reloading.
+2023-12-29 22:21:58,271 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 22:21:59,102 core.settings WARNING  base.signals loaded
+2023-12-29 22:21:59,103 core.settings WARNING  rental.signals loaded
+2023-12-29 22:21:59,116 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-29 22:21:59,141 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-29 22:21:59,521 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-29 22:21:59,521 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-29 22:21:59,526 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2023-12-29 22:21:59,527 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2023-12-29 22:21:59,528 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2023-12-29 22:37:58,567 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\chat\consumers.py changed, reloading.
+2023-12-29 22:38:00,039 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 22:38:00,787 core.settings WARNING  base.signals loaded
+2023-12-29 22:38:00,789 core.settings WARNING  rental.signals loaded
+2023-12-29 22:38:00,798 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-29 22:38:00,822 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-29 22:38:13,423 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\chat\consumers.py changed, reloading.
+2023-12-29 22:38:15,040 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 22:38:15,701 core.settings WARNING  base.signals loaded
+2023-12-29 22:38:15,702 core.settings WARNING  rental.signals loaded
+2023-12-29 22:38:15,711 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-29 22:38:15,735 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-29 22:38:17,134 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-29 22:38:17,134 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-29 22:38:17,138 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2023-12-29 22:38:17,139 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2023-12-29 22:38:17,140 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2023-12-29 22:38:24,192 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\chat\consumers.py changed, reloading.
+2023-12-29 22:38:25,533 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 22:38:26,273 core.settings WARNING  base.signals loaded
+2023-12-29 22:38:26,276 core.settings WARNING  rental.signals loaded
+2023-12-29 22:38:26,289 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-29 22:38:26,319 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-29 22:38:27,075 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-29 22:38:27,075 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-29 22:38:27,078 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2023-12-29 22:38:27,079 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2023-12-29 22:38:27,080 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2023-12-29 22:39:31,795 django.channels.server INFO     WebSocket HANDSHAKING /chat/1/ [127.0.0.1:64832]
+2023-12-29 22:39:31,795 daphne.http_protocol DEBUG    Upgraded connection ['127.0.0.1', 64832] to WebSocket
+2023-12-29 22:39:31,807 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 64832] open and established
+2023-12-29 22:39:31,807 django.channels.server INFO     WebSocket CONNECT /chat/1/ [127.0.0.1:64832]
+2023-12-29 22:39:31,808 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 64832] accepted by application
+2023-12-29 22:39:48,137 daphne.ws_protocol DEBUG    WebSocket incoming frame on ['127.0.0.1', 64832]
+2023-12-29 22:39:50,343 celery.utils.functional DEBUG    
+def xmap(task, it):
+    return 1
+
+2023-12-29 22:39:50,343 celery.utils.functional DEBUG    
+def xmap(task, it):
+    return 1
+
+2023-12-29 22:39:50,351 celery.utils.functional DEBUG    
+def backend_cleanup():
+    return 1
+
+2023-12-29 22:39:50,351 celery.utils.functional DEBUG    
+def backend_cleanup():
+    return 1
+
+2023-12-29 22:39:50,353 celery.utils.functional DEBUG    
+def send_notification(data):
+    return 1
+
+2023-12-29 22:39:50,353 celery.utils.functional DEBUG    
+def send_notification(data):
+    return 1
+
+2023-12-29 22:39:50,356 celery.utils.functional DEBUG    
+def chain(*args, **kwargs):
+    return 1
+
+2023-12-29 22:39:50,356 celery.utils.functional DEBUG    
+def chain(*args, **kwargs):
+    return 1
+
+2023-12-29 22:39:50,357 celery.utils.functional DEBUG    
+def xstarmap(task, it):
+    return 1
+
+2023-12-29 22:39:50,357 celery.utils.functional DEBUG    
+def xstarmap(task, it):
+    return 1
+
+2023-12-29 22:39:50,359 celery.utils.functional DEBUG    
+def accumulate(self, *args, **kwargs):
+    return 1
+
+2023-12-29 22:39:50,359 celery.utils.functional DEBUG    
+def accumulate(self, *args, **kwargs):
+    return 1
+
+2023-12-29 22:39:50,360 celery.utils.functional DEBUG    
+def cleanup_mail(*args, **kwargs):
+    return 1
+
+2023-12-29 22:39:50,360 celery.utils.functional DEBUG    
+def cleanup_mail(*args, **kwargs):
+    return 1
+
+2023-12-29 22:39:50,362 celery.utils.functional DEBUG    
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+2023-12-29 22:39:50,362 celery.utils.functional DEBUG    
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+2023-12-29 22:39:50,363 celery.utils.functional DEBUG    
+def chunks(task, it, n):
+    return 1
+
+2023-12-29 22:39:50,363 celery.utils.functional DEBUG    
+def chunks(task, it, n):
+    return 1
+
+2023-12-29 22:39:50,365 celery.utils.functional DEBUG    
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+2023-12-29 22:39:50,365 celery.utils.functional DEBUG    
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+2023-12-29 22:39:50,366 celery.utils.functional DEBUG    
+def send_queued_mail(*args, **kwargs):
+    return 1
+
+2023-12-29 22:39:50,366 celery.utils.functional DEBUG    
+def send_queued_mail(*args, **kwargs):
+    return 1
+
+2023-12-29 22:39:50,367 celery.utils.functional DEBUG    
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+2023-12-29 22:39:50,367 celery.utils.functional DEBUG    
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+2023-12-29 22:39:54,572 daphne.ws_protocol DEBUG    Sent WebSocket packet to client for ['127.0.0.1', 64832]
+2023-12-29 22:40:20,225 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\chat\consumers.py changed, reloading.
+2023-12-29 22:40:21,687 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 22:40:22,324 core.settings WARNING  base.signals loaded
+2023-12-29 22:40:22,326 core.settings WARNING  rental.signals loaded
+2023-12-29 22:40:22,335 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-29 22:40:22,361 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-29 22:40:23,034 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-29 22:40:23,034 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-29 22:40:23,038 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2023-12-29 22:40:23,039 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2023-12-29 22:40:23,039 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2023-12-29 22:45:40,396 django.utils.autoreload INFO     D:\CODE_BASE\PYTHON\fiefinder\base\views.py changed, reloading.
+2023-12-29 22:45:41,891 asyncio      DEBUG    Using selector: SelectSelector
+2023-12-29 22:45:42,547 core.settings WARNING  base.signals loaded
+2023-12-29 22:45:42,548 core.settings WARNING  rental.signals loaded
+2023-12-29 22:45:42,559 axes.apps    INFO     AXES: BEGIN version 6.2.0, blocking by ip_address
+2023-12-29 22:45:42,581 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-29 22:45:43,209 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-29 22:45:43,209 django.request DEBUG    Asynchronous handler adapted for middleware easyaudit.middleware.easyaudit.EasyAuditMiddleware.
+2023-12-29 22:45:43,213 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2023-12-29 22:45:43,214 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2023-12-29 22:45:43,215 daphne.server INFO     Listening on TCP address 127.0.0.1:8000

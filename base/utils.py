@@ -68,6 +68,7 @@ def token_required(func):
     def inner(request, *args, **kwargs):
         try:
             token = str(request.headers["Authorization"].split(" ")[1]).strip()
+            print(token)
             token = Token.objects.select_related("user").get(key=str(token))
             request.user = token.user
             request.key = token.key
