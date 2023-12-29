@@ -8,7 +8,7 @@ def message_serializer(message, fields=[], exclude=[]):
         "id": message.id,
         "text": message.text,
         "created_at": str(message.created_at),
-        "sender": user_serializer(message.sender),
+        "sender": user_serializer(message.sender, exclude=["last_seen"]),
     }
 
     if fields:

@@ -90,22 +90,3 @@ def fetch_conversations(request):
     )
 
     return JsonResponse(response)
-
-
-# @csrf_exempt
-# @ratelimit(key="ip", rate="5/m", block=True)
-# @request_sanitizer
-# @token_required
-# @require_GET
-# def fetch_conversation(request, conversation_id):
-#     try:
-#         conversation = Conversation.objects.select_related(
-#             "initiator", "receiver"
-#         ).filter(id=conversation_id)
-#         if not conversation.exists():
-#             return JsonResponse({"success": False, "info": "Conversation not found"})
-#         conversation = conversation_serializer(conversation.first())
-#         return JsonResponse({"success": True, "info": conversation})
-#     except Exception as e:
-#         logger.exception(str(e))
-#         return JsonResponse({"success": False, "info": "Invalid request body"})

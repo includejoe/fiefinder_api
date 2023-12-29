@@ -96,10 +96,6 @@ def login_user(request):
         token_checker = Token.objects.filter(user=user)
         if token_checker.exists():
             token = token_checker[0]
-            if token.expiry_date < arrow.now().datetime:
-                logout(request)
-                Token.objects.filter(key=token.key).delete()
-                token = Token.objects.create(user=user)
         else:
             token = Token.objects.create(user=user)
         login(request, user)
