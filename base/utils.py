@@ -68,7 +68,6 @@ def token_required(func):
     def inner(request, *args, **kwargs):
         try:
             token = str(request.headers["Authorization"].split(" ")[1]).strip()
-            print(token)
             token = Token.objects.select_related("user").get(key=str(token))
             request.user = token.user
             request.key = token.key
@@ -146,8 +145,7 @@ def paginator(
     annotate={},
     select_related=None,
     special_filter=None,
-    serializer_excluders=[],
-    serializer_includers=[],
+    serializer_params={},
     excludes=None,
     drop=20,
 ):
@@ -197,10 +195,7 @@ def paginator(
         next_page = page.number
 
     return {
-        "info": [
-            serializer(obj, serializer_includers, serializer_excluders)
-            for obj in page.object_list
-        ],
+        "info": [serializer(obj, **serializer_params) for obj in page.object_list],
         "success": True,
         "paginator": {
             "success": True,

@@ -42,13 +42,13 @@ class ChatConsumer(WebsocketConsumer):
     def chat_message(self, event):
         text_data_json = event.copy()
         text_data_json.pop("type")
-        message_text, sender_id = (
-            text_data_json["message"],
-            text_data_json["sender"],
-        )
+        message_text = text_data_json["message"]
+        sender_id = text_data_json["sender"]
+        receiver_id = text_data_json["receiver"]
 
         conversation = Conversation.objects.get(id=str(self.room_name))
         sender = User.objects.get(id=sender_id)
+        receiver = User.objects.get(id=receiver_id)
 
         # to avoid duplicate messages
         time_threshold = datetime.now() - timedelta(minutes=1)
@@ -72,9 +72,7 @@ class ChatConsumer(WebsocketConsumer):
         self.send(text_data=json.dumps(message))
 
         notification_recipients = list(
-            PushToken.objects.filter(user=conversation.receiver).values_list(
-                "fcm_token", flat=True
-            )
+            PushToken.objects.filter(user=receiver).values_list("fcm_token", flat=True)
         )
 
         notification_data = {

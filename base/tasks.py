@@ -1,5 +1,4 @@
 import os
-import arrow
 from celery import shared_task
 import firebase_admin
 from firebase_admin import credentials, messaging
@@ -14,9 +13,10 @@ firebase_admin.initialize_app(cred)
 
 
 @shared_task
-def send_notification(data):
+def send_notification(data, persist=False):
     logger.warning("--------------about to send notification --------------------")
-    notification = Notification.objects.create(**data)
+    notification = Notification(**data)
+
     if notification.general:
         queryset = PushToken.objects.values_list("fcm_token", flat=True)
         queryset = list(queryset)
@@ -41,6 +41,9 @@ def send_notification(data):
                     logger.warning(
                         f"Error sending notifications {idx + 1} with token {message.tokens[idx]}: {failure.exception}"
                     )
+
+        if persist:
+            notification.save()
 
         logger.warning("--------------done sending notification --------------------")
     except Exception as e:

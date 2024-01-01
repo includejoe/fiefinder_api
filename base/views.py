@@ -2,10 +2,12 @@ from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.http import require_GET, require_POST
 from django_ratelimit.decorators import ratelimit
+from django.db.models import Q
 
 from core.settings import LOGGER as logger
-from base.models import Country, Language, PushToken
-from base.utils import request_sanitizer, token_required, Cache
+from base.models import Country, Language, PushToken, Notification
+from base.utils import request_sanitizer, token_required, Cache, paginator
+from base.serializers import notification_serializer
 
 
 @csrf_exempt
@@ -74,8 +76,51 @@ def push_token(request):
     try:
         body = request.sanitized_data
         body["user"] = request.user
+        checker = PushToken.objects.filter(**body)
+        if checker.exists():
+            return JsonResponse(
+                {
+                    "success": True,
+                    "info": "Push token is already saved",
+                }
+            )
         PushToken.objects.create(**body)
         return JsonResponse({"success": True, "info": "Push token saved successfully"})
     except Exception as e:
         logger.exception(str(e))
         return JsonResponse({"success": False, "info": "Invalid request body"})
+
+
+@csrf_exempt
+@ratelimit(key="ip", rate="10/m", block=True)
+@token_required
+@request_sanitizer
+def fetch_notifications(request):
+    body = request.sanitized_data
+    email = request.user.email
+    page = body.get("page", 1)
+    category = body.get("category", "")
+    push_tokens = PushToken.objects.values_list("fcm_token", flat=True).filter(
+        user__email=email
+    )
+
+    if not isinstance(page, int):
+        return {
+            "success": False,
+            "info": "Page number should be an integer",
+        }
+
+    filters = {} if category == "" else {"category__title": category}
+
+    special_filter = Q(general=True) | Q(recipients__overlap=push_tokens)
+
+    response = paginator(
+        page,
+        Notification,
+        notification_serializer,
+        filters,
+        special_filter=special_filter,
+        serializer_params={"user_email": email},
+    )
+
+    return JsonResponse(response)

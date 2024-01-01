@@ -9,10 +9,10 @@ class ConversationAdmin(admin.ModelAdmin):
     list_display = ["initiator", "receiver"]
 
     def initiator(self, instance):
-        return instance.initiator.username
+        return instance.initiator.email
 
     def receiver(self, instance):
-        return instance.receiver.username
+        return instance.receiver.email
 
 
 @admin.register(Message)
@@ -20,4 +20,4 @@ class MessageAdmin(admin.ModelAdmin):
     list_display = ["sender", "text", "created_at"]
 
     def sender(self, instance):
-        return instance.sender.username
+        return instance.sender.email

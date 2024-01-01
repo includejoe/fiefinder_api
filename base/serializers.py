@@ -20,3 +20,21 @@ def location_serializer(location, fields=[], exclude=[]):
         return excluder(valid_fields, exclude)
 
     return valid_fields
+
+
+def notification_serializer(notification, user_email, fields=[], exclude=[]):
+    valid_fields = {
+        "id": notification.id,
+        "title": notification.title,
+        "message": notification.message,
+        "opened": notification.opened_by.filter(email=user_email).exists(),
+        "created_at": notification.created_at,
+    }
+
+    if fields:
+        return includer(valid_fields, fields)
+
+    if exclude:
+        return excluder(valid_fields, exclude)
+
+    return valid_fields

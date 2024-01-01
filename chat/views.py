@@ -77,7 +77,7 @@ def fetch_conversations(request):
         filters,
         select_related=select_related,
         special_filter=special_filter,
-        serializer_excluders=["messages"],
+        serializer_params={"exclude": ["messages"]},
     )
 
     return JsonResponse(response)
