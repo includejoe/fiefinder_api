@@ -23,6 +23,7 @@ def fetch_countries(request):
                 "name": country["name"],
                 "image": country["image"],
                 "short_name": country["short_name"],
+                "phone_code": country["phone_code"],
                 "currency": country["currency"],
                 "currency_code": country["currency_code"],
             }
@@ -35,6 +36,7 @@ def fetch_countries(request):
                 "name",
                 "image",
                 "short_name",
+                "phone_code",
                 "currency",
                 "currency_code",
             )
@@ -99,7 +101,6 @@ def fetch_notifications(request):
     body = request.sanitized_data
     email = request.user.email
     page = body.get("page", 1)
-    category = body.get("category", "")
     push_tokens = PushToken.objects.values_list("fcm_token", flat=True).filter(
         user__email=email
     )
@@ -110,7 +111,7 @@ def fetch_notifications(request):
             "info": "Page number should be an integer",
         }
 
-    filters = {} if category == "" else {"category__title": category}
+    filters = {}
 
     special_filter = Q(general=True) | Q(recipients__overlap=push_tokens)
 

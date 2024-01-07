@@ -24,7 +24,8 @@ def signup(request):
     try:
         body = request.sanitized_data
         email = body["email"]
-        country = Country.fetch_countries(country_id=body["country"])
+        phone = body["phone"]
+        country = Country.fetch_countries(country=body["country"])
 
         if len(body["password"]) < 6:
             return JsonResponse(
@@ -33,6 +34,16 @@ def signup(request):
                     "info": "Password must be more than 6 characters",
                 }
             )
+
+        if len(phone) < 9:
+            return JsonResponse(
+                {
+                    "success": False,
+                    "info": "Invalid phone number",
+                }
+            )
+
+        phone = phone[-9:]
 
         if User.objects.filter(email=email).exists():
             return JsonResponse(
@@ -47,14 +58,19 @@ def signup(request):
             username=body.get("username", None),
             first_name=body["first_name"],
             last_name=body["last_name"],
-            phone="{}{}".format(country["phone_code"], body["phone"]),
+            phone="{}{}".format(country["phone_code"], phone),
             gender=body["gender"],
             country_id=country["id"],
         )
         user.set_password(body["password"])
         user.save()
 
-        return JsonResponse({"success": True, "info": "Sign up successful"})
+        return JsonResponse(
+            {
+                "success": True,
+                "info": "Sign up successful, login to continue.",
+            }
+        )
     except Exception as e:
         logger.warning(str(e))
         return JsonResponse(

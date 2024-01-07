@@ -43,7 +43,10 @@ def index(request):
                     return JsonResponse(
                         {"success": False, "info": "Location data is required"}
                     )
-                body["location"] = Location.objects.create(**location_data)
+                body["location"] = Location.objects.create(
+                    country_id=user.country.id,
+                    **location_data,
+                )
                 body["user"] = user
                 Rental.objects.create(**body)
                 return JsonResponse(
