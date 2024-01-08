@@ -25,7 +25,9 @@ def conversation_serializer(conversation, fields=[], exclude=[]):
         "id": conversation.id,
         "initiator": user_serializer(conversation.initiator),
         "receiver": user_serializer(conversation.receiver),
-        "last_message": message_serializer(conversation.message_set.last()),
+        "last_message": message_serializer(conversation.message_set.last())
+        if conversation.message_set.exists()
+        else None,
         "messages": [
             message_serializer(message) for message in conversation.message_set.all()
         ]

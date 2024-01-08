@@ -13,6 +13,7 @@ def rental_serializer(rental, fields=[], exclude=[]):
         "lease_type": rental.lease_type,
         "lease_term": rental.lease_term,
         "images": rental.images,
+        "available": rental.available,
         "location": location_serializer(rental.location),
         "created_at": rental.created_at,
         "user": user_serializer(rental.user),

@@ -148,51 +148,35 @@ def login_user(request):
 @require_POST
 def update_user(request):
     body = request.sanitized_data
+    user = request.user
     email = request.user.email
+    current_password = body.pop("current_password", None)
+    new_password = body.pop("new_password", None)
+
     try:
+        if current_password and new_password:
+            current_password = body["current_password"]
+            new_password = body["new_password"]
+
+            if check_password(new_password, user.password):
+                return JsonResponse(
+                    {
+                        "success": True,
+                        "info": "New password can not be same as current password",
+                    },
+                )
+
+            if check_password(current_password, user.password):
+                user.set_password(new_password)
+                user.save()
+            else:
+                return JsonResponse(
+                    {"success": False, "info": "Current password is incorrect"},
+                )
+
         update_fields = partial_update(body, exclude=["email", "username", "password"])
         User.objects.filter(email=email).update(**update_fields)
         return JsonResponse({"success": True, "info": "User updated successfully"})
-    except Exception as e:
-        logger.warning(str(e))
-        return JsonResponse(
-            {"success": False, "info": "Invalid request body"},
-        )
-
-
-@csrf_exempt
-@ratelimit(key="ip", rate="5/m", block=True)
-@request_sanitizer
-@token_required
-@require_POST
-def change_password(request):
-    body = request.sanitized_data
-    email = request.user.email
-
-    try:
-        user = User.objects.get(email=email)
-        current_password = body["current_password"]
-        new_password = body["new_password"]
-
-        if check_password(new_password, user.password):
-            return JsonResponse(
-                {
-                    "success": True,
-                    "info": "New password can not be same as current password",
-                },
-            )
-
-        if check_password(current_password, user.password):
-            user.set_password(new_password)
-            user.save()
-
-            return JsonResponse(
-                {"success": True, "info": "Password changed successfully"},
-            )
-        else:
-            return JsonResponse(
-                {"success": False, "info": "Password changed successfully"},
-            )
     except Exception as e:
         logger.warning(str(e))
         return JsonResponse(
