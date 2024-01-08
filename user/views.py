@@ -82,7 +82,6 @@ def signup(request):
 
 
 @csrf_exempt
-@ratelimit(key="ip", rate="5/m", block=True)
 @request_sanitizer
 @require_POST
 def login_user(request):
@@ -155,13 +154,10 @@ def update_user(request):
 
     try:
         if current_password and new_password:
-            current_password = body["current_password"]
-            new_password = body["new_password"]
-
             if check_password(new_password, user.password):
                 return JsonResponse(
                     {
-                        "success": True,
+                        "success": False,
                         "info": "New password can not be same as current password",
                     },
                 )
@@ -176,7 +172,7 @@ def update_user(request):
 
         update_fields = partial_update(body, exclude=["email", "username", "password"])
         User.objects.filter(email=email).update(**update_fields)
-        return JsonResponse({"success": True, "info": "User updated successfully"})
+        return JsonResponse({"success": True, "info": "Profile updated successfully"})
     except Exception as e:
         logger.warning(str(e))
         return JsonResponse(

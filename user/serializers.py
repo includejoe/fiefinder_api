@@ -17,7 +17,7 @@ def user_serializer(user, fields=[], exclude=[]):
         "email": user.email,
         "full_name": f"{user.first_name} {user.last_name}",
         "image": user.image,
-        "verified": user.image,
+        "verified": user.verified,
         "phone": user.phone,
         "last_seen": last_seen,
     }
